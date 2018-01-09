@@ -9,13 +9,20 @@
 /* Begin PBXBuildFile section */
 		B09545E208C4959AA44FD33C /* Pods_Prototype2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FAC40FDC9F2E6D090F5677D /* Pods_Prototype2.framework */; };
 		FD723CE22004ADC1002E5675 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD723CE12004ADC1002E5675 /* AppDelegate.swift */; };
-		FD723CE42004ADC1002E5675 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD723CE32004ADC1002E5675 /* ViewController.swift */; };
 		FD723CE72004ADC1002E5675 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD723CE52004ADC1002E5675 /* Main.storyboard */; };
 		FD723CE92004ADC1002E5675 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD723CE82004ADC1002E5675 /* Assets.xcassets */; };
 		FD723CEC2004ADC1002E5675 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD723CEA2004ADC1002E5675 /* LaunchScreen.storyboard */; };
 		FD723CFB2004AEBC002E5675 /* meiryo.ttc in Resources */ = {isa = PBXBuildFile; fileRef = FD723CF92004AEBC002E5675 /* meiryo.ttc */; };
 		FD723CFC2004AEBC002E5675 /* meiryob.ttc in Resources */ = {isa = PBXBuildFile; fileRef = FD723CFA2004AEBC002E5675 /* meiryob.ttc */; };
 		FD723CFE2004B023002E5675 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD723CFD2004B022002E5675 /* GoogleService-Info.plist */; };
+		FD723D002004B231002E5675 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD723CFF2004B231002E5675 /* DataServices.swift */; };
+		FD723D022004B52E002E5675 /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD723D012004B52E002E5675 /* AuthServices.swift */; };
+		FD723D042004BAEB002E5675 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD723D032004BAEB002E5675 /* LoginVC.swift */; };
+		FD723D062004BAF8002E5675 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD723D052004BAF8002E5675 /* AuthVC.swift */; };
+		FD723D0A2004BC10002E5675 /* RoundUIViewCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD723D072004BC10002E5675 /* RoundUIViewCorner.swift */; };
+		FD723D0B2004BC10002E5675 /* RoundLabelCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD723D082004BC10002E5675 /* RoundLabelCorner.swift */; };
+		FD723D0C2004BC10002E5675 /* RoundButtonCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD723D092004BC10002E5675 /* RoundButtonCorner.swift */; };
+		FD723D0E2004BC2F002E5675 /* RoundImageCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD723D0D2004BC2F002E5675 /* RoundImageCorner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +31,6 @@
 		678C181F9249952A01FD8EEC /* Pods-Prototype2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prototype2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Prototype2/Pods-Prototype2.release.xcconfig"; sourceTree = "<group>"; };
 		FD723CDE2004ADC1002E5675 /* Prototype2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prototype2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD723CE12004ADC1002E5675 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FD723CE32004ADC1002E5675 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FD723CE62004ADC1002E5675 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD723CE82004ADC1002E5675 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD723CEB2004ADC1002E5675 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +38,14 @@
 		FD723CF92004AEBC002E5675 /* meiryo.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = meiryo.ttc; sourceTree = "<group>"; };
 		FD723CFA2004AEBC002E5675 /* meiryob.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = meiryob.ttc; sourceTree = "<group>"; };
 		FD723CFD2004B022002E5675 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FD723CFF2004B231002E5675 /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
+		FD723D012004B52E002E5675 /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
+		FD723D032004BAEB002E5675 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		FD723D052004BAF8002E5675 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		FD723D072004BC10002E5675 /* RoundUIViewCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundUIViewCorner.swift; sourceTree = "<group>"; };
+		FD723D082004BC10002E5675 /* RoundLabelCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundLabelCorner.swift; sourceTree = "<group>"; };
+		FD723D092004BC10002E5675 /* RoundButtonCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButtonCorner.swift; sourceTree = "<group>"; };
+		FD723D0D2004BC2F002E5675 /* RoundImageCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundImageCorner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +105,6 @@
 				FD723CF42004AE57002E5675 /* Services */,
 				FD723CF32004AE46002E5675 /* Extensions */,
 				FD723CE12004ADC1002E5675 /* AppDelegate.swift */,
-				FD723CE32004ADC1002E5675 /* ViewController.swift */,
 				FD723CE52004ADC1002E5675 /* Main.storyboard */,
 				FD723CE82004ADC1002E5675 /* Assets.xcassets */,
 				FD723CEA2004ADC1002E5675 /* LaunchScreen.storyboard */,
@@ -111,6 +124,8 @@
 		FD723CF42004AE57002E5675 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				FD723CFF2004B231002E5675 /* DataServices.swift */,
+				FD723D012004B52E002E5675 /* AuthServices.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -125,6 +140,10 @@
 		FD723CF62004AE68002E5675 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FD723D092004BC10002E5675 /* RoundButtonCorner.swift */,
+				FD723D082004BC10002E5675 /* RoundLabelCorner.swift */,
+				FD723D072004BC10002E5675 /* RoundUIViewCorner.swift */,
+				FD723D0D2004BC2F002E5675 /* RoundImageCorner.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -132,6 +151,8 @@
 		FD723CF72004AE6C002E5675 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FD723D032004BAEB002E5675 /* LoginVC.swift */,
+				FD723D052004BAF8002E5675 /* AuthVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -259,15 +280,27 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Prototype2/Pods-Prototype2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BarcodeScanner/BarcodeScanner.framework",
+				"${BUILT_PRODUCTS_DIR}/ChameleonSwift/ChameleonSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BarcodeScanner.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -283,8 +316,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD723CE42004ADC1002E5675 /* ViewController.swift in Sources */,
+				FD723D062004BAF8002E5675 /* AuthVC.swift in Sources */,
+				FD723D0B2004BC10002E5675 /* RoundLabelCorner.swift in Sources */,
+				FD723D002004B231002E5675 /* DataServices.swift in Sources */,
 				FD723CE22004ADC1002E5675 /* AppDelegate.swift in Sources */,
+				FD723D042004BAEB002E5675 /* LoginVC.swift in Sources */,
+				FD723D0A2004BC10002E5675 /* RoundUIViewCorner.swift in Sources */,
+				FD723D0E2004BC2F002E5675 /* RoundImageCorner.swift in Sources */,
+				FD723D022004B52E002E5675 /* AuthServices.swift in Sources */,
+				FD723D0C2004BC10002E5675 /* RoundButtonCorner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

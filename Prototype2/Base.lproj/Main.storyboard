@@ -15,10 +15,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Login PageVC-->
+        <!--LoginVC-->
         <scene sceneID="iYu-85-1y8">
             <objects>
-                <viewController storyboardIdentifier="LoginPageViewController" id="Vmm-vo-LoE" customClass="LoginPageVC" customModule="ABCarte2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginPageViewController" id="Vmm-vo-LoE" customClass="LoginVC" customModule="Prototype2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V9x-Sk-Kb2">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,7 +26,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default_ipad-Landscape" translatesAutoresizingMaskIntoConstraints="NO" id="oKE-3q-1wL">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Rg-IU-gY8" userLabel="loginview" customClass="RoundUIViewCorner" customModule="ABCarte2" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Rg-IU-gY8" userLabel="loginview" customClass="RoundUIViewCorner" customModule="Prototype2" customModuleProvider="target">
                                 <rect key="frame" x="80" y="35" width="544" height="698"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsn-hU-tXx">
@@ -166,7 +166,7 @@
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYZ-BW-k9E" customClass="RoundButtonCorner" customModule="ABCarte2" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYZ-BW-k9E" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
                                         <rect key="frame" x="72" y="598" width="400" height="80"/>
                                         <color key="backgroundColor" red="0.59607843140000005" green="0.23137254900000001" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -184,7 +184,7 @@
                                             <action selector="btnLoginQRCodePressed:" destination="Vmm-vo-LoE" eventType="touchUpInside" id="ovF-Jk-FyF"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUs-eT-5Fz" customClass="RoundButtonCorner" customModule="ABCarte2" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUs-eT-5Fz" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
                                         <rect key="frame" x="72" y="440" width="400" height="80"/>
                                         <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="0.75157298660000005" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="35"/>
@@ -195,7 +195,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="btnLoginPressed:" destination="Vmm-vo-LoE" eventType="touchUpInside" id="Epw-EJ-DvI"/>
+                                            <action selector="btnLoginPressed:" destination="Vmm-vo-LoE" eventType="touchUpInside" id="B1Q-Lh-g9T"/>
                                         </connections>
                                     </button>
                                 </subviews>
