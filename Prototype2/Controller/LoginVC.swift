@@ -10,6 +10,9 @@ import UIKit
 
 class LoginVC: UIViewController {
 
+    @IBOutlet weak var tfPassword: UITextField!
+    @IBOutlet weak var tfUsername: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +25,14 @@ class LoginVC: UIViewController {
     }
 
     @IBAction func btnLoginPressed(_ sender: Any) {
-        
+        if tfUsername.text != nil && tfPassword.text != nil {
+            AuthServices.instance.loginUser(withEmail: tfUsername.text!, andPassword: tfPassword.text!, loginComplete: { (success, error) in
+                if success {
+                    self.dismiss(animated: true, completion: nil)
+                } else {
+                    print(String(describing: error??.localizedDescription))
+                }
+            })
+        }
     }
 }

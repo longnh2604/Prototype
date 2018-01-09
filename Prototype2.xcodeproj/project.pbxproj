@@ -18,7 +18,6 @@
 		FD723D002004B231002E5675 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD723CFF2004B231002E5675 /* DataServices.swift */; };
 		FD723D022004B52E002E5675 /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD723D012004B52E002E5675 /* AuthServices.swift */; };
 		FD723D042004BAEB002E5675 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD723D032004BAEB002E5675 /* LoginVC.swift */; };
-		FD723D062004BAF8002E5675 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD723D052004BAF8002E5675 /* AuthVC.swift */; };
 		FD723D0A2004BC10002E5675 /* RoundUIViewCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD723D072004BC10002E5675 /* RoundUIViewCorner.swift */; };
 		FD723D0B2004BC10002E5675 /* RoundLabelCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD723D082004BC10002E5675 /* RoundLabelCorner.swift */; };
 		FD723D0C2004BC10002E5675 /* RoundButtonCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD723D092004BC10002E5675 /* RoundButtonCorner.swift */; };
@@ -41,7 +40,6 @@
 		FD723CFF2004B231002E5675 /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
 		FD723D012004B52E002E5675 /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
 		FD723D032004BAEB002E5675 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		FD723D052004BAF8002E5675 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		FD723D072004BC10002E5675 /* RoundUIViewCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundUIViewCorner.swift; sourceTree = "<group>"; };
 		FD723D082004BC10002E5675 /* RoundLabelCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundLabelCorner.swift; sourceTree = "<group>"; };
 		FD723D092004BC10002E5675 /* RoundButtonCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButtonCorner.swift; sourceTree = "<group>"; };
@@ -152,7 +150,6 @@
 			isa = PBXGroup;
 			children = (
 				FD723D032004BAEB002E5675 /* LoginVC.swift */,
-				FD723D052004BAF8002E5675 /* AuthVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -280,7 +277,6 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Prototype2/Pods-Prototype2-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BarcodeScanner/BarcodeScanner.framework",
 				"${BUILT_PRODUCTS_DIR}/ChameleonSwift/ChameleonSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
@@ -293,7 +289,6 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BarcodeScanner.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
@@ -316,7 +311,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD723D062004BAF8002E5675 /* AuthVC.swift in Sources */,
 				FD723D0B2004BC10002E5675 /* RoundLabelCorner.swift in Sources */,
 				FD723D002004B231002E5675 /* DataServices.swift in Sources */,
 				FD723CE22004ADC1002E5675 /* AppDelegate.swift in Sources */,
@@ -465,6 +459,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8YLSK83HY4;
 				INFOPLIST_FILE = Prototype2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.longnh.Prototype2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -481,6 +476,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8YLSK83HY4;
 				INFOPLIST_FILE = Prototype2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.longnh.Prototype2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
