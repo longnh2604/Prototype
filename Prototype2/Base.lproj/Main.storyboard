@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="meiryob.ttc">
+            <string>Meiryo-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login PageVC-->
+        <scene sceneID="iYu-85-1y8">
+            <objects>
+                <viewController storyboardIdentifier="LoginPageViewController" id="Vmm-vo-LoE" customClass="LoginPageVC" customModule="ABCarte2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V9x-Sk-Kb2">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default_ipad-Landscape" translatesAutoresizingMaskIntoConstraints="NO" id="oKE-3q-1wL">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Rg-IU-gY8" userLabel="loginview" customClass="RoundUIViewCorner" customModule="ABCarte2" customModuleProvider="target">
+                                <rect key="frame" x="80" y="35" width="544" height="698"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsn-hU-tXx">
+                                        <rect key="frame" x="90" y="5" width="365.5" height="82.5"/>
+                                        <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="55"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userIcon" translatesAutoresizingMaskIntoConstraints="NO" id="6PQ-Yy-ZNc">
+                                        <rect key="frame" x="25" y="112.5" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="mKO-WT-sIk"/>
+                                            <constraint firstAttribute="width" constant="50" id="tmd-aU-SW8"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter your username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="75h-1W-lnJ" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                        <rect key="frame" x="130" y="107.5" width="384" height="60"/>
+                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="7qT-Fb-od0"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits" textContentType="username"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="Vmm-vo-LoE" id="J6w-58-FPK"/>
+                                        </connections>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lockIcon-1" translatesAutoresizingMaskIntoConstraints="NO" id="E43-ac-jjR">
+                                        <rect key="frame" x="25" y="180" width="50" height="50"/>
+                                    </imageView>
+                                    <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter your password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kdw-LX-4xe" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                        <rect key="frame" x="130" y="175" width="384" height="60"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="Vmm-vo-LoE" id="aaX-1h-N6H"/>
+                                        </connections>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopIcon" translatesAutoresizingMaskIntoConstraints="NO" id="f0L-AD-6d7">
+                                        <rect key="frame" x="25" y="260" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="JPk-Xp-qeV"/>
+                                            <constraint firstAttribute="width" constant="50" id="PgN-2X-S38"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter your shop id" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NM8-nx-Jao" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                        <rect key="frame" x="130" y="255" width="384" height="60"/>
+                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits" textContentType="username"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="Vmm-vo-LoE" id="Mov-4s-Lc1"/>
+                                        </connections>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lockIcon-1" translatesAutoresizingMaskIntoConstraints="NO" id="fGF-eX-GLB">
+                                        <rect key="frame" x="25" y="340" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="MBm-0M-Vrg"/>
+                                            <constraint firstAttribute="width" constant="50" id="YGH-5X-aYF"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter your shop password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hh6-wm-8La" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                        <rect key="frame" x="130" y="335" width="384" height="60"/>
+                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="Vmm-vo-LoE" id="DOI-97-up6"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Op-Hy-gcL">
+                                        <rect key="frame" x="247.5" y="525" width="50.5" height="68"/>
+                                        <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="45"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYZ-BW-k9E" customClass="RoundButtonCorner" customModule="ABCarte2" customModuleProvider="target">
+                                        <rect key="frame" x="72" y="598" width="400" height="80"/>
+                                        <color key="backgroundColor" red="0.59607843140000005" green="0.23137254900000001" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="YVM-28-1an"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="400" id="fCc-4c-6DA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="35"/>
+                                        <state key="normal" title="LOGIN BY QR CODE"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnLoginQRCodePressed:" destination="Vmm-vo-LoE" eventType="touchUpInside" id="ovF-Jk-FyF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUs-eT-5Fz" customClass="RoundButtonCorner" customModule="ABCarte2" customModuleProvider="target">
+                                        <rect key="frame" x="72" y="440" width="400" height="80"/>
+                                        <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="0.75157298660000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="35"/>
+                                        <state key="normal" title="LOGIN"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnLoginPressed:" destination="Vmm-vo-LoE" eventType="touchUpInside" id="Epw-EJ-DvI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.2784313725" green="0.79215686269999996" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="kdw-LX-4xe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9Rg-IU-gY8" secondAttribute="leading" constant="20" symbolic="YES" id="2Uc-9U-e7g"/>
+                                    <constraint firstItem="hh6-wm-8La" firstAttribute="trailing" secondItem="NM8-nx-Jao" secondAttribute="trailing" id="3Ew-EA-k2W"/>
+                                    <constraint firstItem="f0L-AD-6d7" firstAttribute="leading" secondItem="E43-ac-jjR" secondAttribute="leading" id="46G-UP-f8w"/>
+                                    <constraint firstItem="kdw-LX-4xe" firstAttribute="height" secondItem="75h-1W-lnJ" secondAttribute="height" id="5pq-BB-aFR"/>
+                                    <constraint firstItem="fGF-eX-GLB" firstAttribute="height" secondItem="f0L-AD-6d7" secondAttribute="height" id="5vE-es-IiK"/>
+                                    <constraint firstItem="dYZ-BW-k9E" firstAttribute="top" secondItem="8Op-Hy-gcL" secondAttribute="bottom" constant="5" id="5xa-jo-wSj"/>
+                                    <constraint firstItem="kdw-LX-4xe" firstAttribute="top" secondItem="75h-1W-lnJ" secondAttribute="bottom" constant="7.5" id="7fA-3x-LT1"/>
+                                    <constraint firstAttribute="height" constant="698" id="92g-fq-Zcq"/>
+                                    <constraint firstItem="75h-1W-lnJ" firstAttribute="top" secondItem="rsn-hU-tXx" secondAttribute="bottom" constant="20" id="9u3-RS-3WK"/>
+                                    <constraint firstItem="hh6-wm-8La" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9Rg-IU-gY8" secondAttribute="leading" constant="20" symbolic="YES" id="AeQ-Sa-dm8"/>
+                                    <constraint firstItem="f0L-AD-6d7" firstAttribute="width" secondItem="E43-ac-jjR" secondAttribute="width" id="Duc-jE-7bh"/>
+                                    <constraint firstItem="NM8-nx-Jao" firstAttribute="centerY" secondItem="f0L-AD-6d7" secondAttribute="centerY" id="E22-2n-5aI"/>
+                                    <constraint firstItem="E43-ac-jjR" firstAttribute="width" secondItem="6PQ-Yy-ZNc" secondAttribute="width" id="Fhf-pk-0fI"/>
+                                    <constraint firstItem="kdw-LX-4xe" firstAttribute="trailing" secondItem="75h-1W-lnJ" secondAttribute="trailing" id="G6a-ee-rHt"/>
+                                    <constraint firstAttribute="width" constant="544" id="Gsv-id-CCq"/>
+                                    <constraint firstItem="yUs-eT-5Fz" firstAttribute="width" secondItem="dYZ-BW-k9E" secondAttribute="width" id="JS9-HV-CSf"/>
+                                    <constraint firstItem="kdw-LX-4xe" firstAttribute="width" secondItem="75h-1W-lnJ" secondAttribute="width" id="JhU-oj-TQg"/>
+                                    <constraint firstItem="fGF-eX-GLB" firstAttribute="leading" secondItem="f0L-AD-6d7" secondAttribute="leading" id="JlR-hX-mea"/>
+                                    <constraint firstAttribute="bottom" secondItem="dYZ-BW-k9E" secondAttribute="bottom" constant="20" id="LJJ-8m-qQW"/>
+                                    <constraint firstItem="f0L-AD-6d7" firstAttribute="height" secondItem="E43-ac-jjR" secondAttribute="height" id="MOL-23-lcI"/>
+                                    <constraint firstItem="hh6-wm-8La" firstAttribute="top" secondItem="NM8-nx-Jao" secondAttribute="bottom" constant="20" id="Nu4-wP-iya"/>
+                                    <constraint firstItem="6PQ-Yy-ZNc" firstAttribute="leading" secondItem="9Rg-IU-gY8" secondAttribute="leading" constant="25" id="OjB-FI-iIa"/>
+                                    <constraint firstAttribute="trailing" secondItem="75h-1W-lnJ" secondAttribute="trailing" constant="30" id="S42-rN-Ok4"/>
+                                    <constraint firstItem="NM8-nx-Jao" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9Rg-IU-gY8" secondAttribute="leading" constant="20" symbolic="YES" id="Wh0-cn-rVm"/>
+                                    <constraint firstItem="dYZ-BW-k9E" firstAttribute="centerX" secondItem="9Rg-IU-gY8" secondAttribute="centerX" id="Wqj-fQ-yzs"/>
+                                    <constraint firstItem="75h-1W-lnJ" firstAttribute="leading" secondItem="6PQ-Yy-ZNc" secondAttribute="trailing" constant="55" id="a95-Kw-xKK"/>
+                                    <constraint firstItem="rsn-hU-tXx" firstAttribute="centerX" secondItem="9Rg-IU-gY8" secondAttribute="centerX" id="dMo-Jt-Sou"/>
+                                    <constraint firstItem="rsn-hU-tXx" firstAttribute="top" secondItem="9Rg-IU-gY8" secondAttribute="top" constant="5" id="dhu-w2-E7c"/>
+                                    <constraint firstItem="NM8-nx-Jao" firstAttribute="height" secondItem="kdw-LX-4xe" secondAttribute="height" id="gxh-ZR-hFA"/>
+                                    <constraint firstItem="6PQ-Yy-ZNc" firstAttribute="centerY" secondItem="75h-1W-lnJ" secondAttribute="centerY" id="iZj-MX-aMk"/>
+                                    <constraint firstItem="NM8-nx-Jao" firstAttribute="trailing" secondItem="kdw-LX-4xe" secondAttribute="trailing" id="lSZ-0d-n6n"/>
+                                    <constraint firstItem="8Op-Hy-gcL" firstAttribute="centerX" secondItem="9Rg-IU-gY8" secondAttribute="centerX" id="lgE-IF-DXO"/>
+                                    <constraint firstItem="fGF-eX-GLB" firstAttribute="width" secondItem="f0L-AD-6d7" secondAttribute="width" id="lvj-Yf-M0p"/>
+                                    <constraint firstItem="NM8-nx-Jao" firstAttribute="width" secondItem="kdw-LX-4xe" secondAttribute="width" id="mYf-Dm-TvR"/>
+                                    <constraint firstItem="yUs-eT-5Fz" firstAttribute="height" secondItem="dYZ-BW-k9E" secondAttribute="height" id="n0u-PK-WDO"/>
+                                    <constraint firstItem="NM8-nx-Jao" firstAttribute="top" secondItem="kdw-LX-4xe" secondAttribute="bottom" constant="20" id="oJp-tD-BcD"/>
+                                    <constraint firstItem="hh6-wm-8La" firstAttribute="centerY" secondItem="fGF-eX-GLB" secondAttribute="centerY" id="opD-6w-SAp"/>
+                                    <constraint firstItem="kdw-LX-4xe" firstAttribute="centerY" secondItem="E43-ac-jjR" secondAttribute="centerY" id="p82-na-RLP"/>
+                                    <constraint firstItem="yUs-eT-5Fz" firstAttribute="centerX" secondItem="9Rg-IU-gY8" secondAttribute="centerX" id="pQE-7J-svB"/>
+                                    <constraint firstItem="yUs-eT-5Fz" firstAttribute="top" secondItem="hh6-wm-8La" secondAttribute="bottom" constant="45" id="pUB-EC-B1I"/>
+                                    <constraint firstItem="hh6-wm-8La" firstAttribute="width" secondItem="NM8-nx-Jao" secondAttribute="width" id="r57-7T-w27"/>
+                                    <constraint firstItem="E43-ac-jjR" firstAttribute="height" secondItem="6PQ-Yy-ZNc" secondAttribute="height" id="rZy-6z-GTN"/>
+                                    <constraint firstItem="E43-ac-jjR" firstAttribute="leading" secondItem="6PQ-Yy-ZNc" secondAttribute="leading" id="sFd-Mc-Vdm"/>
+                                    <constraint firstItem="hh6-wm-8La" firstAttribute="height" secondItem="NM8-nx-Jao" secondAttribute="height" id="sSa-el-rIZ"/>
+                                    <constraint firstItem="8Op-Hy-gcL" firstAttribute="top" secondItem="yUs-eT-5Fz" secondAttribute="bottom" constant="5" id="x6C-Vt-BWs"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oKE-3q-1wL" firstAttribute="trailing" secondItem="0hx-fG-4d8" secondAttribute="trailing" id="4iw-Gy-Add"/>
+                            <constraint firstItem="oKE-3q-1wL" firstAttribute="top" secondItem="V9x-Sk-Kb2" secondAttribute="top" id="bmo-sw-OOI"/>
+                            <constraint firstItem="9Rg-IU-gY8" firstAttribute="centerY" secondItem="oKE-3q-1wL" secondAttribute="centerY" id="chP-vO-3iA"/>
+                            <constraint firstItem="oKE-3q-1wL" firstAttribute="leading" secondItem="0hx-fG-4d8" secondAttribute="leading" id="rl6-f0-nM5"/>
+                            <constraint firstItem="oKE-3q-1wL" firstAttribute="bottom" secondItem="0hx-fG-4d8" secondAttribute="bottom" id="rwP-Vl-7wt"/>
+                            <constraint firstItem="9Rg-IU-gY8" firstAttribute="leading" secondItem="0hx-fG-4d8" secondAttribute="leading" constant="80" id="v7T-kn-hmF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0hx-fG-4d8"/>
+                    </view>
+                    <connections>
+                        <outlet property="tfShopId" destination="NM8-nx-Jao" id="qcW-kU-pb9"/>
+                        <outlet property="tfShopPassword" destination="hh6-wm-8La" id="mXU-El-0N1"/>
+                        <outlet property="tfUserPassword" destination="kdw-LX-4xe" id="UbV-90-h9t"/>
+                        <outlet property="tfUsername" destination="75h-1W-lnJ" id="TUT-CO-P1b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sXL-mQ-3A3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-592.4460431654677" y="1133.8129496402878"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Default_ipad-Landscape" width="1024" height="768"/>
+        <image name="lockIcon-1" width="500" height="500"/>
+        <image name="shopIcon" width="500" height="500"/>
+        <image name="userIcon" width="500" height="500"/>
+    </resources>
+</document>
