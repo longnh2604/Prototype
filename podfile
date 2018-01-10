@@ -12,4 +12,5 @@ pod 'SVProgressHUD'
 pod 'IQKeyboardManagerSwift'
 pod 'PopupDialog'
 pod 'BarcodeScanner'
+pod 'RealmSwift'
 end

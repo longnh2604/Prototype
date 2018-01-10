@@ -42,21 +42,21 @@
                                 <rect key="frame" x="80" y="35" width="544" height="698"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsn-hU-tXx">
-                                        <rect key="frame" x="90" y="5" width="365.5" height="82.5"/>
+                                        <rect key="frame" x="115" y="5" width="316" height="64.5"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="55"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userIcon" translatesAutoresizingMaskIntoConstraints="NO" id="6PQ-Yy-ZNc">
-                                        <rect key="frame" x="25" y="112.5" width="50" height="50"/>
+                                        <rect key="frame" x="25" y="94.5" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="mKO-WT-sIk"/>
                                             <constraint firstAttribute="width" constant="50" id="tmd-aU-SW8"/>
                                         </constraints>
                                     </imageView>
                                     <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter your username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="75h-1W-lnJ" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                        <rect key="frame" x="130" y="107.5" width="384" height="60"/>
+                                        <rect key="frame" x="130" y="89.5" width="384" height="60"/>
                                         <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="7qT-Fb-od0"/>
@@ -83,10 +83,10 @@
                                         </connections>
                                     </textField>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lockIcon-1" translatesAutoresizingMaskIntoConstraints="NO" id="E43-ac-jjR">
-                                        <rect key="frame" x="25" y="180" width="50" height="50"/>
+                                        <rect key="frame" x="25" y="162" width="50" height="50"/>
                                     </imageView>
                                     <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter your password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kdw-LX-4xe" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                        <rect key="frame" x="130" y="175" width="384" height="60"/>
+                                        <rect key="frame" x="130" y="157" width="384" height="60"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="30"/>
@@ -110,14 +110,14 @@
                                         </connections>
                                     </textField>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopIcon" translatesAutoresizingMaskIntoConstraints="NO" id="f0L-AD-6d7">
-                                        <rect key="frame" x="25" y="260" width="50" height="50"/>
+                                        <rect key="frame" x="25" y="242" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="JPk-Xp-qeV"/>
                                             <constraint firstAttribute="width" constant="50" id="PgN-2X-S38"/>
                                         </constraints>
                                     </imageView>
                                     <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter your shop id" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NM8-nx-Jao" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                        <rect key="frame" x="130" y="255" width="384" height="60"/>
+                                        <rect key="frame" x="130" y="237" width="384" height="60"/>
                                         <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="30"/>
@@ -141,14 +141,14 @@
                                         </connections>
                                     </textField>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lockIcon-1" translatesAutoresizingMaskIntoConstraints="NO" id="fGF-eX-GLB">
-                                        <rect key="frame" x="25" y="340" width="50" height="50"/>
+                                        <rect key="frame" x="25" y="322" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="MBm-0M-Vrg"/>
                                             <constraint firstAttribute="width" constant="50" id="YGH-5X-aYF"/>
                                         </constraints>
                                     </imageView>
                                     <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter your shop password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hh6-wm-8La" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                        <rect key="frame" x="130" y="335" width="384" height="60"/>
+                                        <rect key="frame" x="130" y="317" width="384" height="60"/>
                                         <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="30"/>
@@ -172,7 +172,7 @@
                                         </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Op-Hy-gcL">
-                                        <rect key="frame" x="247.5" y="525" width="50.5" height="68"/>
+                                        <rect key="frame" x="252.5" y="507" width="41" height="86"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="45"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -197,7 +197,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUs-eT-5Fz" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
-                                        <rect key="frame" x="72" y="440" width="400" height="80"/>
+                                        <rect key="frame" x="72" y="422" width="400" height="80"/>
                                         <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="0.75157298660000005" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="35"/>
                                         <state key="normal" title="LOGIN"/>
@@ -873,13 +873,13 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DpT-kd-xOR">
-                                        <rect key="frame" x="109.5" y="356" width="691.5" height="30"/>
+                                        <rect key="frame" x="109.5" y="353" width="691.5" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fv1-Em-BIL">
-                                        <rect key="frame" x="109.5" y="396" width="851" height="114"/>
+                                        <rect key="frame" x="109.5" y="393" width="851" height="117"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -919,7 +919,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eメール" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJ8-xH-zD4">
-                                        <rect key="frame" x="280" y="318.5" width="75" height="27"/>
+                                        <rect key="frame" x="280" y="321.5" width="75" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="75" id="WLc-QX-b7H"/>
                                         </constraints>
@@ -1094,7 +1094,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メール受信許可" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVR-GJ-tx0">
-                                        <rect key="frame" x="811" y="318.5" width="150" height="27"/>
+                                        <rect key="frame" x="811" y="321.5" width="150" height="21"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1106,7 +1106,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hWh-Xe-viV">
-                                        <rect key="frame" x="861.5" y="356" width="51" height="31"/>
+                                        <rect key="frame" x="861.5" y="353" width="51" height="31"/>
                                     </switch>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1417,7 +1417,7 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全登録件数4件" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpK-6S-a5z">
-                                <rect key="frame" x="883.5" y="31.5" width="120.5" height="27"/>
+                                <rect key="frame" x="885.5" y="34.5" width="118.5" height="21"/>
                                 <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1613,7 +1613,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="件名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hhz-Zg-Qyd">
-                                        <rect key="frame" x="20" y="69" width="100" height="27"/>
+                                        <rect key="frame" x="20" y="69" width="100" height="21"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="18"/>
                                         <color key="textColor" red="0.90980392160000001" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1646,19 +1646,19 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FE9-c4-nPF">
-                                        <rect key="frame" x="130" y="67.5" width="830" height="30"/>
+                                        <rect key="frame" x="130" y="64.5" width="830" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メール本文" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egK-Yk-c0R">
-                                        <rect key="frame" x="20" y="116" width="100" height="27"/>
+                                        <rect key="frame" x="20" y="110" width="100" height="21"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="18"/>
                                         <color key="textColor" red="0.90980392160000001" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MuP-zk-XY6">
-                                        <rect key="frame" x="20" y="163" width="940" height="200"/>
+                                        <rect key="frame" x="20" y="151" width="940" height="200"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="sEm-SY-iVI"/>
@@ -1667,7 +1667,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZC-vO-bfg" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="383" width="160" height="40"/>
+                                        <rect key="frame" x="20" y="371" width="160" height="40"/>
                                         <color key="backgroundColor" red="0.1333333333" green="0.22352941179999999" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="160" id="3xo-sY-IFd"/>
@@ -1684,7 +1684,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xh7-Q4-yh4" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
-                                        <rect key="frame" x="200" y="383" width="160" height="40"/>
+                                        <rect key="frame" x="200" y="371" width="160" height="40"/>
                                         <color key="backgroundColor" red="0.1333333333" green="0.22352941179999999" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="16"/>
                                         <state key="normal" title="日付フィールド">
@@ -1697,7 +1697,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UIG-ic-CUr" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
-                                        <rect key="frame" x="380" y="383" width="120" height="40"/>
+                                        <rect key="frame" x="380" y="371" width="120" height="40"/>
                                         <color key="backgroundColor" red="0.1333333333" green="0.22352941179999999" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="120" id="fX7-a5-6SG"/>
@@ -1714,7 +1714,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckk-Mj-9Mv" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
-                                        <rect key="frame" x="520" y="383" width="120" height="40"/>
+                                        <rect key="frame" x="520" y="371" width="120" height="40"/>
                                         <color key="backgroundColor" red="0.1333333333" green="0.22352941179999999" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="16"/>
                                         <state key="normal" title="汎 用 2">
@@ -1727,7 +1727,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJM-2c-42g" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
-                                        <rect key="frame" x="660" y="383" width="120" height="40"/>
+                                        <rect key="frame" x="660" y="371" width="120" height="40"/>
                                         <color key="backgroundColor" red="0.1333333333" green="0.22352941179999999" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="16"/>
                                         <state key="normal" title="汎 用 3">
@@ -1740,7 +1740,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTj-BA-Aqd" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
-                                        <rect key="frame" x="800" y="383" width="160" height="40"/>
+                                        <rect key="frame" x="800" y="371" width="160" height="40"/>
                                         <color key="backgroundColor" red="0.1333333333" green="0.22352941179999999" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="160" id="p4v-Zi-mwz"/>
@@ -1756,7 +1756,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uro-Iy-3Sc">
-                                        <rect key="frame" x="60" y="461.5" width="80" height="80"/>
+                                        <rect key="frame" x="60" y="455.5" width="80" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="Jin-vL-A0K"/>
                                             <constraint firstAttribute="height" constant="80" id="dZO-mm-YRN"/>
@@ -1764,7 +1764,7 @@
                                         <state key="normal" image="CameraIcon2"/>
                                     </button>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="j4g-vV-Qar">
-                                        <rect key="frame" x="200" y="433" width="760" height="137"/>
+                                        <rect key="frame" x="200" y="421" width="760" height="149"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Q5R-uy-HUQ">
                                             <size key="itemSize" width="180" height="141"/>
@@ -2185,7 +2185,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scS-ac-n6R">
-                                <rect key="frame" x="210" y="26" width="160" height="39"/>
+                                <rect key="frame" x="210" y="29" width="160" height="33"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="NLt-wO-c3j"/>
@@ -2196,7 +2196,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全登録件数4件" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uB-IH-joE">
-                                <rect key="frame" x="883.5" y="31.5" width="120.5" height="27"/>
+                                <rect key="frame" x="885.5" y="34.5" width="118.5" height="21"/>
                                 <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="18"/>
                                 <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -2275,7 +2275,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1985年01月01日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdH-hV-vAI">
-                                        <rect key="frame" x="325" y="103" width="280" height="30"/>
+                                        <rect key="frame" x="325" y="106.5" width="280" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -2355,19 +2355,19 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="リンス・パーマ・カラー" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nn7-8U-3Ks">
-                                        <rect key="frame" x="325" y="72" width="280" height="30"/>
+                                        <rect key="frame" x="325" y="75.5" width="280" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="音楽・旅行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZX-vQ-HYX">
-                                        <rect key="frame" x="325" y="165" width="280" height="30"/>
+                                        <rect key="frame" x="325" y="168.5" width="280" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gf-l0-MuO">
-                                        <rect key="frame" x="325" y="137" width="280" height="30"/>
+                                        <rect key="frame" x="325" y="140.5" width="280" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>

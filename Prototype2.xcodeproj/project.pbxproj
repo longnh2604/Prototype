@@ -11,6 +11,9 @@
 		FD594DE92005A68B006B72A5 /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD594DE82005A68B006B72A5 /* MainPageVC.swift */; };
 		FD594DEB2005A6A1006B72A5 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD594DEA2005A6A1006B72A5 /* MainVC.swift */; };
 		FD594DED2005A9B2006B72A5 /* CarteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD594DEC2005A9B2006B72A5 /* CarteVC.swift */; };
+		FD594DF02005DC50006B72A5 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD594DEF2005DC50006B72A5 /* CloudKit.framework */; };
+		FD594DF32005DDCC006B72A5 /* CustomerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD594DF12005DDCC006B72A5 /* CustomerData.swift */; };
+		FD594DF42005DDCC006B72A5 /* CarteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD594DF22005DDCC006B72A5 /* CarteData.swift */; };
 		FD723CE22004ADC1002E5675 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD723CE12004ADC1002E5675 /* AppDelegate.swift */; };
 		FD723CE72004ADC1002E5675 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD723CE52004ADC1002E5675 /* Main.storyboard */; };
 		FD723CE92004ADC1002E5675 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD723CE82004ADC1002E5675 /* Assets.xcassets */; };
@@ -32,6 +35,10 @@
 		FD594DE82005A68B006B72A5 /* MainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageVC.swift; sourceTree = "<group>"; };
 		FD594DEA2005A6A1006B72A5 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		FD594DEC2005A9B2006B72A5 /* CarteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarteVC.swift; sourceTree = "<group>"; };
+		FD594DEE2005DC4D006B72A5 /* Prototype2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Prototype2.entitlements; sourceTree = "<group>"; };
+		FD594DEF2005DC50006B72A5 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		FD594DF12005DDCC006B72A5 /* CustomerData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerData.swift; sourceTree = "<group>"; };
+		FD594DF22005DDCC006B72A5 /* CarteData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarteData.swift; sourceTree = "<group>"; };
 		FD723CDE2004ADC1002E5675 /* Prototype2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prototype2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD723CE12004ADC1002E5675 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD723CE62004ADC1002E5675 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +61,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B09545E208C4959AA44FD33C /* Pods_Prototype2.framework in Frameworks */,
+				FD594DF02005DC50006B72A5 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +80,7 @@
 		8E29B9073920EAF5F3730D10 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FD594DEF2005DC50006B72A5 /* CloudKit.framework */,
 				0FAC40FDC9F2E6D090F5677D /* Pods_Prototype2.framework */,
 			);
 			name = Frameworks;
@@ -98,6 +107,7 @@
 		FD723CE02004ADC1002E5675 /* Prototype2 */ = {
 			isa = PBXGroup;
 			children = (
+				FD594DEE2005DC4D006B72A5 /* Prototype2.entitlements */,
 				FD723CF82004AEA6002E5675 /* Fonts */,
 				FD723CF72004AE6C002E5675 /* Controller */,
 				FD723CF62004AE68002E5675 /* View */,
@@ -131,6 +141,8 @@
 		FD723CF52004AE64002E5675 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FD594DF22005DDCC006B72A5 /* CarteData.swift */,
+				FD594DF12005DDCC006B72A5 /* CustomerData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -202,6 +214,14 @@
 					FD723CDD2004ADC1002E5675 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -284,6 +304,8 @@
 				"${BUILT_PRODUCTS_DIR}/ChameleonSwift/ChameleonSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
 			);
@@ -293,6 +315,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
 			);
@@ -315,8 +339,10 @@
 				FD723D042004BAEB002E5675 /* LoginVC.swift in Sources */,
 				FD723D0A2004BC10002E5675 /* RoundUIViewCorner.swift in Sources */,
 				FD594DE92005A68B006B72A5 /* MainPageVC.swift in Sources */,
+				FD594DF32005DDCC006B72A5 /* CustomerData.swift in Sources */,
 				FD723D0E2004BC2F002E5675 /* RoundImageCorner.swift in Sources */,
 				FD723D0C2004BC10002E5675 /* RoundButtonCorner.swift in Sources */,
+				FD594DF42005DDCC006B72A5 /* CarteData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +480,7 @@
 			baseConfigurationReference = 5ED158CD1A04F2AE46B9DE44 /* Pods-Prototype2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Prototype2/Prototype2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8YLSK83HY4;
 				INFOPLIST_FILE = Prototype2/Info.plist;
@@ -471,6 +498,7 @@
 			baseConfigurationReference = 678C181F9249952A01FD8EEC /* Pods-Prototype2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Prototype2/Prototype2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8YLSK83HY4;
 				INFOPLIST_FILE = Prototype2/Info.plist;

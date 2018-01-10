@@ -9,9 +9,14 @@
 import UIKit
 import SVProgressHUD
 import BarcodeScanner
+import CloudKit
+import RealmSwift
 
 class LoginVC: UIViewController,UITextFieldDelegate,BarcodeScannerCodeDelegate,BarcodeScannerErrorDelegate,BarcodeScannerDismissalDelegate {
 
+    let realm = try! Realm()
+    var customer: Results<CustomerData>?
+    
     @IBOutlet weak var tfPassword: UITextField!
     @IBOutlet weak var tfUsername: UITextField!
     @IBOutlet weak var tfShopPassword: UITextField!
@@ -40,49 +45,68 @@ class LoginVC: UIViewController,UITextFieldDelegate,BarcodeScannerCodeDelegate,B
     }
 
     @IBAction func btnLoginPressed(_ sender: Any) {
-       SVProgressHUD.show()
-
+        SVProgressHUD.show()
+        loadCloudDatabase()
     }
     
-    //Load the cloud database
+    //Get the CloudKit Database
     func loadCloudDatabase(){
-//        let db = Firestore.firestore()
-//        db.collection("customerData").getDocuments { (querySnapshot, error) in
-//            if let error = error {
-//                SVProgressHUD.showError(withStatus: error.localizedDescription)
-//            } else {
-//                for document in querySnapshot!.documents {
-//                    print("\(document.documentID) => \(document.data())")
-//                }
-//            }
-//        }
         
-//        performSegue(withIdentifier: "goToMainPage", sender: nil)
-//        SVProgressHUD.dismiss()
-//        let container = CKContainer.default()
-//        let privateDatabase = container.publicCloudDatabase
-//        let predicate = NSPredicate(value: true)
-//
-//        let query = CKQuery(recordType: "CustomerData", predicate: predicate)
-//
-//        privateDatabase.perform(query, inZoneWith: nil) { (results, error) -> Void in
-//            if error != nil {
-//                print(error!)
-//                SVProgressHUD.showError(withStatus: error?.localizedDescription)
-//            }
-//            else {
-//                print(results!)
-//
-//                for result in results! {
-//                    GlobalVariables.sharedManager.cusRecord.append(result)
-//                }
-//
-//                OperationQueue.main.addOperation({ () -> Void in
-//                    SVProgressHUD.dismiss()
-//                    self.goToMainPage()
-//                })
-//            }
-//        }
+        let container = CKContainer.default()
+        let privateDB = container.privateCloudDatabase
+        let predicate = NSPredicate(value: true)
+        let zone = CKRecordZone(zoneName: "PrototypeZone")
+
+        let query = CKQuery(recordType: "customerData", predicate: predicate)
+        
+        privateDB.perform(query, inZoneWith: zone.zoneID) { (results, error) -> Void in
+            if error != nil {
+                print(error!)
+                SVProgressHUD.showError(withStatus: error?.localizedDescription)
+                return
+            }
+
+            OperationQueue.main.addOperation({ () -> Void in
+                if self.realm.isEmpty {
+                    for result in results! {
+                        let newCustomer = CustomerData()
+                        newCustomer.cusName = result.value(forKey: "cusName") as! String
+                        newCustomer.cusID = result.value(forKey: "cusID") as! String
+                        newCustomer.cusSex = result.value(forKey: "cusSex") as! String
+                        newCustomer.cusLstCome = result.value(forKey: "cusLstCome") as? Date
+                        newCustomer.cusBirth = result.value(forKey: "cusBirth") as? Date
+                        newCustomer.cusMailInbox = result.value(forKey: "cusMailInbox") as! Int
+                        newCustomer.cusMailOpen = result.value(forKey: "cusMailOpen") as! Int
+                        newCustomer.cusMailError = result.value(forKey: "cusMailError") as! Int
+                        newCustomer.cusMailUnopen = result.value(forKey: "cusMailUnopen") as! Int
+                        newCustomer.cusCarte.append(String(describing: result["carte"]))
+//                        if let cartes = result.value(forKey: "carte") {
+//                            var carteIds = [CKRecordID]()
+//                            for carteRef in result["carte"] as! [CKReference] {
+//                                carteIds.append(carteRef.recordID)
+//                                newCustomer.cusCarte.append(String(describing: carteIds))
+//                            }
+//                        }
+                        
+                        self.save(customer: newCustomer)
+                    }
+                }
+                
+                SVProgressHUD.dismiss()
+                self.performSegue(withIdentifier: "goToMainPage", sender: nil)
+            })
+        }
+    }
+    
+    // MARK: Realm
+    func save(customer: CustomerData) {
+        do {
+            try realm.write {
+                realm.add(customer)
+            }
+        } catch {
+            print("Error Saving Customer \(error)")
+        }
     }
     
     //MARK: - Barcode Scanner Delegate

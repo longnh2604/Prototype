@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import RealmSwift
+import CloudKit
 
 class MainVC: UIViewController {
 
+    let realm = try! Realm()
+    
     @IBOutlet weak var tblMain: UITableView!
     @IBOutlet weak var lblCusTotal: UILabel!
     @IBOutlet weak var imvCus: UIImageView!
@@ -25,8 +29,9 @@ class MainVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
     }
-
+                    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -3,6 +3,11 @@ PODS:
   - ChameleonSwift (3.0)
   - IQKeyboardManagerSwift (5.0.7)
   - PopupDialog (0.6.2)
+  - Realm (3.0.2):
+    - Realm/Headers (= 3.0.2)
+  - Realm/Headers (3.0.2)
+  - RealmSwift (3.0.2):
+    - Realm (= 3.0.2)
   - SkyFloatingLabelTextField (3.4.0)
   - SVProgressHUD (2.2.2)
 
@@ -11,6 +16,7 @@ DEPENDENCIES:
   - ChameleonSwift
   - IQKeyboardManagerSwift
   - PopupDialog
+  - RealmSwift
   - SkyFloatingLabelTextField
   - SVProgressHUD
 
@@ -19,9 +25,11 @@ SPEC CHECKSUMS:
   ChameleonSwift: 1eaab7a98a8877952e378a7686353035e467c286
   IQKeyboardManagerSwift: 30fb3a61de1af53a95e02b80fb54ed0a19d5ede5
   PopupDialog: d4336d7274a6aa3af4cb26d8b6691510eba90cc3
+  Realm: 6f23fd1f178a09342eac21bfa7c2bf4312a7a180
+  RealmSwift: 695393add1b8f9d5fa75dd16e6355cf3935f71e2
   SkyFloatingLabelTextField: 703aa1420b697392b1e7dba25571180dde018477
   SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
 
-PODFILE CHECKSUM: 3fe2890ae1960aa6e511381d81be27b6f5b5cae2
+PODFILE CHECKSUM: 3449a753eb16559103eace67b41bbb1becc9144c
 
 COCOAPODS: 1.3.1
