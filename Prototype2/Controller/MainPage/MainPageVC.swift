@@ -14,11 +14,11 @@ class MainPageVC: UIPageViewController, UIPageViewControllerDelegate, UIPageView
     
     lazy var orderedViewControllers: [UIViewController] = {
         return [self.newVc(viewController: "MainVC"),
-                self.newVc(viewController: "CarteVC")]
-//                self.newVc(viewController: "SelectCarteVC"),
-//                self.newVc(viewController: "SelectPhotoVC"),
-//                self.newVc(viewController: "ComparePhotoVC"),
-//                self.newVc(viewController: "EditPhotoVC")]
+                self.newVc(viewController: "CarteVC"),
+                self.newVc(viewController: "SelectedCarteVC"),
+                self.newVc(viewController: "SelectedPhotoVC"),
+                self.newVc(viewController: "ComparePhotoVC"),
+                self.newVc(viewController: "EditPhotoVC")]
     }()
     
     override func viewDidLoad() {

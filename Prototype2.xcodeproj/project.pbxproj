@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		B09545E208C4959AA44FD33C /* Pods_Prototype2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FAC40FDC9F2E6D090F5677D /* Pods_Prototype2.framework */; };
+		FD15222320061B7F0028B221 /* SelectedCarteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15222220061B7F0028B221 /* SelectedCarteVC.swift */; };
+		FD15222620061BA30028B221 /* SelectedPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15222520061BA30028B221 /* SelectedPhotoVC.swift */; };
+		FD15222920061BD30028B221 /* ComparePhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15222820061BD30028B221 /* ComparePhotoVC.swift */; };
+		FD15222B20061BE30028B221 /* EditPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15222A20061BE30028B221 /* EditPhotoVC.swift */; };
+		FD15223520061DE40028B221 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15223420061DE40028B221 /* MainTableViewCell.swift */; };
+		FD15223720061E2D0028B221 /* MailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15223620061E2D0028B221 /* MailVC.swift */; };
+		FD15223A20061EC80028B221 /* UserPopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15223920061EC80028B221 /* UserPopupVC.swift */; };
+		FD15223D20061F400028B221 /* TemplateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15223C20061F400028B221 /* TemplateVC.swift */; };
+		FD15224020061FC70028B221 /* SecretVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15223F20061FC70028B221 /* SecretVC.swift */; };
+		FD152242200620250028B221 /* CarteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD152241200620250028B221 /* CarteTableViewCell.swift */; };
+		FD152244200620600028B221 /* SelectedVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD152243200620600028B221 /* SelectedVideoVC.swift */; };
+		FD152246200620710028B221 /* CompareVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD152245200620710028B221 /* CompareVideoVC.swift */; };
+		FD152248200620830028B221 /* EditVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD152247200620830028B221 /* EditVideoVC.swift */; };
 		FD594DE92005A68B006B72A5 /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD594DE82005A68B006B72A5 /* MainPageVC.swift */; };
 		FD594DEB2005A6A1006B72A5 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD594DEA2005A6A1006B72A5 /* MainVC.swift */; };
 		FD594DED2005A9B2006B72A5 /* CarteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD594DEC2005A9B2006B72A5 /* CarteVC.swift */; };
@@ -32,6 +45,19 @@
 		0FAC40FDC9F2E6D090F5677D /* Pods_Prototype2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prototype2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ED158CD1A04F2AE46B9DE44 /* Pods-Prototype2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prototype2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Prototype2/Pods-Prototype2.debug.xcconfig"; sourceTree = "<group>"; };
 		678C181F9249952A01FD8EEC /* Pods-Prototype2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prototype2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Prototype2/Pods-Prototype2.release.xcconfig"; sourceTree = "<group>"; };
+		FD15222220061B7F0028B221 /* SelectedCarteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCarteVC.swift; sourceTree = "<group>"; };
+		FD15222520061BA30028B221 /* SelectedPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPhotoVC.swift; sourceTree = "<group>"; };
+		FD15222820061BD30028B221 /* ComparePhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparePhotoVC.swift; sourceTree = "<group>"; };
+		FD15222A20061BE30028B221 /* EditPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPhotoVC.swift; sourceTree = "<group>"; };
+		FD15223420061DE40028B221 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		FD15223620061E2D0028B221 /* MailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailVC.swift; sourceTree = "<group>"; };
+		FD15223920061EC80028B221 /* UserPopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPopupVC.swift; sourceTree = "<group>"; };
+		FD15223C20061F400028B221 /* TemplateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateVC.swift; sourceTree = "<group>"; };
+		FD15223F20061FC70028B221 /* SecretVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretVC.swift; sourceTree = "<group>"; };
+		FD152241200620250028B221 /* CarteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarteTableViewCell.swift; sourceTree = "<group>"; };
+		FD152243200620600028B221 /* SelectedVideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedVideoVC.swift; sourceTree = "<group>"; };
+		FD152245200620710028B221 /* CompareVideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareVideoVC.swift; sourceTree = "<group>"; };
+		FD152247200620830028B221 /* EditVideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVideoVC.swift; sourceTree = "<group>"; };
 		FD594DE82005A68B006B72A5 /* MainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageVC.swift; sourceTree = "<group>"; };
 		FD594DEA2005A6A1006B72A5 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		FD594DEC2005A9B2006B72A5 /* CarteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarteVC.swift; sourceTree = "<group>"; };
@@ -84,6 +110,86 @@
 				0FAC40FDC9F2E6D090F5677D /* Pods_Prototype2.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD15222C20061CDE0028B221 /* VideoPage */ = {
+			isa = PBXGroup;
+			children = (
+				FD152243200620600028B221 /* SelectedVideoVC.swift */,
+				FD152245200620710028B221 /* CompareVideoVC.swift */,
+				FD152247200620830028B221 /* EditVideoVC.swift */,
+			);
+			path = VideoPage;
+			sourceTree = "<group>";
+		};
+		FD15222D20061CED0028B221 /* PhotoPage */ = {
+			isa = PBXGroup;
+			children = (
+				FD15222A20061BE30028B221 /* EditPhotoVC.swift */,
+				FD15222820061BD30028B221 /* ComparePhotoVC.swift */,
+				FD15222520061BA30028B221 /* SelectedPhotoVC.swift */,
+			);
+			path = PhotoPage;
+			sourceTree = "<group>";
+		};
+		FD15222E20061D1F0028B221 /* SecretPage */ = {
+			isa = PBXGroup;
+			children = (
+				FD15223F20061FC70028B221 /* SecretVC.swift */,
+			);
+			path = SecretPage;
+			sourceTree = "<group>";
+		};
+		FD15222F20061D2A0028B221 /* CartePage */ = {
+			isa = PBXGroup;
+			children = (
+				FD15222220061B7F0028B221 /* SelectedCarteVC.swift */,
+				FD594DEC2005A9B2006B72A5 /* CarteVC.swift */,
+				FD152241200620250028B221 /* CarteTableViewCell.swift */,
+			);
+			path = CartePage;
+			sourceTree = "<group>";
+		};
+		FD15223120061D450028B221 /* MailPage */ = {
+			isa = PBXGroup;
+			children = (
+				FD15223620061E2D0028B221 /* MailVC.swift */,
+			);
+			path = MailPage;
+			sourceTree = "<group>";
+		};
+		FD15223220061D600028B221 /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				FD594DE82005A68B006B72A5 /* MainPageVC.swift */,
+				FD594DEA2005A6A1006B72A5 /* MainVC.swift */,
+				FD15223420061DE40028B221 /* MainTableViewCell.swift */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		FD15223320061D680028B221 /* LoginPage */ = {
+			isa = PBXGroup;
+			children = (
+				FD723D032004BAEB002E5675 /* LoginVC.swift */,
+			);
+			path = LoginPage;
+			sourceTree = "<group>";
+		};
+		FD15223820061E9F0028B221 /* UserPage */ = {
+			isa = PBXGroup;
+			children = (
+				FD15223920061EC80028B221 /* UserPopupVC.swift */,
+			);
+			path = UserPage;
+			sourceTree = "<group>";
+		};
+		FD15223B20061F2F0028B221 /* TemplatePage */ = {
+			isa = PBXGroup;
+			children = (
+				FD15223C20061F400028B221 /* TemplateVC.swift */,
+			);
+			path = TemplatePage;
 			sourceTree = "<group>";
 		};
 		FD723CD52004ADC1002E5675 = {
@@ -161,10 +267,15 @@
 		FD723CF72004AE6C002E5675 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FD594DEC2005A9B2006B72A5 /* CarteVC.swift */,
-				FD594DE82005A68B006B72A5 /* MainPageVC.swift */,
-				FD594DEA2005A6A1006B72A5 /* MainVC.swift */,
-				FD723D032004BAEB002E5675 /* LoginVC.swift */,
+				FD15223B20061F2F0028B221 /* TemplatePage */,
+				FD15223820061E9F0028B221 /* UserPage */,
+				FD15223320061D680028B221 /* LoginPage */,
+				FD15223220061D600028B221 /* MainPage */,
+				FD15223120061D450028B221 /* MailPage */,
+				FD15222F20061D2A0028B221 /* CartePage */,
+				FD15222E20061D1F0028B221 /* SecretPage */,
+				FD15222D20061CED0028B221 /* PhotoPage */,
+				FD15222C20061CDE0028B221 /* VideoPage */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -332,17 +443,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD15222B20061BE30028B221 /* EditPhotoVC.swift in Sources */,
+				FD15222620061BA30028B221 /* SelectedPhotoVC.swift in Sources */,
 				FD594DED2005A9B2006B72A5 /* CarteVC.swift in Sources */,
+				FD15223720061E2D0028B221 /* MailVC.swift in Sources */,
+				FD15224020061FC70028B221 /* SecretVC.swift in Sources */,
 				FD723D0B2004BC10002E5675 /* RoundLabelCorner.swift in Sources */,
+				FD15222920061BD30028B221 /* ComparePhotoVC.swift in Sources */,
+				FD15223A20061EC80028B221 /* UserPopupVC.swift in Sources */,
 				FD594DEB2005A6A1006B72A5 /* MainVC.swift in Sources */,
+				FD15223D20061F400028B221 /* TemplateVC.swift in Sources */,
+				FD152248200620830028B221 /* EditVideoVC.swift in Sources */,
 				FD723CE22004ADC1002E5675 /* AppDelegate.swift in Sources */,
 				FD723D042004BAEB002E5675 /* LoginVC.swift in Sources */,
+				FD15222320061B7F0028B221 /* SelectedCarteVC.swift in Sources */,
 				FD723D0A2004BC10002E5675 /* RoundUIViewCorner.swift in Sources */,
+				FD15223520061DE40028B221 /* MainTableViewCell.swift in Sources */,
+				FD152244200620600028B221 /* SelectedVideoVC.swift in Sources */,
 				FD594DE92005A68B006B72A5 /* MainPageVC.swift in Sources */,
 				FD594DF32005DDCC006B72A5 /* CustomerData.swift in Sources */,
 				FD723D0E2004BC2F002E5675 /* RoundImageCorner.swift in Sources */,
+				FD152242200620250028B221 /* CarteTableViewCell.swift in Sources */,
 				FD723D0C2004BC10002E5675 /* RoundButtonCorner.swift in Sources */,
 				FD594DF42005DDCC006B72A5 /* CarteData.swift in Sources */,
+				FD152246200620710028B221 /* CompareVideoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

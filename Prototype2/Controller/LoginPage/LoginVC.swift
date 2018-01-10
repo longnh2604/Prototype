@@ -80,14 +80,6 @@ class LoginVC: UIViewController,UITextFieldDelegate,BarcodeScannerCodeDelegate,B
                         newCustomer.cusMailError = result.value(forKey: "cusMailError") as! Int
                         newCustomer.cusMailUnopen = result.value(forKey: "cusMailUnopen") as! Int
                         newCustomer.cusCarte.append(String(describing: result["carte"]))
-//                        if let cartes = result.value(forKey: "carte") {
-//                            var carteIds = [CKRecordID]()
-//                            for carteRef in result["carte"] as! [CKReference] {
-//                                carteIds.append(carteRef.recordID)
-//                                newCustomer.cusCarte.append(String(describing: carteIds))
-//                            }
-//                        }
-                        
                         self.save(customer: newCustomer)
                     }
                 }
