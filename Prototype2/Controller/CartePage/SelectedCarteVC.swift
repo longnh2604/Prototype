@@ -37,9 +37,7 @@ class SelectedCarteVC: UIViewController {
     }
     
     @IBAction func btnCameraPressed(_ sender: Any) {
-        let gallery = GalleryController()
-        gallery.delegate = self
-        present(gallery, animated: true, completion: nil)
+        
     }
 
 }

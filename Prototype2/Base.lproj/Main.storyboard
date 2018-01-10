@@ -760,6 +760,8 @@
                         <outlet property="lblCusSex" destination="gwz-Cb-eSL" id="drY-Xh-RNM"/>
                         <outlet property="lblCusTotal" destination="tm2-tG-Lks" id="XNz-uu-jsK"/>
                         <outlet property="tblMain" destination="kVe-Pc-e4l" id="WgU-or-Jjj"/>
+                        <segue destination="fkg-zo-pnM" kind="show" identifier="goToNewUserPage" id="Mz9-Sa-9Oa"/>
+                        <segue destination="fkg-zo-pnM" kind="show" identifier="goToUserPage" id="oqZ-1Y-Ah0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8A8-5F-m4Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -4200,5 +4202,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="sYF-uj-eCg"/>
         <segue reference="Fmr-di-vbm"/>
+        <segue reference="Mz9-Sa-9Oa"/>
     </inferredMetricsTieBreakers>
 </document>
