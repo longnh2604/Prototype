@@ -42,7 +42,7 @@
                                 <rect key="frame" x="80" y="35" width="544" height="698"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsn-hU-tXx">
-                                        <rect key="frame" x="89.5" y="5" width="365.5" height="82.5"/>
+                                        <rect key="frame" x="90" y="5" width="365.5" height="82.5"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="55"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -172,7 +172,7 @@
                                         </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Op-Hy-gcL">
-                                        <rect key="frame" x="247" y="525" width="50.5" height="68"/>
+                                        <rect key="frame" x="247.5" y="525" width="50.5" height="68"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="45"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -282,6 +282,7 @@
                         <outlet property="tfShopId" destination="NM8-nx-Jao" id="Iup-gf-Gr0"/>
                         <outlet property="tfShopPassword" destination="hh6-wm-8La" id="BDh-qe-lSw"/>
                         <outlet property="tfUsername" destination="75h-1W-lnJ" id="wVK-Bw-EKf"/>
+                        <segue destination="Si3-Ve-goe" kind="show" identifier="goToMainPage" id="hov-Ax-swV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sXL-mQ-3A3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -291,15 +292,15 @@
         <!--Main PageVC-->
         <scene sceneID="I1f-jH-Y1E">
             <objects>
-                <pageViewController storyboardIdentifier="MainPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Si3-Ve-goe" customClass="MainPageVC" customModule="Prototype2" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Si3-Ve-goe" customClass="MainPageVC" customModule="Prototype2" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2uV-6i-NhM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-593" y="1863"/>
         </scene>
-        <!--Main View Controller-->
+        <!--MainVC-->
         <scene sceneID="jvY-pE-WH6">
             <objects>
-                <viewController storyboardIdentifier="MainVC" id="ps0-aa-eZR" customClass="MainViewController" customModule="Prototype2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainVC" id="ps0-aa-eZR" customClass="MainVC" customModule="Prototype2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZbE-dH-A19">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2252,10 +2253,10 @@
             </objects>
             <point key="canvasLocation" x="-594" y="3259"/>
         </scene>
-        <!--Carte PageVC-->
+        <!--CarteVC-->
         <scene sceneID="xte-GA-Az3">
             <objects>
-                <viewController storyboardIdentifier="CarteVC" id="vLf-t6-q9j" customClass="CartePageVC" customModule="Prototype2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CarteVC" id="vLf-t6-q9j" customClass="CarteVC" customModule="Prototype2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qMQ-0A-v3q">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2274,7 +2275,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1985年01月01日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdH-hV-vAI">
-                                        <rect key="frame" x="325" y="103.5" width="280" height="30"/>
+                                        <rect key="frame" x="325" y="103" width="280" height="30"/>
                                         <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -2354,19 +2355,19 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="リンス・パーマ・カラー" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nn7-8U-3Ks">
-                                        <rect key="frame" x="325" y="72.5" width="280" height="30"/>
+                                        <rect key="frame" x="325" y="72" width="280" height="30"/>
                                         <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="音楽・旅行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZX-vQ-HYX">
-                                        <rect key="frame" x="325" y="165.5" width="280" height="30"/>
+                                        <rect key="frame" x="325" y="165" width="280" height="30"/>
                                         <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gf-l0-MuO">
-                                        <rect key="frame" x="325" y="137.5" width="280" height="30"/>
+                                        <rect key="frame" x="325" y="137" width="280" height="30"/>
                                         <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -4197,7 +4198,7 @@
         <image name="womenIcon-1" width="225" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sYF-uj-eCg"/>
+        <segue reference="v1Y-ed-jAG"/>
         <segue reference="Fmr-di-vbm"/>
     </inferredMetricsTieBreakers>
 </document>

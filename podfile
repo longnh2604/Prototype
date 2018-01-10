@@ -6,13 +6,10 @@ target 'Prototype2' do
   use_frameworks!
 
   # Pods for Prototype2
-pod 'Firebase/Core'
-pod 'Firebase/Database'
-pod 'Firebase/Auth'
-pod 'Firebase/Firestore'
 pod 'SkyFloatingLabelTextField'
 pod 'ChameleonSwift'
 pod 'SVProgressHUD'
 pod 'IQKeyboardManagerSwift'
 pod 'PopupDialog'
+pod 'BarcodeScanner'
 end

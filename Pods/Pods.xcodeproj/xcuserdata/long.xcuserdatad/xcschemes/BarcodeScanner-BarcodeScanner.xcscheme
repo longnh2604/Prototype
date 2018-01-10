@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'AE7531B38912D37012D144BD201F7966'
-               BlueprintName = 'SVProgressHUD'
+               BlueprintIdentifier = '147A66513D885465B02C454C45962D67'
+               BlueprintName = 'BarcodeScanner-BarcodeScanner'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SVProgressHUD.framework'>
+               BuildableName = 'BarcodeScanner.bundle'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

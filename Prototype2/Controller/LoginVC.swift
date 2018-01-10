@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import SVProgressHUD
+import BarcodeScanner
 
-class LoginVC: UIViewController,UITextFieldDelegate {
+class LoginVC: UIViewController,UITextFieldDelegate,BarcodeScannerCodeDelegate,BarcodeScannerErrorDelegate,BarcodeScannerDismissalDelegate {
 
     @IBOutlet weak var tfPassword: UITextField!
     @IBOutlet weak var tfUsername: UITextField!
@@ -30,23 +32,33 @@ class LoginVC: UIViewController,UITextFieldDelegate {
     }
     
     @IBAction func btnLoginQRCodePressed(_ sender: Any) {
-        
+        let controller = BarcodeScannerController()
+        controller.codeDelegate = self
+        controller.errorDelegate = self
+        controller.dismissalDelegate = self
+        present(controller, animated: true, completion: nil)
     }
 
     @IBAction func btnLoginPressed(_ sender: Any) {
-        if tfUsername.text != nil && tfPassword.text != nil {
-            AuthServices.instance.loginUser(withEmail: tfUsername.text!, andPassword: tfPassword.text!, loginComplete: { (success, error) in
-                if success {
-                    self.dismiss(animated: true, completion: nil)
-                } else {
-                    print(String(describing: error??.localizedDescription))
-                }
-            })
-        }
+       SVProgressHUD.show()
+
     }
     
-    //get the cloud database
+    //Load the cloud database
     func loadCloudDatabase(){
+//        let db = Firestore.firestore()
+//        db.collection("customerData").getDocuments { (querySnapshot, error) in
+//            if let error = error {
+//                SVProgressHUD.showError(withStatus: error.localizedDescription)
+//            } else {
+//                for document in querySnapshot!.documents {
+//                    print("\(document.documentID) => \(document.data())")
+//                }
+//            }
+//        }
+        
+//        performSegue(withIdentifier: "goToMainPage", sender: nil)
+//        SVProgressHUD.dismiss()
 //        let container = CKContainer.default()
 //        let privateDatabase = container.publicCloudDatabase
 //        let predicate = NSPredicate(value: true)
@@ -73,11 +85,20 @@ class LoginVC: UIViewController,UITextFieldDelegate {
 //        }
     }
     
-    func goToMainPage(){
-//        let storyboard = UIStoryboard(name: "MainScene", bundle: nil)
-//        let controller = storyboard.instantiateViewController(withIdentifier: "MainPageViewController") as! MainPageVC
-//
-//        self.present(controller, animated: true, completion: nil)
+    //MARK: - Barcode Scanner Delegate
+    /***************************************************************/
+    
+    func barcodeScanner(_ controller: BarcodeScannerController, didCaptureCode code: String, type: String) {
+        // Code processing
+        controller.reset(animated: true)
+    }
+    
+    func barcodeScannerDidDismiss(_ controller: BarcodeScannerController) {
+        controller.dismiss(animated: true, completion: nil)
+    }
+    
+    func barcodeScanner(_ controller: BarcodeScannerController, didReceiveError error: Error) {
+        print(error)
     }
     
     //MARK: - Textfield Delegate
