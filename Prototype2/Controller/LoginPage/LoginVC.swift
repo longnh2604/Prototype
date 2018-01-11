@@ -70,7 +70,9 @@ class LoginVC: UIViewController,UITextFieldDelegate,BarcodeScannerCodeDelegate,B
 
     @IBAction func btnLoginPressed(_ sender: Any) {
         SVProgressHUD.show()
-        loadCloudDatabase()
+        self.performSegue(withIdentifier: "goToMainPage", sender: nil)
+        SVProgressHUD.dismiss()
+//        loadCloudDatabase()
     }
     
     //Get the CloudKit Database
