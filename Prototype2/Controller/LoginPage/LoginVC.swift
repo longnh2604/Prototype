@@ -35,6 +35,30 @@ class LoginVC: UIViewController,UITextFieldDelegate,BarcodeScannerCodeDelegate,B
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func btnWebPressed(_ sender: Any) {
+        UIApplication.tryURL(urls: ["https://abcarte.jp"])
+    }
+    
+    @IBAction func btnFacebookPressed(_ sender: Any) {
+        UIApplication.tryURL(urls: [
+            "fb://profile/ipadabcarte", // App
+            "http://www.facebook.com/ipadabcarte" // Website if app fails
+            ])
+    }
+    
+    @IBAction func btnCallPressed(_ sender: Any) {
+        callNumber(phoneNumber: "0120357339")
+    }
+    
+    func callNumber(phoneNumber:String) {
+        if let url = URL(string: "tel://\(phoneNumber)"), UIApplication.shared.canOpenURL(url) {
+            if #available(iOS 10, *) {
+                UIApplication.shared.open(url)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
+        }
+    }
     
     @IBAction func btnLoginQRCodePressed(_ sender: Any) {
         let controller = BarcodeScannerController()
@@ -130,5 +154,18 @@ class LoginVC: UIViewController,UITextFieldDelegate,BarcodeScannerCodeDelegate,B
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+    }
+    
+}
+
+extension UIApplication {
+    class func tryURL(urls: [String]) {
+        let application = UIApplication.shared
+        for url in urls {
+            if application.canOpenURL(URL(string: url)!) {
+                application.openURL(URL(string: url)!)
+                return
+            }
+        }
     }
 }
