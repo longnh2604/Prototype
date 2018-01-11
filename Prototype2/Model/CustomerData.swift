@@ -20,5 +20,4 @@ class CustomerData: Object {
     @objc dynamic var cusMailError: Int = 0
     @objc dynamic var cusSex: String = ""
     var cusCarte = List<String>()
-    let cartes = List<CarteData>()
 }

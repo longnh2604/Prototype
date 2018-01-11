@@ -12,5 +12,4 @@ import RealmSwift
 class CarteData: Object {
     @objc dynamic var carteID: String = ""
     @objc dynamic var carteMemo: String = ""
-    var parentCategory = LinkingObjects(fromType: CustomerData.self, property: "cartes")
 }
