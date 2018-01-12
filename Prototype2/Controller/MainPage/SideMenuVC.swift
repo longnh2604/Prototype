@@ -79,12 +79,15 @@ class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 //                        new_vc.navigationController?.pushViewController(pageTestVC!, animated: true)
 //                    }
 //                }
-            
-            getSelectedVCInTabbar()?.navigationController?.pushViewController(pageTestVC!, animated: true)
+            if !(UIApplication.topViewController() is PageTestViewController){
+                getSelectedVCInTabbar()?.navigationController?.pushViewController(pageTestVC!, animated: true)
+            }
             
             break
         case 2:
-            getSelectedVCInTabbar()?.navigationController?.pushViewController(pageTestVC!, animated: true)
+            if !(UIApplication.topViewController() is PageTestViewController){
+                getSelectedVCInTabbar()?.navigationController?.pushViewController(pageTestVC!, animated: true)
+            }
 //            if let navi_help = mainTabbarController?.viewControllers![(mainTabbarController?.selectedIndex)!] as? UINavigationController{
 //                if let help_vc = navi_help.viewControllers[0] as? HelpVC{
 //                    help_vc.navigationController?.pushViewController(pageTestVC!, animated: true)
