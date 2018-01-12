@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		419D6AB42007AA38007C7CBC /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 419D6AB22007AA38007C7CBC /* SWRevealViewController.m */; };
+		419D6AB620084BE6007C7CBC /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419D6AB520084BE6007C7CBC /* SideMenuVC.swift */; };
+		419D6AB820084C8B007C7CBC /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419D6AB720084C8B007C7CBC /* SideMenuCell.swift */; };
+		419D6ABA20085285007C7CBC /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419D6AB920085285007C7CBC /* NewViewController.swift */; };
+		419D6ABC2008540D007C7CBC /* HelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419D6ABB2008540D007C7CBC /* HelpVC.swift */; };
+		419D6ABE200855A3007C7CBC /* BaseMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419D6ABD200855A3007C7CBC /* BaseMenuVC.swift */; };
 		B09545E208C4959AA44FD33C /* Pods_Prototype2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FAC40FDC9F2E6D090F5677D /* Pods_Prototype2.framework */; };
 		FD15222320061B7F0028B221 /* SelectedCarteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15222220061B7F0028B221 /* SelectedCarteVC.swift */; };
 		FD15222620061BA30028B221 /* SelectedPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15222520061BA30028B221 /* SelectedPhotoVC.swift */; };
@@ -43,6 +49,14 @@
 
 /* Begin PBXFileReference section */
 		0FAC40FDC9F2E6D090F5677D /* Pods_Prototype2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prototype2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		419D6AB12007AA37007C7CBC /* Prototype2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Prototype2-Bridging-Header.h"; sourceTree = "<group>"; };
+		419D6AB22007AA38007C7CBC /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		419D6AB32007AA38007C7CBC /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		419D6AB520084BE6007C7CBC /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
+		419D6AB720084C8B007C7CBC /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
+		419D6AB920085285007C7CBC /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		419D6ABB2008540D007C7CBC /* HelpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpVC.swift; sourceTree = "<group>"; };
+		419D6ABD200855A3007C7CBC /* BaseMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMenuVC.swift; sourceTree = "<group>"; };
 		5ED158CD1A04F2AE46B9DE44 /* Pods-Prototype2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prototype2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Prototype2/Pods-Prototype2.debug.xcconfig"; sourceTree = "<group>"; };
 		678C181F9249952A01FD8EEC /* Pods-Prototype2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prototype2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Prototype2/Pods-Prototype2.release.xcconfig"; sourceTree = "<group>"; };
 		FD15222220061B7F0028B221 /* SelectedCarteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCarteVC.swift; sourceTree = "<group>"; };
@@ -94,6 +108,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		419D6AB02007AA10007C7CBC /* 3rdParty */ = {
+			isa = PBXGroup;
+			children = (
+				419D6AB32007AA38007C7CBC /* SWRevealViewController.h */,
+				419D6AB22007AA38007C7CBC /* SWRevealViewController.m */,
+				419D6AB12007AA37007C7CBC /* Prototype2-Bridging-Header.h */,
+			);
+			path = 3rdParty;
+			sourceTree = "<group>";
+		};
 		47E14569158FC383BA0311B3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,9 +185,14 @@
 		FD15223220061D600028B221 /* MainPage */ = {
 			isa = PBXGroup;
 			children = (
+				419D6AB520084BE6007C7CBC /* SideMenuVC.swift */,
+				419D6AB720084C8B007C7CBC /* SideMenuCell.swift */,
 				FD594DE82005A68B006B72A5 /* MainPageVC.swift */,
 				FD594DEA2005A6A1006B72A5 /* MainVC.swift */,
 				FD15223420061DE40028B221 /* MainTableViewCell.swift */,
+				419D6AB920085285007C7CBC /* NewViewController.swift */,
+				419D6ABB2008540D007C7CBC /* HelpVC.swift */,
+				419D6ABD200855A3007C7CBC /* BaseMenuVC.swift */,
 			);
 			path = MainPage;
 			sourceTree = "<group>";
@@ -217,9 +246,8 @@
 				FD723CF82004AEA6002E5675 /* Fonts */,
 				FD723CF72004AE6C002E5675 /* Controller */,
 				FD723CF62004AE68002E5675 /* View */,
+				419D6AB02007AA10007C7CBC /* 3rdParty */,
 				FD723CF52004AE64002E5675 /* Model */,
-				FD723CF42004AE57002E5675 /* Services */,
-				FD723CF32004AE46002E5675 /* Extensions */,
 				FD723CE12004ADC1002E5675 /* AppDelegate.swift */,
 				FD723CE52004ADC1002E5675 /* Main.storyboard */,
 				FD723CE82004ADC1002E5675 /* Assets.xcassets */,
@@ -228,20 +256,6 @@
 				FD723CFD2004B022002E5675 /* GoogleService-Info.plist */,
 			);
 			path = Prototype2;
-			sourceTree = "<group>";
-		};
-		FD723CF32004AE46002E5675 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		FD723CF42004AE57002E5675 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		FD723CF52004AE64002E5675 /* Model */ = {
@@ -324,6 +338,7 @@
 				TargetAttributes = {
 					FD723CDD2004ADC1002E5675 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
@@ -453,21 +468,27 @@
 				FD723D0B2004BC10002E5675 /* RoundLabelCorner.swift in Sources */,
 				FD15222920061BD30028B221 /* ComparePhotoVC.swift in Sources */,
 				FD15223A20061EC80028B221 /* UserPopupVC.swift in Sources */,
+				419D6ABC2008540D007C7CBC /* HelpVC.swift in Sources */,
 				FD594DEB2005A6A1006B72A5 /* MainVC.swift in Sources */,
 				FD15223D20061F400028B221 /* TemplateVC.swift in Sources */,
 				FD152248200620830028B221 /* EditVideoVC.swift in Sources */,
 				FD723CE22004ADC1002E5675 /* AppDelegate.swift in Sources */,
+				419D6AB42007AA38007C7CBC /* SWRevealViewController.m in Sources */,
 				FD723D042004BAEB002E5675 /* LoginVC.swift in Sources */,
+				419D6AB820084C8B007C7CBC /* SideMenuCell.swift in Sources */,
 				FD15222320061B7F0028B221 /* SelectedCarteVC.swift in Sources */,
 				FD723D0A2004BC10002E5675 /* RoundUIViewCorner.swift in Sources */,
 				FD15223520061DE40028B221 /* MainTableViewCell.swift in Sources */,
 				FD152244200620600028B221 /* SelectedVideoVC.swift in Sources */,
 				FD594DE92005A68B006B72A5 /* MainPageVC.swift in Sources */,
 				FD594DF32005DDCC006B72A5 /* CustomerData.swift in Sources */,
+				419D6AB620084BE6007C7CBC /* SideMenuVC.swift in Sources */,
 				FD723D0E2004BC2F002E5675 /* RoundImageCorner.swift in Sources */,
+				419D6ABA20085285007C7CBC /* NewViewController.swift in Sources */,
 				FD152242200620250028B221 /* CarteTableViewCell.swift in Sources */,
 				FD723D0C2004BC10002E5675 /* RoundButtonCorner.swift in Sources */,
 				FD594DF42005DDCC006B72A5 /* CarteData.swift in Sources */,
+				419D6ABE200855A3007C7CBC /* BaseMenuVC.swift in Sources */,
 				FD152246200620710028B221 /* CompareVideoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -606,6 +627,7 @@
 			baseConfigurationReference = 5ED158CD1A04F2AE46B9DE44 /* Pods-Prototype2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Prototype2/Prototype2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8YLSK83HY4;
@@ -614,6 +636,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.longnh.Prototype2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Prototype2/3rdParty/Prototype2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -624,6 +648,7 @@
 			baseConfigurationReference = 678C181F9249952A01FD8EEC /* Pods-Prototype2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Prototype2/Prototype2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8YLSK83HY4;
@@ -632,6 +657,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.longnh.Prototype2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Prototype2/3rdParty/Prototype2-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
