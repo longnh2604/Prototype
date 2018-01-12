@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double ESTabBarController_swiftVersionNumber;
-FOUNDATION_EXPORT const unsigned char ESTabBarController_swiftVersionString[];
+FOUNDATION_EXPORT double SlideMenuControllerSwiftVersionNumber;
+FOUNDATION_EXPORT const unsigned char SlideMenuControllerSwiftVersionString[];
 

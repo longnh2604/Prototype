@@ -9,8 +9,6 @@
 import UIKit
 
 class NewViewController: BaseMenuVC {
-
-    @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()

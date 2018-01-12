@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SlideMenuControllerSwift
 class MailVC: UIViewController {
     
     @IBOutlet weak var tblMailCategory: UITableView!
@@ -20,6 +20,7 @@ class MailVC: UIViewController {
         let slideRight = UISwipeGestureRecognizer(target: self, action: #selector(dismissView(gesture:)))
         slideRight.direction = .right
         view.addGestureRecognizer(slideRight)
+        
     }
     
     override func didReceiveMemoryWarning() {

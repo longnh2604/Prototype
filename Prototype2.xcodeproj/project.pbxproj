@@ -13,6 +13,10 @@
 		419D6ABA20085285007C7CBC /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419D6AB920085285007C7CBC /* NewViewController.swift */; };
 		419D6ABC2008540D007C7CBC /* HelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419D6ABB2008540D007C7CBC /* HelpVC.swift */; };
 		419D6ABE200855A3007C7CBC /* BaseMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419D6ABD200855A3007C7CBC /* BaseMenuVC.swift */; };
+		4D88FEFD2008779000A442DE /* ExSlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88FEFC2008779000A442DE /* ExSlideMenuController.swift */; };
+		4D88FEFF200877B800A442DE /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88FEFE200877B800A442DE /* UIApplication.swift */; };
+		4D88FF0220087BEF00A442DE /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88FF0120087BEF00A442DE /* Constant.swift */; };
+		4D88FF042008824600A442DE /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88FF032008824600A442DE /* UIViewController.swift */; };
 		B09545E208C4959AA44FD33C /* Pods_Prototype2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FAC40FDC9F2E6D090F5677D /* Pods_Prototype2.framework */; };
 		FD15222320061B7F0028B221 /* SelectedCarteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15222220061B7F0028B221 /* SelectedCarteVC.swift */; };
 		FD15222620061BA30028B221 /* SelectedPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15222520061BA30028B221 /* SelectedPhotoVC.swift */; };
@@ -57,6 +61,10 @@
 		419D6AB920085285007C7CBC /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		419D6ABB2008540D007C7CBC /* HelpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpVC.swift; sourceTree = "<group>"; };
 		419D6ABD200855A3007C7CBC /* BaseMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMenuVC.swift; sourceTree = "<group>"; };
+		4D88FEFC2008779000A442DE /* ExSlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExSlideMenuController.swift; sourceTree = "<group>"; };
+		4D88FEFE200877B800A442DE /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		4D88FF0120087BEF00A442DE /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		4D88FF032008824600A442DE /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		5ED158CD1A04F2AE46B9DE44 /* Pods-Prototype2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prototype2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Prototype2/Pods-Prototype2.debug.xcconfig"; sourceTree = "<group>"; };
 		678C181F9249952A01FD8EEC /* Pods-Prototype2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prototype2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Prototype2/Pods-Prototype2.release.xcconfig"; sourceTree = "<group>"; };
 		FD15222220061B7F0028B221 /* SelectedCarteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCarteVC.swift; sourceTree = "<group>"; };
@@ -125,6 +133,24 @@
 				678C181F9249952A01FD8EEC /* Pods-Prototype2.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		4D88FEFB200876D800A442DE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4D88FF032008824600A442DE /* UIViewController.swift */,
+				4D88FEFE200877B800A442DE /* UIApplication.swift */,
+				4D88FEFC2008779000A442DE /* ExSlideMenuController.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4D88FF0020087BDD00A442DE /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				4D88FF0120087BEF00A442DE /* Constant.swift */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 		8E29B9073920EAF5F3730D10 /* Frameworks */ = {
@@ -242,11 +268,13 @@
 		FD723CE02004ADC1002E5675 /* Prototype2 */ = {
 			isa = PBXGroup;
 			children = (
+				4D88FF0020087BDD00A442DE /* Constant */,
 				FD594DEE2005DC4D006B72A5 /* Prototype2.entitlements */,
 				FD723CF82004AEA6002E5675 /* Fonts */,
 				FD723CF72004AE6C002E5675 /* Controller */,
 				FD723CF62004AE68002E5675 /* View */,
 				419D6AB02007AA10007C7CBC /* 3rdParty */,
+				4D88FEFB200876D800A442DE /* Extension */,
 				FD723CF52004AE64002E5675 /* Model */,
 				FD723CE12004ADC1002E5675 /* AppDelegate.swift */,
 				FD723CE52004ADC1002E5675 /* Main.storyboard */,
@@ -428,25 +456,25 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Prototype2/Pods-Prototype2-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BarcodeScanner/BarcodeScanner.framework",
 				"${BUILT_PRODUCTS_DIR}/ChameleonSwift/ChameleonSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/SlideMenuControllerSwift/SlideMenuControllerSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BarcodeScanner.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController_swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlideMenuControllerSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -460,6 +488,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D88FEFF200877B800A442DE /* UIApplication.swift in Sources */,
 				FD15222B20061BE30028B221 /* EditPhotoVC.swift in Sources */,
 				FD15222620061BA30028B221 /* SelectedPhotoVC.swift in Sources */,
 				FD594DED2005A9B2006B72A5 /* CarteVC.swift in Sources */,
@@ -467,6 +496,8 @@
 				FD15224020061FC70028B221 /* SecretVC.swift in Sources */,
 				FD723D0B2004BC10002E5675 /* RoundLabelCorner.swift in Sources */,
 				FD15222920061BD30028B221 /* ComparePhotoVC.swift in Sources */,
+				4D88FF042008824600A442DE /* UIViewController.swift in Sources */,
+				4D88FF0220087BEF00A442DE /* Constant.swift in Sources */,
 				FD15223A20061EC80028B221 /* UserPopupVC.swift in Sources */,
 				419D6ABC2008540D007C7CBC /* HelpVC.swift in Sources */,
 				FD594DEB2005A6A1006B72A5 /* MainVC.swift in Sources */,
@@ -488,6 +519,7 @@
 				FD152242200620250028B221 /* CarteTableViewCell.swift in Sources */,
 				FD723D0C2004BC10002E5675 /* RoundButtonCorner.swift in Sources */,
 				FD594DF42005DDCC006B72A5 /* CarteData.swift in Sources */,
+				4D88FEFD2008779000A442DE /* ExSlideMenuController.swift in Sources */,
 				419D6ABE200855A3007C7CBC /* BaseMenuVC.swift in Sources */,
 				FD152246200620710028B221 /* CompareVideoVC.swift in Sources */,
 			);

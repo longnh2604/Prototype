@@ -7,15 +7,16 @@
 //
 
 import UIKit
-
-class MainVC: BaseMenuVC {
+import SlideMenuControllerSwift
+class MainVC: UITabBarController {
     
     @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        sideMenu()
+        slideMenuVC.automaticallyAdjustsScrollViewInsets = true
+        slideMenuVC.delegate = self
+//        sideMenu()
     }
                     
     override func didReceiveMemoryWarning() {
@@ -23,12 +24,55 @@ class MainVC: BaseMenuVC {
         // Dispose of any resources that can be recreated.
     }
     
-    func sideMenu() {
+//    func sideMenu() {
+//        
+//        if revealViewController() != nil {
+//            
+//            sideMenuBtn.target = revealViewController()
+//            sideMenuBtn.action = #selector(SWRevealViewController.revealToggle(_:))
+//        }
+//    }
+}
+
+extension MainVC : SlideMenuControllerDelegate {
+    
+    func leftWillOpen() {
+        print("SlideMenuControllerDelegate: leftWillOpen")
         
-        if revealViewController() != nil {
-            
-            sideMenuBtn.target = revealViewController()
-            sideMenuBtn.action = #selector(SWRevealViewController.revealToggle(_:))
-        }
+    }
+    
+    func leftDidOpen() {
+        print("SlideMenuControllerDelegate: leftDidOpen")
+        
+    }
+    
+    func leftWillClose() {
+        print("SlideMenuControllerDelegate: leftWillClose")
+        
+    }
+    
+    func leftDidClose() {
+        print("SlideMenuControllerDelegate: leftDidClose")
+        
+    }
+    
+    func rightWillOpen() {
+        
+        print("SlideMenuControllerDelegate: rightWillOpen")
+    }
+    
+    func rightDidOpen() {
+        
+        print("SlideMenuControllerDelegate: rightDidOpen")
+    }
+    
+    func rightWillClose() {
+        print("SlideMenuControllerDelegate: rightWillClose")
+        
+    }
+    
+    func rightDidClose() {
+        print("SlideMenuControllerDelegate: rightDidClose")
+        
     }
 }

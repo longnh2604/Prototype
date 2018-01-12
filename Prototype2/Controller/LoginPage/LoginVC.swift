@@ -24,7 +24,6 @@ class LoginVC: UIViewController,UITextFieldDelegate,BarcodeScannerCodeDelegate,B
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         tfUsername.delegate = self
         tfPassword.delegate = self
         tfShopPassword.delegate = self
@@ -70,7 +69,9 @@ class LoginVC: UIViewController,UITextFieldDelegate,BarcodeScannerCodeDelegate,B
 
     @IBAction func btnLoginPressed(_ sender: Any) {
         SVProgressHUD.show()
-        self.performSegue(withIdentifier: "goToMainPage", sender: nil)
+        
+        self.present(slideMenuVC, animated: true, completion: nil)
+//        self.performSegue(withIdentifier: "goToMainPage", sender: nil)
         SVProgressHUD.dismiss()
 //        loadCloudDatabase()
     }
