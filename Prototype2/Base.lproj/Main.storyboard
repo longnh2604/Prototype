@@ -4832,8 +4832,9 @@
                     </view>
                     <connections>
                         <outlet property="tblSideMenu" destination="qbF-pU-twm" id="SF4-w1-Uiz"/>
-                        <segue destination="4nl-TW-GpP" kind="custom" identifier="goToNewView" customClass="SWRevealViewControllerSeguePushController" id="cXR-YJ-diq"/>
-                        <segue destination="Cab-BF-dz3" kind="custom" identifier="goToHelpView" customClass="SWRevealViewControllerSeguePushController" id="IxE-p2-wkp"/>
+                        <segue destination="4nl-TW-GpP" kind="custom" identifier="New" customClass="SWRevealViewControllerSeguePushController" id="cXR-YJ-diq"/>
+                        <segue destination="Cab-BF-dz3" kind="custom" identifier="Help" customClass="SWRevealViewControllerSeguePushController" id="IxE-p2-wkp"/>
+                        <segue destination="dAY-51-4Eu" kind="custom" identifier="Home" customClass="SWRevealViewControllerSeguePushController" id="dkc-c3-4Z5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhT-t2-077" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -5009,6 +5010,7 @@
         <image name="womenIcon-1" width="225" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="dkc-c3-4Z5"/>
         <segue reference="sYF-uj-eCg"/>
         <segue reference="Fmr-di-vbm"/>
         <segue reference="Mz9-Sa-9Oa"/>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainVC: UIViewController {
+class MainVC: BaseMenuVC {
     
     @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
     
@@ -29,9 +29,6 @@ class MainVC: UIViewController {
             
             sideMenuBtn.target = revealViewController()
             sideMenuBtn.action = #selector(SWRevealViewController.revealToggle(_:))
-            revealViewController().rearViewRevealWidth = 500
-            
-            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
     }
     

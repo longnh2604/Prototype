@@ -8,14 +8,12 @@
 
 import UIKit
 
-class NewViewController: UIViewController {
+class NewViewController: BaseMenuVC {
 
     @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        sideMenu()
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,15 +21,4 @@ class NewViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    func sideMenu() {
-        
-        if revealViewController() != nil {
-            
-            sideMenuBtn.target = revealViewController()
-            sideMenuBtn.action = #selector(SWRevealViewController.revealToggle(_:))
-            revealViewController().rearViewRevealWidth = 500
-            
-            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        }
-    }
 }

@@ -12,7 +12,7 @@ class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tblSideMenu: UITableView!
     
-    var menuOptions = ["Home", "Profile", "Setting", "Logout"]
+    var menuOptions = ["Home", "New", "Help", "Logout"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,16 +40,7 @@ class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "goToNewView", sender: self)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToNewView" {
-            
-        }
-        if segue.identifier == "goToHelpView" {
-            
-        }
+        performSegue(withIdentifier: menuOptions[indexPath.row], sender: self)
     }
 
 }

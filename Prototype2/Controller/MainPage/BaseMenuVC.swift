@@ -13,16 +13,15 @@ class BaseMenuVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named:"sideMenuIcon"), style:.plain, target: self, action: #selector(barButtonSelected))
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named:"sideMenuIcon"), style:.plain, target: self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)))
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        self.revealViewController().rearViewRevealWidth = 500
+    
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    @objc func barButtonSelected() {
-        print("Bar button selected")
     }
 
 }
