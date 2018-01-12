@@ -12,12 +12,16 @@ class BaseMenuVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         addMenuBarButton()
 //        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named:"sideMenuIcon"), style:.plain, target: self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)))
 //        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
 //        self.revealViewController().rearViewRevealWidth = 500
 //
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        naviMain.navigationBar.isHidden = true
     }
 
     override func didReceiveMemoryWarning() {

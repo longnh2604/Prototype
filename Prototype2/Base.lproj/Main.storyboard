@@ -4780,15 +4780,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NY0-Dc-6yn">
-                                <rect key="frame" x="491" y="345" width="76" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NY0-Dc-6yn">
+                                <rect key="frame" x="474" y="373.5" width="76" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZi-NM-LrN">
+                                <rect key="frame" x="489" y="402.5" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="hez-Oa-tZe" kind="show" id="pLL-aT-u8p"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vZi-NM-LrN" firstAttribute="top" secondItem="NY0-Dc-6yn" secondAttribute="bottom" constant="8" id="Iil-ad-faC"/>
+                            <constraint firstItem="NY0-Dc-6yn" firstAttribute="centerY" secondItem="V5t-TD-XPH" secondAttribute="centerY" id="f2s-nw-aEP"/>
+                            <constraint firstItem="vZi-NM-LrN" firstAttribute="centerX" secondItem="NY0-Dc-6yn" secondAttribute="centerX" id="xn0-1N-w03"/>
+                            <constraint firstItem="NY0-Dc-6yn" firstAttribute="centerX" secondItem="V5t-TD-XPH" secondAttribute="centerX" id="zTh-lB-kkx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0g9-QO-CEO"/>
                     </view>
                     <navigationItem key="navigationItem" id="ras-aX-0sf"/>
@@ -4840,10 +4852,10 @@
             </objects>
             <point key="canvasLocation" x="1487.109375" y="-1228.125"/>
         </scene>
-        <!--View Controller-->
+        <!--Page Test View Controller-->
         <scene sceneID="snS-HY-7gF">
             <objects>
-                <viewController storyboardIdentifier="PageTest" id="hez-Oa-tZe" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PageTestViewController" id="hez-Oa-tZe" customClass="PageTestViewController" customModule="Prototype2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AMG-gg-5CC">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4871,7 +4883,7 @@
         <!--Item-->
         <scene sceneID="x7I-2d-CVu">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uRy-nW-zFt" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NaviNewView" automaticallyAdjustsScrollViewInsets="NO" id="uRy-nW-zFt" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="7QM-Mf-rkh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GiC-Pb-ZgO">
@@ -4885,12 +4897,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LfD-yi-aP1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="677" y="-2080"/>
+            <point key="canvasLocation" x="619" y="-2080"/>
         </scene>
         <!--Item-->
         <scene sceneID="iDT-wn-mRx">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uHh-Xg-WR9" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NaviHelp" automaticallyAdjustsScrollViewInsets="NO" id="uHh-Xg-WR9" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="ug6-Mp-wU8"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FaT-HJ-jmt">
@@ -8055,6 +8067,7 @@ MiY3AAAAAAAAAgEAAAAAAAAAWQAAAAAAAAAAAAAAAAAAJjk
         <image name="womenIcon-1" width="225" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="pLL-aT-u8p"/>
         <segue reference="sYF-uj-eCg"/>
         <segue reference="Fmr-di-vbm"/>
         <segue reference="Mz9-Sa-9Oa"/>

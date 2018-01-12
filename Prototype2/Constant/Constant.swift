@@ -15,8 +15,6 @@ let kMain_Storyboard = UIStoryboard(name: "Main", bundle: nil)
 //Init SlideMenuVC
 let mainTabbarController = kMain_Storyboard.instantiateViewController(withIdentifier: "idMainVC") as? MainVC
 let naviMain = UINavigationController(rootViewController: mainTabbarController!)
-
-
 let slideMenuVC = ExSlideMenuController(mainViewController:naviMain, leftMenuViewController: kLeftMenuVC!)
 //Init LeftMenuVC
 let kLeftMenuVC = kMain_Storyboard.instantiateViewController(withIdentifier: "SideMenuVC") as? SideMenuVC

@@ -13,11 +13,18 @@ class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tblSideMenu: UITableView!
     var mainNavi : UINavigationController?
     var pageTestNavi : UINavigationController?
+//    var newViewNavi : UINavigationController?
+//    var helpViewNavi : UINavigationController?
+    var pageTestVC : PageTestViewController?
     var menuOptions = ["Home", "New", "Help", "Logout"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         pageTestNavi = kMain_Storyboard.instantiateViewController(withIdentifier: "PageTestNavi") as? UINavigationController
+//        newViewNavi = kMain_Storyboard.instantiateViewController(withIdentifier: "NaviNewView") as? UINavigationController
+//        helpViewNavi = kMain_Storyboard.instantiateViewController(withIdentifier: "NaviHelp") as? UINavigationController
+        
+        pageTestVC = kMain_Storyboard.instantiateViewController(withIdentifier: "PageTestViewController") as? PageTestViewController
         // Do any additional setup after loading the view.
     }
 
@@ -45,31 +52,57 @@ class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         changeViewController(indexPath.row)
     }
     
+    func getSelectedVCInTabbar() -> UIViewController?{
+        if let navi_help = mainTabbarController?.viewControllers![(mainTabbarController?.selectedIndex)!] as? UINavigationController{
+            return navi_help.viewControllers[0]
+//            if let help_vc = navi_help.viewControllers[0] as? HelpVC{
+//
+//            }else if let new_vc = navi_help.viewControllers[0] as? NewViewController{
+//
+//            }
+        }
+        return nil
+    }
+    
+    
     func changeViewController(_ index : Int) {
         switch index {
         case 0:
-            self.slideMenuController()?.changeMainViewController(mainNavi!, close: true)
+//            self.slideMenuController()?.changeMainViewController(mainNavi!, close: true)
+            getSelectedVCInTabbar()?.navigationController?.popToRootViewController(animated: true)
             break
         case 1:
-            self.slideMenuController()?.changeMainViewController(pageTestNavi!, close: true)
+//                if let navi_help = mainTabbarController?.viewControllers![(mainTabbarController?.selectedIndex)!] as? UINavigationController{
+//                    if let help_vc = navi_help.viewControllers[0] as? HelpVC{
+//                        help_vc.navigationController?.pushViewController(pageTestVC!, animated: true)
+//                    }else if let new_vc = navi_help.viewControllers[0] as? NewViewController{
+//                        new_vc.navigationController?.pushViewController(pageTestVC!, animated: true)
+//                    }
+//                }
+            
+            getSelectedVCInTabbar()?.navigationController?.pushViewController(pageTestVC!, animated: true)
+            
             break
         case 2:
-            self.slideMenuController()?.changeMainViewController(pageTestNavi!, close: true)
-//            if (requestNavi == nil){
-//                if let requestVC = kRequest_storyboard.instantiateViewController(withIdentifier: "RequestWaiterViewController") as? RequestWaiterViewController{
-//                    requestNavi = UINavigationController(rootViewController: requestVC)
+            getSelectedVCInTabbar()?.navigationController?.pushViewController(pageTestVC!, animated: true)
+//            if let navi_help = mainTabbarController?.viewControllers![(mainTabbarController?.selectedIndex)!] as? UINavigationController{
+//                if let help_vc = navi_help.viewControllers[0] as? HelpVC{
+//                    help_vc.navigationController?.pushViewController(pageTestVC!, animated: true)
+//                }else if let new_vc = navi_help.viewControllers[0] as? NewViewController{
+//                    new_vc.navigationController?.pushViewController(pageTestVC!, animated: true)
 //                }
 //            }
-//            self.slideMenuController()?.changeMainViewController(requestNavi!, close: true)
+            
             break
         case 3:
             slideMenuVC.dismiss(animated: true, completion: nil)
             break
         default:
-            toggleLeft()
+            
             //            callUpdateAllTable()
             break
         }
+        toggleLeft()
     }
 
 }

@@ -22,7 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SlideMenuOptions.leftViewWidth = kScreenSize.width * 0.75
         SlideMenuOptions.contentViewScale = 1.0
         SlideMenuOptions.contentViewDrag = true
-        naviMain.navigationBar.isHidden = true
         kLeftMenuVC?.mainNavi = naviMain
         
         return true

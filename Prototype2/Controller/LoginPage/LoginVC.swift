@@ -69,7 +69,6 @@ class LoginVC: UIViewController,UITextFieldDelegate,BarcodeScannerCodeDelegate,B
 
     @IBAction func btnLoginPressed(_ sender: Any) {
         SVProgressHUD.show()
-        
         self.present(slideMenuVC, animated: true, completion: nil)
 //        self.performSegue(withIdentifier: "goToMainPage", sender: nil)
         SVProgressHUD.dismiss()
