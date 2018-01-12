@@ -31,11 +31,4 @@ class MainVC: BaseMenuVC {
             sideMenuBtn.action = #selector(SWRevealViewController.revealToggle(_:))
         }
     }
-    
-    func customizeNavBar() {
-        
-        navigationController?.navigationBar.tintColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
-        navigationController?.navigationBar.barTintColor = UIColor(red: 255/255, green: 87/255, blue: 35/255, alpha: 1)
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.black]
-    }
 }
