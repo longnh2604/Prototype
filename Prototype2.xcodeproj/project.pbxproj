@@ -34,6 +34,7 @@
 		FD152244200620600028B221 /* SelectedVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD152243200620600028B221 /* SelectedVideoVC.swift */; };
 		FD152246200620710028B221 /* CompareVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD152245200620710028B221 /* CompareVideoVC.swift */; };
 		FD152248200620830028B221 /* EditVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD152247200620830028B221 /* EditVideoVC.swift */; };
+		FD15D29D200C7962006F1816 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15D29C200C7962006F1816 /* UserData.swift */; };
 		FD594DE92005A68B006B72A5 /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD594DE82005A68B006B72A5 /* MainPageVC.swift */; };
 		FD594DEB2005A6A1006B72A5 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD594DEA2005A6A1006B72A5 /* MainVC.swift */; };
 		FD594DED2005A9B2006B72A5 /* CarteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD594DEC2005A9B2006B72A5 /* CarteVC.swift */; };
@@ -83,6 +84,7 @@
 		FD152243200620600028B221 /* SelectedVideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedVideoVC.swift; sourceTree = "<group>"; };
 		FD152245200620710028B221 /* CompareVideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareVideoVC.swift; sourceTree = "<group>"; };
 		FD152247200620830028B221 /* EditVideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVideoVC.swift; sourceTree = "<group>"; };
+		FD15D29C200C7962006F1816 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		FD594DE82005A68B006B72A5 /* MainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageVC.swift; sourceTree = "<group>"; };
 		FD594DEA2005A6A1006B72A5 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		FD594DEC2005A9B2006B72A5 /* CarteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarteVC.swift; sourceTree = "<group>"; };
@@ -292,6 +294,7 @@
 			children = (
 				FD594DF22005DDCC006B72A5 /* CarteData.swift */,
 				FD594DF12005DDCC006B72A5 /* CustomerData.swift */,
+				FD15D29C200C7962006F1816 /* UserData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -456,26 +459,46 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Prototype2/Pods-Prototype2-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BarcodeScanner/BarcodeScanner.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/ChameleonSwift/ChameleonSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/SlideMenuControllerSwift/SlideMenuControllerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BarcodeScanner.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlideMenuControllerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -511,6 +534,7 @@
 				FD723D042004BAEB002E5675 /* LoginVC.swift in Sources */,
 				419D6AB820084C8B007C7CBC /* SideMenuCell.swift in Sources */,
 				FD15222320061B7F0028B221 /* SelectedCarteVC.swift in Sources */,
+				FD15D29D200C7962006F1816 /* UserData.swift in Sources */,
 				FD723D0A2004BC10002E5675 /* RoundUIViewCorner.swift in Sources */,
 				FD15223520061DE40028B221 /* MainTableViewCell.swift in Sources */,
 				41AF5105200B2D6B0082F272 /* SettingVC.swift in Sources */,

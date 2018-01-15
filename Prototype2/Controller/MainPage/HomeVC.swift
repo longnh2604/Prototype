@@ -12,8 +12,12 @@ class HomeVC: BaseMenuVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         navigationController?.navigationBar.topItem?.title = createDateTime()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,7 +28,7 @@ class HomeVC: BaseMenuVC {
     func createDateTime() -> String {
         let date = Date()
         let formatter = DateFormatter()
-        formatter.dateFormat = "ホーム　yyyy/mm/dd "
+        formatter.dateFormat = "ホーム　yyyy/MM/dd "
         let weekday = Calendar.current.component(.weekday, from: date)
         let result = formatter.string(from: date)
         return result + checkWeekDay(weekday: weekday)

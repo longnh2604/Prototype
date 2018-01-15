@@ -12,11 +12,8 @@ extension UIViewController {
     
     func addMenuBarButton() {
         self.addLeftBarButtonWithImage(UIImage(named: "sideMenuIcon")!)
-//        self.addRightBarButtonWithImage(UIImage(named: "ic_notifications_black_24dp")!)
         self.slideMenuController()?.removeLeftGestures()
-//        self.slideMenuController()?.removeRightGestures()
         self.slideMenuController()?.addLeftGestures()
-//        self.slideMenuController()?.addRightGestures()
     }
     
     func removeNavigationBarItem() {

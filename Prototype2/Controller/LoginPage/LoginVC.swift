@@ -11,11 +11,13 @@ import SVProgressHUD
 import BarcodeScanner
 import CloudKit
 import RealmSwift
+import Firebase
 
 class LoginVC: UIViewController,UITextFieldDelegate,BarcodeScannerCodeDelegate,BarcodeScannerErrorDelegate,BarcodeScannerDismissalDelegate {
 
     let realm = try! Realm()
     var customer: Results<CustomerData>?
+//    var ref: DatabaseReference!
     
     @IBOutlet weak var tfPassword: UITextField!
     @IBOutlet weak var tfUsername: UITextField!
@@ -28,6 +30,16 @@ class LoginVC: UIViewController,UITextFieldDelegate,BarcodeScannerCodeDelegate,B
         tfPassword.delegate = self
         tfShopPassword.delegate = self
         tfShopId.delegate = self
+        
+//        ref = Database.database().reference(fromURL: "https://prototype2-c8299.firebaseio.com/")
+//
+//        ref.child("users").observeSingleEvent(of: .value, with: { (snapshot) in
+//            // Get user value
+//            let value = snapshot.value as? NSDictionary
+//            let username = value?["username"] as? String ?? ""
+//        }) { (error) in
+//            print(error.localizedDescription)
+//        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -69,10 +81,38 @@ class LoginVC: UIViewController,UITextFieldDelegate,BarcodeScannerCodeDelegate,B
 
     @IBAction func btnLoginPressed(_ sender: Any) {
         SVProgressHUD.show()
-        self.present(slideMenuVC, animated: true, completion: nil)
-//        self.performSegue(withIdentifier: "goToMainPage", sender: nil)
-        SVProgressHUD.dismiss()
-//        loadCloudDatabase()
+        userLogin()
+    }
+    
+    //Firebase Account Authentication
+    func userLogin() {
+        Auth.auth().signIn(withEmail: "longnh264@gmail.com", password: "123456") { (user, error) in
+            if error != nil {
+                print(error!)
+                SVProgressHUD.showError(withStatus: error?.localizedDescription)
+            } else {
+                print("Firebase Auth passed!")
+                self.findUser()
+                self.present(slideMenuVC, animated: true, completion: nil)
+                SVProgressHUD.dismiss()
+            }
+        }
+    }
+    
+    func findUser() {
+        let queryRef = Database.database().reference().child("users")
+        let userID = Auth.auth().currentUser?.uid
+        queryRef.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+            if !snapshot.exists() {
+                return }
+            
+            print(snapshot) // Its print all values including Snap (User)
+            
+            print(snapshot.value!)
+            
+            let username = snapshot.childSnapshot(forPath: "username").value
+            print(username!)
+        })
     }
     
     //Get the CloudKit Database

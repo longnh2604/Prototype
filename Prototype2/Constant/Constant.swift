@@ -8,6 +8,7 @@
 
 import UIKit
 import SlideMenuControllerSwift
+import Firebase
 
 let kScreenSize: CGSize = UIScreen.main.bounds.size
 //Main storyboard
@@ -18,4 +19,3 @@ let naviMain = UINavigationController(rootViewController: mainTabbarController!)
 let slideMenuVC = ExSlideMenuController(mainViewController:naviMain, leftMenuViewController: kLeftMenuVC!)
 //Init LeftMenuVC
 let kLeftMenuVC = kMain_Storyboard.instantiateViewController(withIdentifier: "SideMenuVC") as? SideMenuVC
-

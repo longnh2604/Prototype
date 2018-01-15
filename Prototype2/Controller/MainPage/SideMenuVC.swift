@@ -7,17 +7,27 @@
 //
 
 import UIKit
+import Firebase
 
 class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tblSideMenu: UITableView!
+    @IBOutlet weak var lblWelcome: UILabel!
+    @IBOutlet weak var lblLstLogined: UILabel!
+    @IBOutlet weak var imvAccount: UIImageView!
+    
     var mainNavi : UINavigationController?
     var pageTestNavi : UINavigationController?
     var pageTestVC : PageTestViewController?
-    var menuOptions = ["Home", "Account Information", "Help", "Logout"]
+    var menuOptions = ["ホーム", "口座情報", "言語", "ヘルプ", "ログアウト"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tblSideMenu.tableFooterView = UIView()
+        Auth.auth().currentUser?.uid
+        lblWelcome.text = "ようこそ　、\(String(describing: Auth.auth().currentUser?.email))"
+        
         pageTestNavi = kMain_Storyboard.instantiateViewController(withIdentifier: "PageTestNavi") as? UINavigationController
         pageTestVC = kMain_Storyboard.instantiateViewController(withIdentifier: "PageTestViewController") as? PageTestViewController
     }

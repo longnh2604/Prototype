@@ -9,20 +9,42 @@
 import UIKit
 import IQKeyboardManagerSwift
 import SlideMenuControllerSwift
+import ChameleonSwift
+import Firebase
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         IQKeyboardManager.sharedManager().enable = true
+        FirebaseApp.configure()
+
         //Set constant option for slidemneu
-        SlideMenuOptions.leftViewWidth = kScreenSize.width * 0.75
+        SlideMenuOptions.leftViewWidth = kScreenSize.width * 0.5
         SlideMenuOptions.contentViewScale = 1.0
         SlideMenuOptions.contentViewDrag = true
         kLeftMenuVC?.mainNavi = naviMain
+        naviMain.navigationBar.isHidden = true
+        
+        //setup Navigation bar
+        UINavigationBar.appearance().barTintColor = UIColor(red: 26/255, green: 188/255, blue: 156/255, alpha: 1)
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.font: UIFont(name: "Meiryo-Bold", size: 20)!]
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
+        
+        //setup tab bar
+        UITabBar.appearance().barTintColor = UIColor(red: 239/255, green: 239/255, blue: 244/255, alpha: 1)
+        let selectedColor   = UIColor.black
+        let unselectedColor = UIColor.lightGray
+        
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: unselectedColor], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: selectedColor], for: .selected)
+        
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: "Meiryo-Bold", size: 14)!], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: "Meiryo-Bold", size: 14)!], for: .selected)
         
         return true
     }

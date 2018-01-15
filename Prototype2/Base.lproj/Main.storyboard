@@ -331,7 +331,7 @@
             </objects>
             <point key="canvasLocation" x="-205" y="-2080"/>
         </scene>
-        <!--PHOTO-->
+        <!--写真-->
         <scene sceneID="oBz-fk-Cxv">
             <objects>
                 <viewController id="g64-pb-S8m" sceneMemberID="viewController">
@@ -341,13 +341,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="D3Z-a6-Lhf"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="PHOTO" image="TBcameraIcon" id="fMq-Jn-b5F"/>
+                    <tabBarItem key="tabBarItem" title="写真" image="TBcameraIcon" id="fMq-Jn-b5F"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EVO-Qe-TJr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="619" y="-477"/>
         </scene>
-        <!--VIDEO-->
+        <!--ビデオ-->
         <scene sceneID="mZd-CP-7QZ">
             <objects>
                 <viewController id="x46-kf-LEG" sceneMemberID="viewController">
@@ -357,7 +357,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="QHD-Qy-XFV"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="VIDEO" image="TBvideoIcon" id="5EJ-tc-xR9"/>
+                    <tabBarItem key="tabBarItem" title="ビデオ" image="TBvideoIcon" id="5EJ-tc-xR9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3yV-JR-dBD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -371,9 +371,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aq-T7-wsK" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
-                                <rect key="frame" x="212" y="479" width="600" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aq-T7-wsK" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
+                                <rect key="frame" x="212" y="514" width="600" height="80"/>
                                 <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="30"/>
                                 <state key="normal" title="メール設定">
                                     <color key="titleColor" red="0.20748737" green="0.3494919843" blue="0.50504889460000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -393,13 +392,15 @@
                                     <action selector="btnLoginPressed:" destination="Vmm-vo-LoE" eventType="touchUpInside" id="Izt-Hf-bp6"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ABCarteIcon" translatesAutoresizingMaskIntoConstraints="NO" id="EtS-Ap-AYa">
-                                <rect key="frame" x="437" y="109" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ABCarteIcon" translatesAutoresizingMaskIntoConstraints="NO" id="EtS-Ap-AYa">
+                                <rect key="frame" x="437" y="144" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="11w-3i-XCL"/>
+                                    <constraint firstAttribute="width" constant="150" id="eq6-jw-13O"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CrC-oL-IsW" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
-                                <rect key="frame" x="212" y="379" width="600" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CrC-oL-IsW" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
+                                <rect key="frame" x="212" y="414" width="600" height="80"/>
                                 <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="30"/>
                                 <state key="normal" title="クラウド同期">
                                     <color key="titleColor" red="0.20748737" green="0.3494919843" blue="0.50504889460000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -419,25 +420,12 @@
                                     <action selector="btnLoginPressed:" destination="Vmm-vo-LoE" eventType="touchUpInside" id="AnK-mC-YrE"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuO-8r-cYQ" customClass="RoundLabelCorner" customModule="Prototype2" customModuleProvider="target">
-                                <rect key="frame" x="731" y="402" width="60" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="20"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKh-MP-CDs" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
-                                <rect key="frame" x="212" y="279" width="600" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKh-MP-CDs" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
+                                <rect key="frame" x="212" y="314" width="600" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="5h6-lH-Nkc"/>
+                                    <constraint firstAttribute="width" constant="600" id="Tml-qU-5St"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="30"/>
                                 <state key="normal" title="口座情報">
                                     <color key="titleColor" red="0.20748737" green="0.3494919843" blue="0.50504889460000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -457,9 +445,8 @@
                                     <action selector="btnLoginPressed:" destination="Vmm-vo-LoE" eventType="touchUpInside" id="ycT-40-E7Q"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMG-RT-n5M" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
-                                <rect key="frame" x="212" y="579" width="600" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMG-RT-n5M" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
+                                <rect key="frame" x="212" y="614" width="600" height="80"/>
                                 <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="30"/>
                                 <state key="normal" title="ログアウト">
                                     <color key="titleColor" red="0.20748737" green="0.3494919843" blue="0.50504889460000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -479,8 +466,47 @@
                                     <action selector="btnLoginPressed:" destination="Vmm-vo-LoE" eventType="touchUpInside" id="zuA-PH-jvX"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuO-8r-cYQ" customClass="RoundLabelCorner" customModule="Prototype2" customModuleProvider="target">
+                                <rect key="frame" x="732" y="439" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="7mk-ih-aoN"/>
+                                    <constraint firstAttribute="height" constant="30" id="INd-cL-yng"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="20"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.97601603140000004" blue="0.95929121650000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GKh-MP-CDs" firstAttribute="top" secondItem="EtS-Ap-AYa" secondAttribute="bottom" constant="20" id="3On-61-HdD"/>
+                            <constraint firstItem="ZMG-RT-n5M" firstAttribute="width" secondItem="GKh-MP-CDs" secondAttribute="width" id="70C-5N-hdX"/>
+                            <constraint firstItem="1aq-T7-wsK" firstAttribute="centerX" secondItem="GKh-MP-CDs" secondAttribute="centerX" id="7H3-Tf-519"/>
+                            <constraint firstItem="CrC-oL-IsW" firstAttribute="width" secondItem="GKh-MP-CDs" secondAttribute="width" id="7eN-l8-zsi"/>
+                            <constraint firstItem="GKh-MP-CDs" firstAttribute="centerX" secondItem="EtS-Ap-AYa" secondAttribute="centerX" id="Fie-nE-SAN"/>
+                            <constraint firstItem="NuO-8r-cYQ" firstAttribute="centerY" secondItem="CrC-oL-IsW" secondAttribute="centerY" id="JNV-AD-eZZ"/>
+                            <constraint firstItem="ZMG-RT-n5M" firstAttribute="height" secondItem="GKh-MP-CDs" secondAttribute="height" id="Kqb-2n-lrL"/>
+                            <constraint firstItem="1aq-T7-wsK" firstAttribute="top" secondItem="CrC-oL-IsW" secondAttribute="bottom" constant="20" id="LxY-cL-9VG"/>
+                            <constraint firstItem="ZMG-RT-n5M" firstAttribute="top" secondItem="1aq-T7-wsK" secondAttribute="bottom" constant="20" id="P1M-jG-qMK"/>
+                            <constraint firstItem="1aq-T7-wsK" firstAttribute="height" secondItem="GKh-MP-CDs" secondAttribute="height" id="Wrb-8l-Fti"/>
+                            <constraint firstItem="EtS-Ap-AYa" firstAttribute="top" secondItem="sgu-6N-kXQ" secondAttribute="top" constant="80" id="Y8p-3k-HaX"/>
+                            <constraint firstItem="1aq-T7-wsK" firstAttribute="width" secondItem="GKh-MP-CDs" secondAttribute="width" id="Z0p-us-s5o"/>
+                            <constraint firstItem="ZMG-RT-n5M" firstAttribute="centerX" secondItem="GKh-MP-CDs" secondAttribute="centerX" id="bKk-tP-6Du"/>
+                            <constraint firstItem="EtS-Ap-AYa" firstAttribute="centerX" secondItem="sgu-6N-kXQ" secondAttribute="centerX" id="daU-Z0-Oca"/>
+                            <constraint firstItem="NuO-8r-cYQ" firstAttribute="leading" secondItem="CrC-oL-IsW" secondAttribute="trailing" constant="-80" id="dwY-d7-hJu"/>
+                            <constraint firstItem="CrC-oL-IsW" firstAttribute="centerX" secondItem="GKh-MP-CDs" secondAttribute="centerX" id="gFs-F7-Axg"/>
+                            <constraint firstItem="CrC-oL-IsW" firstAttribute="top" secondItem="GKh-MP-CDs" secondAttribute="bottom" constant="20" id="uXa-HJ-oJO"/>
+                            <constraint firstItem="CrC-oL-IsW" firstAttribute="height" secondItem="GKh-MP-CDs" secondAttribute="height" id="vvm-x1-Qxq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="sgu-6N-kXQ"/>
                     </view>
                     <navigationItem key="navigationItem" title="SETTING" id="TQJ-P4-etE"/>
@@ -4365,28 +4391,54 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bL1-Ou-3qU">
                                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="200"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ABCarte Logo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6Q-sB-Jeb">
-                                                        <rect key="frame" x="15" y="53" width="209" height="21"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6Q-sB-Jeb">
+                                                        <rect key="frame" x="40" y="20" width="350" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="350" id="Ab6-mC-K7i"/>
+                                                            <constraint firstAttribute="height" constant="30" id="OKx-2C-I5N"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="manIcon-1" translatesAutoresizingMaskIntoConstraints="NO" id="ksE-kg-pVl">
+                                                        <rect key="frame" x="40" y="70" width="120" height="120"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="120" id="6vj-sm-TSR"/>
+                                                            <constraint firstAttribute="width" constant="120" id="n7o-6z-z90"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Logined 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGo-GZ-sZs">
+                                                        <rect key="frame" x="180" y="110" width="400" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="0lo-iA-NAd"/>
+                                                            <constraint firstAttribute="width" constant="400" id="9hE-10-F8N"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="16"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" red="0.23753024649999999" green="0.61932541190000001" blue="0.59231505100000004" alpha="0.71990352349999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
+                                                    <constraint firstItem="B6Q-sB-Jeb" firstAttribute="leading" secondItem="bL1-Ou-3qU" secondAttribute="leading" constant="40" id="1j2-Eq-qrj"/>
+                                                    <constraint firstItem="cGo-GZ-sZs" firstAttribute="leading" secondItem="ksE-kg-pVl" secondAttribute="trailing" constant="20" id="37A-jW-GNh"/>
+                                                    <constraint firstItem="B6Q-sB-Jeb" firstAttribute="top" secondItem="bL1-Ou-3qU" secondAttribute="top" constant="20" id="3nD-mX-0J3"/>
+                                                    <constraint firstItem="ksE-kg-pVl" firstAttribute="leading" secondItem="B6Q-sB-Jeb" secondAttribute="leading" id="67i-YH-syb"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ksE-kg-pVl" secondAttribute="bottom" constant="10" id="iLm-Vg-PL6"/>
                                                     <constraint firstAttribute="height" constant="200" id="jfc-Ed-UuN"/>
+                                                    <constraint firstItem="cGo-GZ-sZs" firstAttribute="centerY" secondItem="ksE-kg-pVl" secondAttribute="centerY" id="w7F-mp-bas"/>
                                                 </constraints>
                                             </view>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qbF-pU-twm">
                                                 <rect key="frame" x="0.0" y="200" width="1024" height="568"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SideMenuCell" rowHeight="100" id="YOB-ZF-rkD" customClass="SideMenuCell" customModule="Prototype2" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SideMenuCell" rowHeight="100" id="YOB-ZF-rkD" customClass="SideMenuCell" customModule="Prototype2" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="1024" height="100"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YOB-ZF-rkD" id="KMT-E5-bU0">
-                                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="99.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="991" height="99.5"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9L-9S-8hR">
@@ -4395,7 +4447,7 @@
                                                                         <constraint firstAttribute="height" constant="30" id="VNe-TM-cBb"/>
                                                                         <constraint firstAttribute="width" constant="350" id="ffC-aX-RMD"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="18"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -4437,13 +4489,16 @@
                         <viewLayoutGuide key="safeArea" id="mA2-QP-R17"/>
                     </view>
                     <connections>
+                        <outlet property="imvAccount" destination="ksE-kg-pVl" id="9xY-Gr-rDh"/>
+                        <outlet property="lblLstLogined" destination="cGo-GZ-sZs" id="zSI-k7-1XI"/>
+                        <outlet property="lblWelcome" destination="B6Q-sB-Jeb" id="fmY-gx-04Y"/>
                         <outlet property="tblSideMenu" destination="qbF-pU-twm" id="SF4-w1-Uiz"/>
                         <segue destination="x7v-hZ-l6S" kind="show" id="mrI-fn-Gd6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhT-t2-077" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-967" y="-1228"/>
+            <point key="canvasLocation" x="-967.38281249999989" y="-1228.125"/>
         </scene>
         <!--HOME-->
         <scene sceneID="vws-r1-9go">
@@ -4454,7 +4509,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6b-vg-gq3" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
-                                <rect key="frame" x="212" y="264" width="600" height="80"/>
+                                <rect key="frame" x="212" y="314" width="600" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="Jqp-Uq-Tfy"/>
                                     <constraint firstAttribute="width" constant="600" id="pYh-2A-08t"/>
@@ -4479,14 +4534,14 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ABCarteIcon" translatesAutoresizingMaskIntoConstraints="NO" id="gZ2-wy-qFO">
-                                <rect key="frame" x="437" y="94" width="150" height="150"/>
+                                <rect key="frame" x="437" y="144" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="P8Y-Cg-UCY"/>
                                     <constraint firstAttribute="height" constant="150" id="msj-ba-hLQ"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QoS-Xv-mGK" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
-                                <rect key="frame" x="212" y="364" width="600" height="80"/>
+                                <rect key="frame" x="212" y="414" width="600" height="80"/>
                                 <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="30"/>
                                 <state key="normal" title="受付一覧">
                                     <color key="titleColor" red="0.20748736997346939" green="0.34949198425646261" blue="0.50504889455782309" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -4507,7 +4562,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9i-3D-bPg" customClass="RoundLabelCorner" customModule="Prototype2" customModuleProvider="target">
-                                <rect key="frame" x="731" y="387" width="60" height="35"/>
+                                <rect key="frame" x="732" y="437" width="60" height="35"/>
                                 <color key="backgroundColor" red="0.90588235294117647" green="0.29803921568627451" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="eUE-Po-Tp3"/>
@@ -4526,7 +4581,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmP-ue-f3d" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
-                                <rect key="frame" x="212" y="464" width="600" height="80"/>
+                                <rect key="frame" x="212" y="514" width="600" height="80"/>
                                 <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="30"/>
                                 <state key="normal" title="お客様登録">
                                     <color key="titleColor" red="0.20748736997346939" green="0.34949198425646261" blue="0.50504889455782309" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -4547,7 +4602,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rdf-F6-gYN" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
-                                <rect key="frame" x="212" y="564" width="600" height="80"/>
+                                <rect key="frame" x="212" y="614" width="600" height="80"/>
                                 <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="30"/>
                                 <state key="normal" title="お知らせ">
                                     <color key="titleColor" red="0.20748736997346939" green="0.34949198425646261" blue="0.50504889455782309" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -4568,7 +4623,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhf-m4-LbM" customClass="RoundLabelCorner" customModule="Prototype2" customModuleProvider="target">
-                                <rect key="frame" x="711" y="587" width="80" height="35"/>
+                                <rect key="frame" x="712" y="637" width="80" height="35"/>
                                 <color key="backgroundColor" red="0.20748737" green="0.3494919843" blue="0.50504889460000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="LRd-fi-8t7"/>
@@ -4589,13 +4644,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.97601603140000004" blue="0.95929121650000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="rhf-m4-LbM" firstAttribute="leading" secondItem="Rdf-F6-gYN" secondAttribute="trailing" constant="-101" id="0ZS-3p-4ba"/>
+                            <constraint firstItem="rhf-m4-LbM" firstAttribute="leading" secondItem="Rdf-F6-gYN" secondAttribute="trailing" constant="-100" id="0ZS-3p-4ba"/>
                             <constraint firstItem="Rdf-F6-gYN" firstAttribute="centerX" secondItem="0g9-QO-CEO" secondAttribute="centerX" id="0bh-6g-lLO"/>
                             <constraint firstItem="QoS-Xv-mGK" firstAttribute="centerX" secondItem="0g9-QO-CEO" secondAttribute="centerX" id="0hA-wD-T4e"/>
-                            <constraint firstItem="gZ2-wy-qFO" firstAttribute="top" secondItem="0g9-QO-CEO" secondAttribute="top" constant="30" id="1LU-65-tbt"/>
+                            <constraint firstItem="gZ2-wy-qFO" firstAttribute="top" secondItem="0g9-QO-CEO" secondAttribute="top" constant="80" id="1LU-65-tbt"/>
                             <constraint firstItem="b6b-vg-gq3" firstAttribute="top" secondItem="gZ2-wy-qFO" secondAttribute="bottom" constant="20" id="7Qq-51-8PM"/>
                             <constraint firstItem="mmP-ue-f3d" firstAttribute="centerX" secondItem="0g9-QO-CEO" secondAttribute="centerX" id="Gax-UL-sv1"/>
-                            <constraint firstItem="S9i-3D-bPg" firstAttribute="leading" secondItem="QoS-Xv-mGK" secondAttribute="trailing" constant="-81" id="MMG-TJ-wVo"/>
+                            <constraint firstItem="S9i-3D-bPg" firstAttribute="leading" secondItem="QoS-Xv-mGK" secondAttribute="trailing" constant="-80" id="MMG-TJ-wVo"/>
                             <constraint firstItem="gZ2-wy-qFO" firstAttribute="centerX" secondItem="0g9-QO-CEO" secondAttribute="centerX" id="Pjg-DM-MBF"/>
                             <constraint firstItem="mmP-ue-f3d" firstAttribute="height" secondItem="b6b-vg-gq3" secondAttribute="height" id="Tvm-u4-Gpm"/>
                             <constraint firstItem="QoS-Xv-mGK" firstAttribute="height" secondItem="b6b-vg-gq3" secondAttribute="height" id="WWC-ad-D64"/>
@@ -4622,10 +4677,9 @@
         <scene sceneID="eEh-J5-Eqe">
             <objects>
                 <tabBarController storyboardIdentifier="idMainVC" id="GTJ-BE-ZBO" customClass="MainVC" customModule="Prototype2" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hxy-xY-qzW">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="fill" id="hxy-xY-qzW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="uRy-nW-zFt" kind="relationship" relationship="viewControllers" id="V73-jL-1j9"/>
@@ -4677,15 +4731,18 @@
             </objects>
             <point key="canvasLocation" x="-1721" y="-477"/>
         </scene>
-        <!--Home-->
+        <!-- ホーム-->
         <scene sceneID="x7I-2d-CVu">
             <objects>
                 <navigationController storyboardIdentifier="NaviNewView" automaticallyAdjustsScrollViewInsets="NO" id="uRy-nW-zFt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="TBhomeIcon" id="7QM-Mf-rkh"/>
+                    <tabBarItem key="tabBarItem" title=" ホーム" image="TBhomeIcon" id="7QM-Mf-rkh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GiC-Pb-ZgO">
                         <rect key="frame" x="0.0" y="20" width="1024" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -4696,15 +4753,18 @@
             </objects>
             <point key="canvasLocation" x="619" y="-2080"/>
         </scene>
-        <!--CUSTOMER-->
+        <!--お客様情報-->
         <scene sceneID="iDT-wn-mRx">
             <objects>
                 <navigationController storyboardIdentifier="NaviHelp" automaticallyAdjustsScrollViewInsets="NO" id="uHh-Xg-WR9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="CUSTOMER" image="TBphotoIcon" id="ug6-Mp-wU8"/>
+                    <tabBarItem key="tabBarItem" title="お客様情報" image="TBphotoIcon" id="ug6-Mp-wU8"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FaT-HJ-jmt">
                         <rect key="frame" x="0.0" y="20" width="1024" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -4733,11 +4793,11 @@
             </objects>
             <point key="canvasLocation" x="-967" y="-476"/>
         </scene>
-        <!--SETTING-->
+        <!--設定-->
         <scene sceneID="Nxt-ST-UV0">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yZr-zK-KdR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="SETTING" image="TBsettingIcon" id="nZI-hA-wRF"/>
+                    <tabBarItem key="tabBarItem" title="設定" image="TBsettingIcon" id="nZI-hA-wRF"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZzP-Yb-PtY">
                         <rect key="frame" x="0.0" y="20" width="1024" height="44"/>

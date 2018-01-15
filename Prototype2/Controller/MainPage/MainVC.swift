@@ -15,7 +15,6 @@ class MainVC: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         slideMenuVC.automaticallyAdjustsScrollViewInsets = true
-        slideMenuVC.changeLeftViewWidth(500)
         slideMenuVC.delegate = self
     }
                     
