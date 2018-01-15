@@ -87,20 +87,37 @@ class LoginVC: UIViewController {
     }
     
     func findUser() {
-        let queryRef = Database.database().reference()
         let userID = Auth.auth().currentUser?.uid
         queryRef.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
             if !snapshot.exists() {
                 return }
             print(snapshot.value!)
             
+            //save user data
             UserDefaults.standard.set(snapshot.childSnapshot(forPath: "username").value, forKey: "username")
             UserDefaults.standard.set(snapshot.childSnapshot(forPath: "imageURL").value, forKey: "imageURL")
             UserDefaults.standard.set(snapshot.childSnapshot(forPath: "rules").value, forKey: "rules")
             
-            self.present(slideMenuVC, animated: true, completion: nil)
+            //get Customer
+            self.getCustomersfromUser(with: userID!)
+            
+//            self.present(slideMenuVC, animated: true, completion: nil)
             SVProgressHUD.dismiss()
         })
+    }
+    
+    func getCustomersfromUser(with UID:String) {
+        // create searchRef or queryRef you name it
+        queryRef.child("customers").queryOrdered(byChild: "userID").queryEqual(toValue: UID).observeSingleEvent(of: .value,with: { (snapshot) in
+            
+            for snap in snapshot.children.allObjects as! [DataSnapshot] {
+                guard let dictionary = snap.value as? [String: AnyObject] else {
+                    return
+                }
+                let name = dictionary["cusName"] as? String
+                let id = dictionary["cusID"] as? String
+            }
+            })
     }
     
     //Get the CloudKit Database

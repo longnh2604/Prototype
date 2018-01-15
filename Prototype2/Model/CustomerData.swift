@@ -21,3 +21,11 @@ class CustomerData: Object {
     @objc dynamic var cusSex: String = ""
     var cusCarte = List<String>()
 }
+
+extension CustomerData {
+    func writeToRealm() {
+        try! uiRealm.write {
+            uiRealm.add(self)
+        }
+    }
+}

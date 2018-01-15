@@ -19,3 +19,5 @@ let naviMain = UINavigationController(rootViewController: mainTabbarController!)
 let slideMenuVC = ExSlideMenuController(mainViewController:naviMain, leftMenuViewController: kLeftMenuVC!)
 //Init LeftMenuVC
 let kLeftMenuVC = kMain_Storyboard.instantiateViewController(withIdentifier: "SideMenuVC") as? SideMenuVC
+//Database Ref
+let queryRef = Database.database().reference()

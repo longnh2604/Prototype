@@ -12,6 +12,8 @@ import SlideMenuControllerSwift
 import Firebase
 import RealmSwift
 
+var uiRealm = try! Realm()
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -21,11 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         IQKeyboardManager.sharedManager().enable = true
         FirebaseApp.configure()
-        
-        let realm = try! Realm()
-        try! realm.write {
-            realm.deleteAll()
-        }
         
         //Set constant option for slidemneu
         SlideMenuOptions.leftViewWidth = kScreenSize.width * 0.5
