@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import RealmSwift
 
 class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -15,6 +16,7 @@ class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var lblWelcome: UILabel!
     @IBOutlet weak var lblLstLogined: UILabel!
     @IBOutlet weak var imvAccount: UIImageView!
+    @IBOutlet weak var lblRole: UILabel!
     
     var mainNavi : UINavigationController?
     var pageTestNavi : UINavigationController?
@@ -25,8 +27,21 @@ class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         super.viewDidLoad()
         
         tblSideMenu.tableFooterView = UIView()
-        Auth.auth().currentUser?.uid
-        lblWelcome.text = "ようこそ　、\(String(describing: Auth.auth().currentUser?.email))"
+        
+        lblWelcome.text = "ようこそ、 　\(UserDefaults.standard.string(forKey: "username")!)"
+        lblRole.text = UserDefaults.standard.string(forKey: "rules")!
+        
+        let url = URL(fileURLWithPath: UserDefaults.standard.string(forKey: "imageURL")!)
+        if let data = try? Data(contentsOf: url)
+        {
+            let image: UIImage = UIImage(data: data)!
+            imvAccount.image = image
+        }
+        
+        let signInDate = Auth.auth().currentUser?.metadata.lastSignInDate
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMMM dd, yyyy HH:mm:ss"
+        lblLstLogined.text = dateFormatter.string(from: signInDate!)
         
         pageTestNavi = kMain_Storyboard.instantiateViewController(withIdentifier: "PageTestNavi") as? UINavigationController
         pageTestVC = kMain_Storyboard.instantiateViewController(withIdentifier: "PageTestViewController") as? PageTestViewController
