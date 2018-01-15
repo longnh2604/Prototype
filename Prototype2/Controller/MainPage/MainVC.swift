@@ -15,23 +15,14 @@ class MainVC: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         slideMenuVC.automaticallyAdjustsScrollViewInsets = true
+        slideMenuVC.changeLeftViewWidth(500)
         slideMenuVC.delegate = self
-//        sideMenu()
     }
                     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-//    func sideMenu() {
-//        
-//        if revealViewController() != nil {
-//            
-//            sideMenuBtn.target = revealViewController()
-//            sideMenuBtn.action = #selector(SWRevealViewController.revealToggle(_:))
-//        }
-//    }
 }
 
 extension MainVC : SlideMenuControllerDelegate {

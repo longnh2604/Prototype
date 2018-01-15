@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		419D6AB42007AA38007C7CBC /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 419D6AB22007AA38007C7CBC /* SWRevealViewController.m */; };
+		4185115D200BB038008BBDFA /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4185115C200BB038008BBDFA /* HomeVC.swift */; };
 		419D6AB620084BE6007C7CBC /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419D6AB520084BE6007C7CBC /* SideMenuVC.swift */; };
 		419D6AB820084C8B007C7CBC /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419D6AB720084C8B007C7CBC /* SideMenuCell.swift */; };
-		419D6ABA20085285007C7CBC /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419D6AB920085285007C7CBC /* NewViewController.swift */; };
 		419D6ABC2008540D007C7CBC /* HelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419D6ABB2008540D007C7CBC /* HelpVC.swift */; };
 		419D6ABE200855A3007C7CBC /* BaseMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419D6ABD200855A3007C7CBC /* BaseMenuVC.swift */; };
+		41AF5105200B2D6B0082F272 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AF5104200B2D6B0082F272 /* SettingVC.swift */; };
+		41AF5107200B3B3F0082F272 /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AF5106200B3B3F0082F272 /* PageVC.swift */; };
+		41AF5109200B3BB40082F272 /* CustomerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AF5108200B3BB40082F272 /* CustomerVC.swift */; };
 		4D88FEFD2008779000A442DE /* ExSlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88FEFC2008779000A442DE /* ExSlideMenuController.swift */; };
 		4D88FEFF200877B800A442DE /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88FEFE200877B800A442DE /* UIApplication.swift */; };
 		4D88FF0220087BEF00A442DE /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88FF0120087BEF00A442DE /* Constant.swift */; };
@@ -35,7 +37,6 @@
 		FD594DE92005A68B006B72A5 /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD594DE82005A68B006B72A5 /* MainPageVC.swift */; };
 		FD594DEB2005A6A1006B72A5 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD594DEA2005A6A1006B72A5 /* MainVC.swift */; };
 		FD594DED2005A9B2006B72A5 /* CarteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD594DEC2005A9B2006B72A5 /* CarteVC.swift */; };
-		FD594DF02005DC50006B72A5 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD594DEF2005DC50006B72A5 /* CloudKit.framework */; };
 		FD594DF32005DDCC006B72A5 /* CustomerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD594DF12005DDCC006B72A5 /* CustomerData.swift */; };
 		FD594DF42005DDCC006B72A5 /* CarteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD594DF22005DDCC006B72A5 /* CarteData.swift */; };
 		FD723CE22004ADC1002E5675 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD723CE12004ADC1002E5675 /* AppDelegate.swift */; };
@@ -54,14 +55,14 @@
 
 /* Begin PBXFileReference section */
 		0FAC40FDC9F2E6D090F5677D /* Pods_Prototype2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prototype2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		419D6AB12007AA37007C7CBC /* Prototype2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Prototype2-Bridging-Header.h"; sourceTree = "<group>"; };
-		419D6AB22007AA38007C7CBC /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
-		419D6AB32007AA38007C7CBC /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		4185115C200BB038008BBDFA /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		419D6AB520084BE6007C7CBC /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
 		419D6AB720084C8B007C7CBC /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
-		419D6AB920085285007C7CBC /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		419D6ABB2008540D007C7CBC /* HelpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpVC.swift; sourceTree = "<group>"; };
 		419D6ABD200855A3007C7CBC /* BaseMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMenuVC.swift; sourceTree = "<group>"; };
+		41AF5104200B2D6B0082F272 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		41AF5106200B3B3F0082F272 /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
+		41AF5108200B3BB40082F272 /* CustomerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerVC.swift; sourceTree = "<group>"; };
 		4D88FEFC2008779000A442DE /* ExSlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExSlideMenuController.swift; sourceTree = "<group>"; };
 		4D88FEFE200877B800A442DE /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		4D88FF0120087BEF00A442DE /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -86,7 +87,6 @@
 		FD594DEA2005A6A1006B72A5 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		FD594DEC2005A9B2006B72A5 /* CarteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarteVC.swift; sourceTree = "<group>"; };
 		FD594DEE2005DC4D006B72A5 /* Prototype2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Prototype2.entitlements; sourceTree = "<group>"; };
-		FD594DEF2005DC50006B72A5 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		FD594DF12005DDCC006B72A5 /* CustomerData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerData.swift; sourceTree = "<group>"; };
 		FD594DF22005DDCC006B72A5 /* CarteData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarteData.swift; sourceTree = "<group>"; };
 		FD723CDE2004ADC1002E5675 /* Prototype2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prototype2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,7 +111,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B09545E208C4959AA44FD33C /* Pods_Prototype2.framework in Frameworks */,
-				FD594DF02005DC50006B72A5 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,9 +120,6 @@
 		419D6AB02007AA10007C7CBC /* 3rdParty */ = {
 			isa = PBXGroup;
 			children = (
-				419D6AB32007AA38007C7CBC /* SWRevealViewController.h */,
-				419D6AB22007AA38007C7CBC /* SWRevealViewController.m */,
-				419D6AB12007AA37007C7CBC /* Prototype2-Bridging-Header.h */,
 			);
 			path = 3rdParty;
 			sourceTree = "<group>";
@@ -158,7 +154,6 @@
 		8E29B9073920EAF5F3730D10 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FD594DEF2005DC50006B72A5 /* CloudKit.framework */,
 				0FAC40FDC9F2E6D090F5677D /* Pods_Prototype2.framework */,
 			);
 			name = Frameworks;
@@ -218,10 +213,13 @@
 				FD594DE82005A68B006B72A5 /* MainPageVC.swift */,
 				FD594DEA2005A6A1006B72A5 /* MainVC.swift */,
 				FD15223420061DE40028B221 /* MainTableViewCell.swift */,
-				419D6AB920085285007C7CBC /* NewViewController.swift */,
 				419D6ABB2008540D007C7CBC /* HelpVC.swift */,
 				419D6ABD200855A3007C7CBC /* BaseMenuVC.swift */,
 				4D88FF052008AB7F00A442DE /* PageTestViewController.swift */,
+				41AF5104200B2D6B0082F272 /* SettingVC.swift */,
+				41AF5106200B3B3F0082F272 /* PageVC.swift */,
+				41AF5108200B3BB40082F272 /* CustomerVC.swift */,
+				4185115C200BB038008BBDFA /* HomeVC.swift */,
 			);
 			path = MainPage;
 			sourceTree = "<group>";
@@ -373,10 +371,10 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.iCloud = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -492,6 +490,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D88FEFF200877B800A442DE /* UIApplication.swift in Sources */,
+				41AF5109200B3BB40082F272 /* CustomerVC.swift in Sources */,
 				FD15222B20061BE30028B221 /* EditPhotoVC.swift in Sources */,
 				4D88FF062008AB7F00A442DE /* PageTestViewController.swift in Sources */,
 				FD15222620061BA30028B221 /* SelectedPhotoVC.swift in Sources */,
@@ -507,19 +506,20 @@
 				FD594DEB2005A6A1006B72A5 /* MainVC.swift in Sources */,
 				FD15223D20061F400028B221 /* TemplateVC.swift in Sources */,
 				FD152248200620830028B221 /* EditVideoVC.swift in Sources */,
+				4185115D200BB038008BBDFA /* HomeVC.swift in Sources */,
 				FD723CE22004ADC1002E5675 /* AppDelegate.swift in Sources */,
-				419D6AB42007AA38007C7CBC /* SWRevealViewController.m in Sources */,
 				FD723D042004BAEB002E5675 /* LoginVC.swift in Sources */,
 				419D6AB820084C8B007C7CBC /* SideMenuCell.swift in Sources */,
 				FD15222320061B7F0028B221 /* SelectedCarteVC.swift in Sources */,
 				FD723D0A2004BC10002E5675 /* RoundUIViewCorner.swift in Sources */,
 				FD15223520061DE40028B221 /* MainTableViewCell.swift in Sources */,
+				41AF5105200B2D6B0082F272 /* SettingVC.swift in Sources */,
 				FD152244200620600028B221 /* SelectedVideoVC.swift in Sources */,
 				FD594DE92005A68B006B72A5 /* MainPageVC.swift in Sources */,
+				41AF5107200B3B3F0082F272 /* PageVC.swift in Sources */,
 				FD594DF32005DDCC006B72A5 /* CustomerData.swift in Sources */,
 				419D6AB620084BE6007C7CBC /* SideMenuVC.swift in Sources */,
 				FD723D0E2004BC2F002E5675 /* RoundImageCorner.swift in Sources */,
-				419D6ABA20085285007C7CBC /* NewViewController.swift in Sources */,
 				FD152242200620250028B221 /* CarteTableViewCell.swift in Sources */,
 				FD723D0C2004BC10002E5675 /* RoundButtonCorner.swift in Sources */,
 				FD594DF42005DDCC006B72A5 /* CarteData.swift in Sources */,
@@ -664,7 +664,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Prototype2/Prototype2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8YLSK83HY4;
 				INFOPLIST_FILE = Prototype2/Info.plist;
@@ -672,7 +671,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.longnh.Prototype2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Prototype2/3rdParty/Prototype2-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -685,7 +684,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Prototype2/Prototype2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8YLSK83HY4;
 				INFOPLIST_FILE = Prototype2/Info.plist;
@@ -693,7 +691,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.longnh.Prototype2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Prototype2/3rdParty/Prototype2-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};

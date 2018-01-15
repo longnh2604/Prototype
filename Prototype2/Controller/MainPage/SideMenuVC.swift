@@ -13,19 +13,13 @@ class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tblSideMenu: UITableView!
     var mainNavi : UINavigationController?
     var pageTestNavi : UINavigationController?
-//    var newViewNavi : UINavigationController?
-//    var helpViewNavi : UINavigationController?
     var pageTestVC : PageTestViewController?
-    var menuOptions = ["Home", "New", "Help", "Logout"]
+    var menuOptions = ["Home", "Account Information", "Help", "Logout"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         pageTestNavi = kMain_Storyboard.instantiateViewController(withIdentifier: "PageTestNavi") as? UINavigationController
-//        newViewNavi = kMain_Storyboard.instantiateViewController(withIdentifier: "NaviNewView") as? UINavigationController
-//        helpViewNavi = kMain_Storyboard.instantiateViewController(withIdentifier: "NaviHelp") as? UINavigationController
-        
         pageTestVC = kMain_Storyboard.instantiateViewController(withIdentifier: "PageTestViewController") as? PageTestViewController
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,11 +49,6 @@ class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func getSelectedVCInTabbar() -> UIViewController?{
         if let navi_help = mainTabbarController?.viewControllers![(mainTabbarController?.selectedIndex)!] as? UINavigationController{
             return navi_help.viewControllers[0]
-//            if let help_vc = navi_help.viewControllers[0] as? HelpVC{
-//
-//            }else if let new_vc = navi_help.viewControllers[0] as? NewViewController{
-//
-//            }
         }
         return nil
     }
@@ -68,17 +57,9 @@ class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func changeViewController(_ index : Int) {
         switch index {
         case 0:
-//            self.slideMenuController()?.changeMainViewController(mainNavi!, close: true)
             getSelectedVCInTabbar()?.navigationController?.popToRootViewController(animated: true)
             break
         case 1:
-//                if let navi_help = mainTabbarController?.viewControllers![(mainTabbarController?.selectedIndex)!] as? UINavigationController{
-//                    if let help_vc = navi_help.viewControllers[0] as? HelpVC{
-//                        help_vc.navigationController?.pushViewController(pageTestVC!, animated: true)
-//                    }else if let new_vc = navi_help.viewControllers[0] as? NewViewController{
-//                        new_vc.navigationController?.pushViewController(pageTestVC!, animated: true)
-//                    }
-//                }
             if !(UIApplication.topViewController() is PageTestViewController){
                 getSelectedVCInTabbar()?.navigationController?.pushViewController(pageTestVC!, animated: true)
             }
@@ -88,21 +69,12 @@ class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             if !(UIApplication.topViewController() is PageTestViewController){
                 getSelectedVCInTabbar()?.navigationController?.pushViewController(pageTestVC!, animated: true)
             }
-//            if let navi_help = mainTabbarController?.viewControllers![(mainTabbarController?.selectedIndex)!] as? UINavigationController{
-//                if let help_vc = navi_help.viewControllers[0] as? HelpVC{
-//                    help_vc.navigationController?.pushViewController(pageTestVC!, animated: true)
-//                }else if let new_vc = navi_help.viewControllers[0] as? NewViewController{
-//                    new_vc.navigationController?.pushViewController(pageTestVC!, animated: true)
-//                }
-//            }
-            
             break
         case 3:
             slideMenuVC.dismiss(animated: true, completion: nil)
             break
         default:
             
-            //            callUpdateAllTable()
             break
         }
         toggleLeft()
