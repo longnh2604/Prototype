@@ -12,20 +12,19 @@ import RealmSwift
 class CustomerData: Object {
     @objc dynamic var cusName: String = ""
     @objc dynamic var cusID: String = ""
-    @objc dynamic var cusBirth: Date?
-    @objc dynamic var cusLstCome: Date?
+    @objc dynamic var cusImage : String = ""
+    @objc dynamic var cusBirth: String = ""
+    @objc dynamic var cusLstCome: String = ""
     @objc dynamic var cusMailInbox: Int = 0
     @objc dynamic var cusMailOpen: Int = 0
     @objc dynamic var cusMailUnopen: Int = 0
     @objc dynamic var cusMailError: Int = 0
     @objc dynamic var cusSex: String = ""
+    @objc dynamic var cusSecret: String = ""
+    @objc dynamic var userID: String = ""
     var cusCarte = List<String>()
-}
-
-extension CustomerData {
-    func writeToRealm() {
-        try! uiRealm.write {
-            uiRealm.add(self)
-        }
+    
+    static func primarykey() -> String? {
+        return "cusID"
     }
 }

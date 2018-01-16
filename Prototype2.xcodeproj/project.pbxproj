@@ -38,6 +38,7 @@
 		FD15D29F200C8BB0006F1816 /* CustomerPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15D29E200C8BB0006F1816 /* CustomerPageVC.swift */; };
 		FD15D2A1200C8BC3006F1816 /* PhotoPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15D2A0200C8BC3006F1816 /* PhotoPageVC.swift */; };
 		FD15D2A3200C8BDD006F1816 /* VideoPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15D2A2200C8BDD006F1816 /* VideoPageVC.swift */; };
+		FD55BA72200D9038008E6A81 /* RealmServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD55BA71200D9038008E6A81 /* RealmServices.swift */; };
 		FD594DE92005A68B006B72A5 /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD594DE82005A68B006B72A5 /* MainPageVC.swift */; };
 		FD594DEB2005A6A1006B72A5 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD594DEA2005A6A1006B72A5 /* MainVC.swift */; };
 		FD594DED2005A9B2006B72A5 /* CarteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD594DEC2005A9B2006B72A5 /* CarteVC.swift */; };
@@ -55,6 +56,8 @@
 		FD723D0B2004BC10002E5675 /* RoundLabelCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD723D082004BC10002E5675 /* RoundLabelCorner.swift */; };
 		FD723D0C2004BC10002E5675 /* RoundButtonCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD723D092004BC10002E5675 /* RoundButtonCorner.swift */; };
 		FD723D0E2004BC2F002E5675 /* RoundImageCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD723D0D2004BC2F002E5675 /* RoundImageCorner.swift */; };
+		FD8BE949200DA2470011E4F8 /* CustomerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8BE948200DA2470011E4F8 /* CustomerCell.swift */; };
+		FD8BE94D200DCF830011E4F8 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8BE94C200DCF830011E4F8 /* GlobalVariables.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +94,7 @@
 		FD15D29E200C8BB0006F1816 /* CustomerPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerPageVC.swift; sourceTree = "<group>"; };
 		FD15D2A0200C8BC3006F1816 /* PhotoPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPageVC.swift; sourceTree = "<group>"; };
 		FD15D2A2200C8BDD006F1816 /* VideoPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPageVC.swift; sourceTree = "<group>"; };
+		FD55BA71200D9038008E6A81 /* RealmServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmServices.swift; sourceTree = "<group>"; };
 		FD594DE82005A68B006B72A5 /* MainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageVC.swift; sourceTree = "<group>"; };
 		FD594DEA2005A6A1006B72A5 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		FD594DEC2005A9B2006B72A5 /* CarteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarteVC.swift; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 		FD723D082004BC10002E5675 /* RoundLabelCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundLabelCorner.swift; sourceTree = "<group>"; };
 		FD723D092004BC10002E5675 /* RoundButtonCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButtonCorner.swift; sourceTree = "<group>"; };
 		FD723D0D2004BC2F002E5675 /* RoundImageCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundImageCorner.swift; sourceTree = "<group>"; };
+		FD8BE948200DA2470011E4F8 /* CustomerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerCell.swift; sourceTree = "<group>"; };
+		FD8BE94C200DCF830011E4F8 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +153,8 @@
 				4D88FF032008824600A442DE /* UIViewController.swift */,
 				4D88FEFE200877B800A442DE /* UIApplication.swift */,
 				4D88FEFC2008779000A442DE /* ExSlideMenuController.swift */,
+				FD55BA71200D9038008E6A81 /* RealmServices.swift */,
+				FD8BE94C200DCF830011E4F8 /* GlobalVariables.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -216,8 +224,9 @@
 		FD15223220061D600028B221 /* MainPage */ = {
 			isa = PBXGroup;
 			children = (
-				419D6AB520084BE6007C7CBC /* SideMenuVC.swift */,
-				419D6AB720084C8B007C7CBC /* SideMenuCell.swift */,
+				FD8BE94E200DD9BD0011E4F8 /* HomeMenu */,
+				FD8BE94B200DA26D0011E4F8 /* SideMenu */,
+				FD8BE94A200DA2550011E4F8 /* Customer */,
 				FD594DE82005A68B006B72A5 /* MainPageVC.swift */,
 				FD594DEA2005A6A1006B72A5 /* MainVC.swift */,
 				FD15223420061DE40028B221 /* MainTableViewCell.swift */,
@@ -226,9 +235,6 @@
 				4D88FF052008AB7F00A442DE /* PageTestViewController.swift */,
 				41AF5104200B2D6B0082F272 /* SettingVC.swift */,
 				41AF5106200B3B3F0082F272 /* PageVC.swift */,
-				41AF5108200B3BB40082F272 /* CustomerVC.swift */,
-				4185115C200BB038008BBDFA /* HomeVC.swift */,
-				FD15D29E200C8BB0006F1816 /* CustomerPageVC.swift */,
 				FD15D2A0200C8BC3006F1816 /* PhotoPageVC.swift */,
 				FD15D2A2200C8BDD006F1816 /* VideoPageVC.swift */,
 			);
@@ -342,6 +348,33 @@
 				FD723CFA2004AEBC002E5675 /* meiryob.ttc */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FD8BE94A200DA2550011E4F8 /* Customer */ = {
+			isa = PBXGroup;
+			children = (
+				FD8BE948200DA2470011E4F8 /* CustomerCell.swift */,
+				FD15D29E200C8BB0006F1816 /* CustomerPageVC.swift */,
+				41AF5108200B3BB40082F272 /* CustomerVC.swift */,
+			);
+			path = Customer;
+			sourceTree = "<group>";
+		};
+		FD8BE94B200DA26D0011E4F8 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				419D6AB520084BE6007C7CBC /* SideMenuVC.swift */,
+				419D6AB720084C8B007C7CBC /* SideMenuCell.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		FD8BE94E200DD9BD0011E4F8 /* HomeMenu */ = {
+			isa = PBXGroup;
+			children = (
+				4185115C200BB038008BBDFA /* HomeVC.swift */,
+			);
+			path = HomeMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -527,10 +560,12 @@
 				4D88FF062008AB7F00A442DE /* PageTestViewController.swift in Sources */,
 				FD15D2A1200C8BC3006F1816 /* PhotoPageVC.swift in Sources */,
 				FD15222620061BA30028B221 /* SelectedPhotoVC.swift in Sources */,
+				FD8BE94D200DCF830011E4F8 /* GlobalVariables.swift in Sources */,
 				FD594DED2005A9B2006B72A5 /* CarteVC.swift in Sources */,
 				FD15223720061E2D0028B221 /* MailVC.swift in Sources */,
 				FD15224020061FC70028B221 /* SecretVC.swift in Sources */,
 				FD723D0B2004BC10002E5675 /* RoundLabelCorner.swift in Sources */,
+				FD8BE949200DA2470011E4F8 /* CustomerCell.swift in Sources */,
 				FD15222920061BD30028B221 /* ComparePhotoVC.swift in Sources */,
 				4D88FF042008824600A442DE /* UIViewController.swift in Sources */,
 				4D88FF0220087BEF00A442DE /* Constant.swift in Sources */,
@@ -562,6 +597,7 @@
 				4D88FEFD2008779000A442DE /* ExSlideMenuController.swift in Sources */,
 				419D6ABE200855A3007C7CBC /* BaseMenuVC.swift in Sources */,
 				FD152246200620710028B221 /* CompareVideoVC.swift in Sources */,
+				FD55BA72200D9038008E6A81 /* RealmServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

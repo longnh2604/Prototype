@@ -15,8 +15,7 @@ import Firebase
 
 class LoginVC: UIViewController {
 
-    let realm = try! Realm()
-    var customer: Results<CustomerData>?
+    var customer: Results<CustomerData>!
     
     @IBOutlet weak var tfPassword: UITextField!
     @IBOutlet weak var tfUsername: UITextField!
@@ -29,6 +28,20 @@ class LoginVC: UIViewController {
         tfPassword.delegate = self
         tfShopPassword.delegate = self
         tfShopId.delegate = self
+        
+        let time = UserDefaults.standard.string(forKey: "AppClose")
+        
+        let realm = RealmServices.shared.realm
+        customer = realm.objects(CustomerData.self)
+        
+        RealmServices.shared.observerRealmErrors(in: self) { (error) in
+            print(error ?? "No errors detected")
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        RealmServices.shared.stopObservingErrors(in: self)
     }
 
     override func didReceiveMemoryWarning() {
@@ -100,9 +113,6 @@ class LoginVC: UIViewController {
             
             //get Customer
             self.getCustomersfromUser(with: userID!)
-            
-//            self.present(slideMenuVC, animated: true, completion: nil)
-            SVProgressHUD.dismiss()
         })
     }
     
@@ -116,71 +126,78 @@ class LoginVC: UIViewController {
                 }
                 let name = dictionary["cusName"] as? String
                 let id = dictionary["cusID"] as? String
+                let birth = dictionary["cusBirth"] as? String
+                let image = dictionary["cusImage"] as? String
+                let secret = dictionary["cusSecret"] as? String
+                let userID = dictionary["userID"] as? String
+                let sex = dictionary["cusSex"] as? String
+                let lstCome = dictionary["cusLstCome"] as? String
+                let mail = dictionary["cusMail"]?["inbox"] as? Int
+                let open = dictionary["cusMail"]?["open"] as? Int
+                let unopen = dictionary["cusMail"]?["unopen"] as? Int
+                let error = dictionary["cusMail"]?["error"] as? Int
+                
+                let newCustomer = CustomerData()
+                newCustomer.cusName = name!
+                newCustomer.cusID = id!
+                newCustomer.cusBirth = birth!
+                newCustomer.cusImage = image!
+                newCustomer.cusSecret = secret!
+                newCustomer.userID = userID!
+                newCustomer.cusSex = sex!
+                newCustomer.cusLstCome = lstCome!
+                newCustomer.cusMailInbox = mail!
+                newCustomer.cusMailOpen = open!
+                newCustomer.cusMailUnopen = unopen!
+                newCustomer.cusMailError = error!
+                
+                RealmServices.shared.create(newCustomer)
             }
+            self.present(slideMenuVC, animated: true, completion: nil)
+            SVProgressHUD.dismiss()
             })
     }
     
     //Get the CloudKit Database
-    func loadCloudDatabase(){
-        
-        let container = CKContainer.default()
-        let privateDB = container.privateCloudDatabase
-        let predicate = NSPredicate(value: true)
-        let zone = CKRecordZone(zoneName: "PrototypeZone")
-
-        let query = CKQuery(recordType: "customerData", predicate: predicate)
-        
-        privateDB.perform(query, inZoneWith: zone.zoneID) { (results, error) -> Void in
-            if error != nil {
-                print(error!)
-                SVProgressHUD.showError(withStatus: error?.localizedDescription)
-                return
-            }
-
-            OperationQueue.main.addOperation({ () -> Void in
-                if self.realm.isEmpty {
-                    for result in results! {
-                        let newCustomer = CustomerData()
-                        newCustomer.cusName = result.value(forKey: "cusName") as! String
-                        newCustomer.cusID = result.value(forKey: "cusID") as! String
-                        newCustomer.cusSex = result.value(forKey: "cusSex") as! String
-                        newCustomer.cusLstCome = result.value(forKey: "cusLstCome") as? Date
-                        newCustomer.cusBirth = result.value(forKey: "cusBirth") as? Date
-                        newCustomer.cusMailInbox = result.value(forKey: "cusMailInbox") as! Int
-                        newCustomer.cusMailOpen = result.value(forKey: "cusMailOpen") as! Int
-                        newCustomer.cusMailError = result.value(forKey: "cusMailError") as! Int
-                        newCustomer.cusMailUnopen = result.value(forKey: "cusMailUnopen") as! Int
-                        newCustomer.cusCarte.append(String(describing: result["carte"]))
-                        self.save(customer: newCustomer)
-                    }
-                }
-                
-                SVProgressHUD.dismiss()
-                self.performSegue(withIdentifier: "goToMainPage", sender: nil)
-            })
-        }
-    }
-    
-    // MARK: Realm
-    func save(customer: CustomerData) {
-        do {
-            try realm.write {
-                realm.add(customer)
-            }
-        } catch {
-            print("Error Saving Customer \(error)")
-        }
-    }
-    
-    func save(user: UserData) {
-        do {
-            try realm.write {
-                realm.add(user)
-            }
-        } catch {
-            print("Error Saving Customer \(error)")
-        }
-    }
+//    func loadCloudDatabase(){
+//
+//        let container = CKContainer.default()
+//        let privateDB = container.privateCloudDatabase
+//        let predicate = NSPredicate(value: true)
+//        let zone = CKRecordZone(zoneName: "PrototypeZone")
+//
+//        let query = CKQuery(recordType: "customerData", predicate: predicate)
+//
+//        privateDB.perform(query, inZoneWith: zone.zoneID) { (results, error) -> Void in
+//            if error != nil {
+//                print(error!)
+//                SVProgressHUD.showError(withStatus: error?.localizedDescription)
+//                return
+//            }
+//
+//            OperationQueue.main.addOperation({ () -> Void in
+//                if self.realm.isEmpty {
+//                    for result in results! {
+//                        let newCustomer = CustomerData()
+//                        newCustomer.cusName = result.value(forKey: "cusName") as! String
+//                        newCustomer.cusID = result.value(forKey: "cusID") as! String
+//                        newCustomer.cusSex = result.value(forKey: "cusSex") as! String
+//                        newCustomer.cusLstCome = result.value(forKey: "cusLstCome") as? Date
+//                        newCustomer.cusBirth = result.value(forKey: "cusBirth") as? Date
+//                        newCustomer.cusMailInbox = result.value(forKey: "cusMailInbox") as! Int
+//                        newCustomer.cusMailOpen = result.value(forKey: "cusMailOpen") as! Int
+//                        newCustomer.cusMailError = result.value(forKey: "cusMailError") as! Int
+//                        newCustomer.cusMailUnopen = result.value(forKey: "cusMailUnopen") as! Int
+//                        newCustomer.cusCarte.append(String(describing: result["carte"]))
+//                        self.save(customer: newCustomer)
+//                    }
+//                }
+//
+//                SVProgressHUD.dismiss()
+//                self.performSegue(withIdentifier: "goToMainPage", sender: nil)
+//            })
+//        }
+//    }
     
     //MARK: - UIResponder Delegate
     /***************************************************************/

@@ -42,7 +42,7 @@
                                 <rect key="frame" x="410" y="29" width="544" height="710"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsn-hU-tXx">
-                                        <rect key="frame" x="157.5" y="20" width="230" height="60"/>
+                                        <rect key="frame" x="151.5" y="20" width="242.5" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="l3u-es-6wa"/>
                                         </constraints>
@@ -163,7 +163,7 @@
                                         </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Op-Hy-gcL">
-                                        <rect key="frame" x="259" y="430" width="27.5" height="40"/>
+                                        <rect key="frame" x="257.5" y="430" width="30.5" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="d87-Fd-CaP"/>
                                         </constraints>
@@ -173,7 +173,7 @@
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="You can also contact us as the following" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Es-Xj-XQs">
-                                        <rect key="frame" x="93.5" y="550" width="359" height="70"/>
+                                        <rect key="frame" x="77.5" y="550" width="389.5" height="70"/>
                                         <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -432,6 +432,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="btnLoginPressed:" destination="Vmm-vo-LoE" eventType="touchUpInside" id="zuA-PH-jvX"/>
+                                    <action selector="logoutPressed:" destination="u7a-Tg-mbj" eventType="touchUpInside" id="MkM-71-lMz"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuO-8r-cYQ" customClass="RoundLabelCorner" customModule="Prototype2" customModuleProvider="target">
@@ -481,7 +482,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wja-eH-atD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1270" y="959"/>
+            <point key="canvasLocation" x="1487" y="959"/>
         </scene>
         <!--MainVC-->
         <scene sceneID="jvY-pE-WH6">
@@ -1061,13 +1062,13 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DpT-kd-xOR">
-                                        <rect key="frame" x="109.5" y="353" width="691.5" height="30"/>
+                                        <rect key="frame" x="109.5" y="356" width="691.5" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fv1-Em-BIL">
-                                        <rect key="frame" x="109.5" y="393" width="851" height="117"/>
+                                        <rect key="frame" x="109.5" y="396" width="851" height="114"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1107,7 +1108,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eメール" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJ8-xH-zD4">
-                                        <rect key="frame" x="280" y="321.5" width="75" height="21"/>
+                                        <rect key="frame" x="280" y="318.5" width="75" height="27"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="75" id="WLc-QX-b7H"/>
                                         </constraints>
@@ -1282,7 +1283,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メール受信許可" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVR-GJ-tx0">
-                                        <rect key="frame" x="811" y="321.5" width="150" height="21"/>
+                                        <rect key="frame" x="811" y="318.5" width="150" height="27"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1294,7 +1295,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hWh-Xe-viV">
-                                        <rect key="frame" x="861.5" y="353" width="51" height="31"/>
+                                        <rect key="frame" x="861.5" y="356" width="51" height="31"/>
                                     </switch>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1605,7 +1606,7 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全登録件数4件" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpK-6S-a5z">
-                                <rect key="frame" x="885.5" y="34.5" width="118.5" height="21"/>
+                                <rect key="frame" x="883.5" y="31.5" width="120.5" height="27"/>
                                 <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1801,7 +1802,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="件名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hhz-Zg-Qyd">
-                                        <rect key="frame" x="20" y="69" width="100" height="21"/>
+                                        <rect key="frame" x="20" y="69" width="100" height="27"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="18"/>
                                         <color key="textColor" red="0.90980392160000001" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1834,19 +1835,19 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FE9-c4-nPF">
-                                        <rect key="frame" x="130" y="64.5" width="830" height="30"/>
+                                        <rect key="frame" x="130" y="67.5" width="830" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メール本文" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egK-Yk-c0R">
-                                        <rect key="frame" x="20" y="110" width="100" height="21"/>
+                                        <rect key="frame" x="20" y="116" width="100" height="27"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="18"/>
                                         <color key="textColor" red="0.90980392160000001" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MuP-zk-XY6">
-                                        <rect key="frame" x="20" y="151" width="940" height="200"/>
+                                        <rect key="frame" x="20" y="163" width="940" height="200"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="sEm-SY-iVI"/>
@@ -1855,7 +1856,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZC-vO-bfg" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="371" width="160" height="40"/>
+                                        <rect key="frame" x="20" y="383" width="160" height="40"/>
                                         <color key="backgroundColor" red="0.1333333333" green="0.22352941179999999" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="160" id="3xo-sY-IFd"/>
@@ -1872,7 +1873,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xh7-Q4-yh4" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
-                                        <rect key="frame" x="200" y="371" width="160" height="40"/>
+                                        <rect key="frame" x="200" y="383" width="160" height="40"/>
                                         <color key="backgroundColor" red="0.1333333333" green="0.22352941179999999" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="16"/>
                                         <state key="normal" title="日付フィールド">
@@ -1885,7 +1886,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UIG-ic-CUr" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
-                                        <rect key="frame" x="380" y="371" width="120" height="40"/>
+                                        <rect key="frame" x="380" y="383" width="120" height="40"/>
                                         <color key="backgroundColor" red="0.1333333333" green="0.22352941179999999" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="120" id="fX7-a5-6SG"/>
@@ -1902,7 +1903,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckk-Mj-9Mv" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
-                                        <rect key="frame" x="520" y="371" width="120" height="40"/>
+                                        <rect key="frame" x="520" y="383" width="120" height="40"/>
                                         <color key="backgroundColor" red="0.1333333333" green="0.22352941179999999" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="16"/>
                                         <state key="normal" title="汎 用 2">
@@ -1915,7 +1916,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJM-2c-42g" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
-                                        <rect key="frame" x="660" y="371" width="120" height="40"/>
+                                        <rect key="frame" x="660" y="383" width="120" height="40"/>
                                         <color key="backgroundColor" red="0.1333333333" green="0.22352941179999999" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="16"/>
                                         <state key="normal" title="汎 用 3">
@@ -1928,7 +1929,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTj-BA-Aqd" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
-                                        <rect key="frame" x="800" y="371" width="160" height="40"/>
+                                        <rect key="frame" x="800" y="383" width="160" height="40"/>
                                         <color key="backgroundColor" red="0.1333333333" green="0.22352941179999999" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="160" id="p4v-Zi-mwz"/>
@@ -1944,7 +1945,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uro-Iy-3Sc">
-                                        <rect key="frame" x="60" y="455.5" width="80" height="80"/>
+                                        <rect key="frame" x="60" y="461.5" width="80" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="Jin-vL-A0K"/>
                                             <constraint firstAttribute="height" constant="80" id="dZO-mm-YRN"/>
@@ -1952,7 +1953,7 @@
                                         <state key="normal" image="CameraIcon2"/>
                                     </button>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="j4g-vV-Qar">
-                                        <rect key="frame" x="200" y="421" width="760" height="149"/>
+                                        <rect key="frame" x="200" y="433" width="760" height="137"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Q5R-uy-HUQ">
                                             <size key="itemSize" width="180" height="141"/>
@@ -2373,7 +2374,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scS-ac-n6R">
-                                <rect key="frame" x="210" y="29" width="160" height="33"/>
+                                <rect key="frame" x="210" y="26" width="160" height="39"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="NLt-wO-c3j"/>
@@ -2384,7 +2385,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全登録件数4件" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uB-IH-joE">
-                                <rect key="frame" x="885.5" y="34.5" width="118.5" height="21"/>
+                                <rect key="frame" x="883.5" y="31.5" width="120.5" height="27"/>
                                 <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="18"/>
                                 <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -2463,7 +2464,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1985年01月01日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdH-hV-vAI">
-                                        <rect key="frame" x="325" y="107" width="280" height="23.5"/>
+                                        <rect key="frame" x="325" y="103" width="280" height="30"/>
                                         <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -2543,19 +2544,19 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="リンス・パーマ・カラー" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nn7-8U-3Ks">
-                                        <rect key="frame" x="325" y="76" width="280" height="23.5"/>
+                                        <rect key="frame" x="325" y="72" width="280" height="30"/>
                                         <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="音楽・旅行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZX-vQ-HYX">
-                                        <rect key="frame" x="325" y="169" width="280" height="23.5"/>
+                                        <rect key="frame" x="325" y="165" width="280" height="30"/>
                                         <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gf-l0-MuO">
-                                        <rect key="frame" x="325" y="141" width="280" height="23.5"/>
+                                        <rect key="frame" x="325" y="137" width="280" height="30"/>
                                         <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -3165,13 +3166,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Default_ipad-Landscape" translatesAutoresizingMaskIntoConstraints="NO" id="tjO-Kc-zOe">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lfa-fW-ueX" customClass="RoundUIViewCorner" customModule="Prototype2" customModuleProvider="target">
-                                <rect key="frame" x="15" y="20" width="994" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfa-fW-ueX" customClass="RoundUIViewCorner" customModule="Prototype2" customModuleProvider="target">
+                                <rect key="frame" x="10" y="70" width="1004" height="200"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="I can't stop myself of loving you" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K9J-ay-zPs">
                                         <rect key="frame" x="622" y="99" width="332" height="93"/>
@@ -3279,26 +3275,23 @@
                                         <rect key="frame" x="884" y="11" width="70" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="secretmemo"/>
-                                        <connections>
-                                            <segue destination="aYe-YI-nlC" kind="show" identifier="goToSecretPage" id="sYF-uj-eCg">
-                                                <nil key="action"/>
-                                            </segue>
-                                        </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.23753024649999999" green="0.61932541190000001" blue="0.59231505100000004" alpha="0.71990352349999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.23921568630000001" green="0.61960784310000006" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="H6M-wT-7lh"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="40"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zDL-d0-9uJ" customClass="RoundUIViewCorner" customModule="Prototype2" customModuleProvider="target">
-                                <rect key="frame" x="20" y="231" width="984" height="527"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zDL-d0-9uJ" customClass="RoundUIViewCorner" customModule="Prototype2" customModuleProvider="target">
+                                <rect key="frame" x="20" y="278" width="984" height="480"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="メ モ 2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1t0-66-8MT">
-                                        <rect key="frame" x="21" y="172" width="160" height="29"/>
+                                        <rect key="frame" x="21" y="129" width="160" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="18"/>
                                         <color key="textColor" red="0.90980392160000001" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3306,7 +3299,7 @@
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="メ モ" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZm-Ab-1Y3">
-                                        <rect key="frame" x="21" y="247" width="160" height="29"/>
+                                        <rect key="frame" x="21" y="198" width="160" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="18"/>
                                         <color key="textColor" red="0.90980392160000001" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3314,14 +3307,14 @@
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wFI-aP-xOl">
-                                        <rect key="frame" x="210" y="224" width="755" height="100"/>
+                                        <rect key="frame" x="210" y="182" width="755" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ye-GZ-jRd" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
-                                        <rect key="frame" x="21" y="332" width="160" height="40"/>
+                                        <rect key="frame" x="21" y="267" width="160" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.1333333333" green="0.22352941179999999" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="16"/>
@@ -3335,7 +3328,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4h-Zd-6tl" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
-                                        <rect key="frame" x="676" y="332" width="120" height="40"/>
+                                        <rect key="frame" x="676" y="267" width="120" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.1333333333" green="0.22352941179999999" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="16"/>
@@ -3349,7 +3342,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNW-vp-XMj" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
-                                        <rect key="frame" x="805" y="332" width="160" height="40"/>
+                                        <rect key="frame" x="805" y="267" width="160" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.90980392160000001" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="16"/>
@@ -3363,7 +3356,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="a1F-lR-PpF">
-                                        <rect key="frame" x="210" y="385" width="755" height="134"/>
+                                        <rect key="frame" x="210" y="328" width="755" height="134"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="868-Qw-rX3">
@@ -3399,7 +3392,7 @@
                                         </cells>
                                     </collectionView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="メ モ 1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4PM-ye-aFL">
-                                        <rect key="frame" x="21" y="100" width="160" height="29"/>
+                                        <rect key="frame" x="21" y="56" width="160" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="18"/>
                                         <color key="textColor" red="0.90980392160000001" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3407,21 +3400,21 @@
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xeu-Vc-S7H">
-                                        <rect key="frame" x="210" y="154" width="586" height="60"/>
+                                        <rect key="frame" x="210" y="115" width="586" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zgC-Dx-Miq">
-                                        <rect key="frame" x="210" y="84" width="586" height="60"/>
+                                        <rect key="frame" x="210" y="45" width="586" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMQ-Kn-g9g" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
-                                        <rect key="frame" x="805" y="159" width="160" height="49"/>
+                                        <rect key="frame" x="805" y="115" width="160" height="49"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.1333333333" green="0.22352941179999999" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="16"/>
@@ -3435,7 +3428,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ded-tv-zam" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
-                                        <rect key="frame" x="805" y="88" width="160" height="49"/>
+                                        <rect key="frame" x="805" y="45" width="160" height="49"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.1333333333" green="0.22352941179999999" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="16"/>
@@ -3449,7 +3442,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3S-dc-hhb" customClass="RoundButtonCorner" customModule="Prototype2" customModuleProvider="target">
-                                        <rect key="frame" x="488" y="332" width="180" height="40"/>
+                                        <rect key="frame" x="488" y="267" width="180" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.1333333333" green="0.22352941179999999" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="16"/>
@@ -3463,7 +3456,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="来店日" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JX9-gs-X1y">
-                                        <rect key="frame" x="21" y="24" width="160" height="29"/>
+                                        <rect key="frame" x="21" y="7" width="160" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="18"/>
                                         <color key="textColor" red="0.90980392160000001" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3471,13 +3464,13 @@
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="２０１３年０７月０５日　　金曜日" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdt-NZ-6Gi">
-                                        <rect key="frame" x="210" y="24" width="586" height="30"/>
+                                        <rect key="frame" x="210" y="7" width="586" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="22"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPp-cJ-8Fg">
-                                        <rect key="frame" x="61" y="412" width="80" height="80"/>
+                                        <rect key="frame" x="61" y="355" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="CameraIcon2"/>
                                         <connections>
@@ -3493,7 +3486,13 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zDL-d0-9uJ" firstAttribute="top" secondItem="lfa-fW-ueX" secondAttribute="bottom" constant="5" id="6O1-w5-2zS"/>
+                            <constraint firstItem="gul-Es-liP" firstAttribute="trailing" secondItem="lfa-fW-ueX" secondAttribute="trailing" constant="10" id="buT-Me-aQP"/>
+                            <constraint firstItem="lfa-fW-ueX" firstAttribute="leading" secondItem="gul-Es-liP" secondAttribute="leading" constant="10" id="muO-7U-HdF"/>
+                            <constraint firstItem="lfa-fW-ueX" firstAttribute="top" secondItem="sci-SD-9Wk" secondAttribute="top" constant="70" id="ygb-uC-m81"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gul-Es-liP"/>
                     </view>
                     <connections>
@@ -3515,7 +3514,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tYz-JJ-gJD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="70" y="3959"/>
+            <point key="canvasLocation" x="3501.5625" y="-1228.125"/>
         </scene>
         <!--Selected PhotoVC-->
         <scene sceneID="fl9-M1-ibW">
@@ -4707,11 +4706,11 @@
             </objects>
             <point key="canvasLocation" x="-205" y="-1228"/>
         </scene>
-        <!--Customer PageVC-->
+        <!--お客様情報-->
         <scene sceneID="M93-Ph-DGu">
             <objects>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="ETm-fw-NXn" customClass="CustomerPageVC" customModule="Prototype2" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="e5d-Et-U31"/>
+                    <navigationItem key="navigationItem" title="お客様情報" id="e5d-Et-U31"/>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q5k-7T-Ktq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -4854,19 +4853,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default_ipad-Landscape" translatesAutoresizingMaskIntoConstraints="NO" id="TXa-xG-QYk">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ADk-np-ONO" customClass="RoundUIViewCorner" customModule="Prototype2" customModuleProvider="target">
-                                <rect key="frame" x="15" y="20" width="994" height="200"/>
+                                <rect key="frame" x="10" y="70" width="1004" height="200"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RuX-i0-tH8">
-                                        <rect key="frame" x="894" y="5" width="70" height="70"/>
+                                        <rect key="frame" x="904" y="5" width="70" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="70" id="DTG-XJ-TvK"/>
                                             <constraint firstAttribute="height" constant="70" id="n5r-fb-BP5"/>
                                         </constraints>
                                         <state key="normal" image="editIcon2"/>
+                                        <connections>
+                                            <action selector="editPressed:" destination="elA-pq-VJs" eventType="touchUpInside" id="2jG-8I-HbC"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="生年月日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="336-mR-vTC">
                                         <rect key="frame" x="210" y="94" width="116" height="39"/>
@@ -4917,7 +4916,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最新来店日2010年01月01日  木曜日" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iu6-Uz-CiV">
-                                        <rect key="frame" x="514" y="94" width="450" height="36"/>
+                                        <rect key="frame" x="514" y="94" width="460" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="Npv-sj-hd5"/>
                                         </constraints>
@@ -4933,7 +4932,7 @@
                                         </constraints>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yom-bK-1KE">
-                                        <rect key="frame" x="210" y="138" width="754" height="54"/>
+                                        <rect key="frame" x="210" y="138" width="764" height="54"/>
                                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="54" id="Rie-dc-d3X"/>
@@ -4974,7 +4973,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mkT-rI-iCf">
-                                <rect key="frame" x="0.0" y="225" width="1024" height="60"/>
+                                <rect key="frame" x="0.0" y="275" width="1024" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdm-No-sz2">
                                         <rect key="frame" x="20" y="5" width="50" height="50"/>
@@ -4987,6 +4986,9 @@
                                         <state key="normal" image="addIcon">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="addNewCustomerPressed:" destination="elA-pq-VJs" eventType="touchUpInside" id="A0d-D5-G16"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全 :  10件" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atL-RG-h9P">
                                         <rect key="frame" x="838" y="10" width="80" height="40"/>
@@ -5001,6 +5003,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWv-Sf-Oo6">
                                         <rect key="frame" x="954" y="5" width="50" height="50"/>
                                         <state key="normal" title="Button" image="searchIcon"/>
+                                        <connections>
+                                            <action selector="searchPressed:" destination="elA-pq-VJs" eventType="touchUpInside" id="C6s-ZQ-nfP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFy-Yi-B50">
                                         <rect key="frame" x="90" y="15" width="68" height="30"/>
@@ -5019,9 +5024,12 @@
                                         <state key="normal" title="▲▽">
                                             <color key="titleColor" red="0.23753024649999999" green="0.61932541190000001" blue="0.59231505100000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="sortIndexPressed:" destination="elA-pq-VJs" eventType="touchUpInside" id="l1b-te-T3C"/>
+                                        </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.91247037389999996" green="0.91952092959999998" blue="0.89252052969999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="GWv-Sf-Oo6" firstAttribute="centerY" secondItem="mkT-rI-iCf" secondAttribute="centerY" id="2ry-dZ-u0u"/>
                                     <constraint firstItem="atL-RG-h9P" firstAttribute="centerY" secondItem="mkT-rI-iCf" secondAttribute="centerY" id="CoH-q6-llG"/>
@@ -5045,10 +5053,10 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="X3O-0w-2u7">
-                                <rect key="frame" x="0.0" y="285" width="1024" height="483"/>
+                                <rect key="frame" x="0.0" y="335" width="1024" height="433"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cellMain" rowHeight="100" id="4Ah-iJ-RxV" customClass="MainTableViewCell" customModule="Prototype2" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="CustomerCell" rowHeight="100" id="4Ah-iJ-RxV" customClass="CustomerCell" customModule="Prototype2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="1024" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Ah-iJ-RxV" id="RcO-fm-FVB">
@@ -5265,24 +5273,31 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="TXa-xG-QYk" firstAttribute="bottom" secondItem="Q3J-Ui-kHg" secondAttribute="bottom" id="03U-zp-nf0"/>
-                            <constraint firstItem="Q3J-Ui-kHg" firstAttribute="trailing" secondItem="ADk-np-ONO" secondAttribute="trailing" constant="15" id="1e3-8Q-VIG"/>
+                            <constraint firstItem="Q3J-Ui-kHg" firstAttribute="trailing" secondItem="ADk-np-ONO" secondAttribute="trailing" constant="10" id="1e3-8Q-VIG"/>
                             <constraint firstItem="mkT-rI-iCf" firstAttribute="trailing" secondItem="Q3J-Ui-kHg" secondAttribute="trailing" id="6i0-th-2O2"/>
                             <constraint firstItem="X3O-0w-2u7" firstAttribute="bottom" secondItem="Q3J-Ui-kHg" secondAttribute="bottom" id="7jG-2L-hXq"/>
                             <constraint firstItem="X3O-0w-2u7" firstAttribute="top" secondItem="mkT-rI-iCf" secondAttribute="bottom" id="7mB-6n-TLl"/>
-                            <constraint firstItem="TXa-xG-QYk" firstAttribute="leading" secondItem="Q3J-Ui-kHg" secondAttribute="leading" id="9lj-A2-bHy"/>
                             <constraint firstItem="mkT-rI-iCf" firstAttribute="leading" secondItem="Q3J-Ui-kHg" secondAttribute="leading" id="ELb-bZ-N1m"/>
                             <constraint firstItem="X3O-0w-2u7" firstAttribute="trailing" secondItem="Q3J-Ui-kHg" secondAttribute="trailing" id="KqB-Uw-RpW"/>
-                            <constraint firstItem="ADk-np-ONO" firstAttribute="top" secondItem="2Vu-ez-0tA" secondAttribute="top" constant="20" id="Vnc-NN-yeI"/>
-                            <constraint firstItem="ADk-np-ONO" firstAttribute="leading" secondItem="Q3J-Ui-kHg" secondAttribute="leading" constant="15" id="WFx-hn-5YH"/>
+                            <constraint firstItem="ADk-np-ONO" firstAttribute="top" secondItem="2Vu-ez-0tA" secondAttribute="top" constant="70" id="Vnc-NN-yeI"/>
+                            <constraint firstItem="ADk-np-ONO" firstAttribute="leading" secondItem="Q3J-Ui-kHg" secondAttribute="leading" constant="10" id="WFx-hn-5YH"/>
                             <constraint firstItem="X3O-0w-2u7" firstAttribute="leading" secondItem="Q3J-Ui-kHg" secondAttribute="leading" id="Wcm-Yt-qKc"/>
                             <constraint firstItem="mkT-rI-iCf" firstAttribute="top" secondItem="ADk-np-ONO" secondAttribute="bottom" constant="5" id="XQi-Fu-27H"/>
-                            <constraint firstItem="TXa-xG-QYk" firstAttribute="top" secondItem="2Vu-ez-0tA" secondAttribute="top" id="wYD-fK-FqY"/>
-                            <constraint firstItem="TXa-xG-QYk" firstAttribute="trailing" secondItem="Q3J-Ui-kHg" secondAttribute="trailing" id="zPp-ru-Qni"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Q3J-Ui-kHg"/>
                     </view>
+                    <connections>
+                        <outlet property="imvCus" destination="aXQ-ZX-LNZ" id="Qx3-ey-HtW"/>
+                        <outlet property="lblCus" destination="oQD-73-07f" id="l6B-MY-RAn"/>
+                        <outlet property="lblCusBirth" destination="gPh-4p-iJa" id="14t-rb-dwM"/>
+                        <outlet property="lblCusGenre" destination="ghK-q2-wIg" id="o8z-9C-osO"/>
+                        <outlet property="lblCusID" destination="LyR-Qx-8H5" id="2d0-G0-ngh"/>
+                        <outlet property="lblCusLstCome" destination="Iu6-Uz-CiV" id="QUX-Od-FMu"/>
+                        <outlet property="lblCusTotal" destination="atL-RG-h9P" id="GDi-gL-V9j"/>
+                        <outlet property="tblCustomer" destination="X3O-0w-2u7" id="jxq-vU-e7e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kcc-PY-M1w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -5296,197 +5311,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Default_ipad-Landscape" translatesAutoresizingMaskIntoConstraints="NO" id="2KM-7W-6vm">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C1W-Zg-xwI" customClass="RoundUIViewCorner" customModule="Prototype2" customModuleProvider="target">
-                                <rect key="frame" x="15" y="20" width="994" height="200"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メモ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Nc-G4-qFi">
-                                        <rect key="frame" x="220" y="72" width="100" height="27.5"/>
-                                        <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1985年01月01日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHZ-E8-CqW">
-                                        <rect key="frame" x="325" y="107" width="280" height="23.5"/>
-                                        <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
-                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最新来店日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGG-7s-T6i">
-                                        <rect key="frame" x="220" y="40" width="100" height="27.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="UmH-Qs-nxg"/>
-                                            <constraint firstAttribute="height" constant="27.5" id="bS5-tg-anB"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="202392" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBf-pt-bIk">
-                                        <rect key="frame" x="733" y="40" width="130" height="35"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="130" id="JZs-5H-VUy"/>
-                                            <constraint firstAttribute="height" constant="35" id="y1T-rc-ZaW"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
-                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KAGARI 様" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fkd-L6-3QS">
-                                        <rect key="frame" x="220" y="5" width="300" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="hTh-yd-yQE"/>
-                                            <constraint firstAttribute="width" constant="300" id="q82-qi-ryb"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="30"/>
-                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="manIcon-1" translatesAutoresizingMaskIntoConstraints="NO" id="FIi-Ar-NIc">
-                                        <rect key="frame" x="30" y="20" width="160" height="160"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="160" id="MWF-Ie-P93"/>
-                                            <constraint firstAttribute="width" constant="160" id="gBg-Xd-bMn"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="生年月日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLe-pL-vcg">
-                                        <rect key="frame" x="220" y="104" width="100" height="27.5"/>
-                                        <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="血液型" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R80-et-L9z">
-                                        <rect key="frame" x="220" y="136.5" width="100" height="27.5"/>
-                                        <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="趣味" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pk-rU-TXc">
-                                        <rect key="frame" x="220" y="169" width="100" height="27.5"/>
-                                        <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="お客様番号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieg-ve-hQ8">
-                                        <rect key="frame" x="618" y="40" width="110" height="35"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="110" id="JG5-w4-A4v"/>
-                                            <constraint firstAttribute="height" constant="35" id="kXp-mn-F12"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017年01月01日　金曜日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mW-rD-HrO">
-                                        <rect key="frame" x="325" y="40" width="280" height="27.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="280" id="HuE-Tk-aY5"/>
-                                            <constraint firstAttribute="height" constant="27.5" id="raX-iN-2wn"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
-                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="リンス・パーマ・カラー" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfX-RX-ge7">
-                                        <rect key="frame" x="325" y="76" width="280" height="23.5"/>
-                                        <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
-                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="音楽・旅行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPz-d3-wov">
-                                        <rect key="frame" x="325" y="169" width="280" height="23.5"/>
-                                        <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
-                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6je-dZ-j28">
-                                        <rect key="frame" x="325" y="141" width="280" height="23.5"/>
-                                        <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
-                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="I can't stop myself of loving you" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FBt-jJ-rT2">
-                                        <rect key="frame" x="618" y="105" width="356" height="90"/>
-                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="90" id="cdg-Bh-6Ss"/>
-                                        </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJV-MQ-YPB">
-                                        <rect key="frame" x="904" y="22" width="70" height="70"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="Es7-Wu-bla"/>
-                                            <constraint firstAttribute="width" constant="70" id="KuI-jr-zWp"/>
-                                        </constraints>
-                                        <state key="normal" image="secretmemo"/>
-                                        <connections>
-                                            <action selector="btnSecretPressed:" destination="mbL-DB-Wfu" eventType="touchUpInside" id="lFF-ja-uxh"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.23753024649999999" green="0.61932541190000001" blue="0.59231505100000004" alpha="0.71990352349999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="BLe-pL-vcg" firstAttribute="height" secondItem="hGG-7s-T6i" secondAttribute="height" id="19O-AI-qzD"/>
-                                    <constraint firstItem="FBt-jJ-rT2" firstAttribute="leading" secondItem="nHZ-E8-CqW" secondAttribute="trailing" constant="13" id="1UY-QF-OoV"/>
-                                    <constraint firstItem="Fkd-L6-3QS" firstAttribute="leading" secondItem="FIi-Ar-NIc" secondAttribute="trailing" constant="30" id="2Wt-sh-Ugi"/>
-                                    <constraint firstItem="FBt-jJ-rT2" firstAttribute="trailing" secondItem="rJV-MQ-YPB" secondAttribute="trailing" id="2nv-6L-CMh"/>
-                                    <constraint firstItem="VBf-pt-bIk" firstAttribute="centerY" secondItem="ieg-ve-hQ8" secondAttribute="centerY" id="4oY-NI-b7u"/>
-                                    <constraint firstItem="GPz-d3-wov" firstAttribute="leading" secondItem="2mW-rD-HrO" secondAttribute="leading" id="5L4-AI-p7q"/>
-                                    <constraint firstItem="4Nc-G4-qFi" firstAttribute="width" secondItem="hGG-7s-T6i" secondAttribute="width" id="5Vg-cG-0V3"/>
-                                    <constraint firstItem="R80-et-L9z" firstAttribute="leading" secondItem="hGG-7s-T6i" secondAttribute="leading" id="5w6-tK-i19"/>
-                                    <constraint firstItem="2mW-rD-HrO" firstAttribute="leading" secondItem="hGG-7s-T6i" secondAttribute="trailing" constant="5" id="6ZQ-gz-vlI"/>
-                                    <constraint firstItem="hGG-7s-T6i" firstAttribute="top" secondItem="Fkd-L6-3QS" secondAttribute="bottom" constant="5" id="7fw-ek-nq0"/>
-                                    <constraint firstItem="5pk-rU-TXc" firstAttribute="height" secondItem="hGG-7s-T6i" secondAttribute="height" id="9mE-Lj-Ehj"/>
-                                    <constraint firstItem="R80-et-L9z" firstAttribute="width" secondItem="hGG-7s-T6i" secondAttribute="width" id="AgM-5s-sQT"/>
-                                    <constraint firstItem="ieg-ve-hQ8" firstAttribute="top" secondItem="hGG-7s-T6i" secondAttribute="top" id="DkM-W1-Zjg"/>
-                                    <constraint firstItem="4Nc-G4-qFi" firstAttribute="top" secondItem="hGG-7s-T6i" secondAttribute="bottom" constant="5" id="Fq5-fN-Eiw"/>
-                                    <constraint firstItem="tfX-RX-ge7" firstAttribute="trailing" secondItem="2mW-rD-HrO" secondAttribute="trailing" id="GGh-QF-4Ls"/>
-                                    <constraint firstItem="5pk-rU-TXc" firstAttribute="width" secondItem="hGG-7s-T6i" secondAttribute="width" id="Kgu-Xf-KVt"/>
-                                    <constraint firstItem="hGG-7s-T6i" firstAttribute="leading" secondItem="Fkd-L6-3QS" secondAttribute="leading" id="Kxe-uV-WF3"/>
-                                    <constraint firstItem="R80-et-L9z" firstAttribute="top" secondItem="BLe-pL-vcg" secondAttribute="bottom" constant="5" id="Oi9-NI-L0u"/>
-                                    <constraint firstItem="GPz-d3-wov" firstAttribute="trailing" secondItem="2mW-rD-HrO" secondAttribute="trailing" id="PNu-Zg-7Yu"/>
-                                    <constraint firstItem="2mW-rD-HrO" firstAttribute="centerY" secondItem="hGG-7s-T6i" secondAttribute="centerY" id="Pag-Ke-nNw"/>
-                                    <constraint firstItem="rJV-MQ-YPB" firstAttribute="centerY" secondItem="ieg-ve-hQ8" secondAttribute="centerY" id="Px6-05-goG"/>
-                                    <constraint firstItem="5pk-rU-TXc" firstAttribute="leading" secondItem="hGG-7s-T6i" secondAttribute="leading" id="SuT-0E-dzQ"/>
-                                    <constraint firstItem="tfX-RX-ge7" firstAttribute="centerY" secondItem="4Nc-G4-qFi" secondAttribute="centerY" constant="1" id="Yl1-sq-nL4"/>
-                                    <constraint firstItem="6je-dZ-j28" firstAttribute="leading" secondItem="2mW-rD-HrO" secondAttribute="leading" id="br1-DL-gwg"/>
-                                    <constraint firstItem="nHZ-E8-CqW" firstAttribute="leading" secondItem="tfX-RX-ge7" secondAttribute="leading" id="dWz-Cu-ANM"/>
-                                    <constraint firstItem="ieg-ve-hQ8" firstAttribute="leading" secondItem="FBt-jJ-rT2" secondAttribute="leading" id="e3b-2E-Fa3"/>
-                                    <constraint firstItem="6je-dZ-j28" firstAttribute="trailing" secondItem="2mW-rD-HrO" secondAttribute="trailing" id="e6v-I9-M99"/>
-                                    <constraint firstItem="BLe-pL-vcg" firstAttribute="width" secondItem="hGG-7s-T6i" secondAttribute="width" id="igC-kr-Bps"/>
-                                    <constraint firstAttribute="bottom" secondItem="5pk-rU-TXc" secondAttribute="bottom" constant="3.5" id="iyN-WC-fXK"/>
-                                    <constraint firstItem="BLe-pL-vcg" firstAttribute="leading" secondItem="hGG-7s-T6i" secondAttribute="leading" id="j5M-7A-7eF"/>
-                                    <constraint firstItem="6je-dZ-j28" firstAttribute="centerY" secondItem="R80-et-L9z" secondAttribute="centerY" constant="1.5" id="jgh-XI-KnA"/>
-                                    <constraint firstAttribute="bottom" secondItem="FBt-jJ-rT2" secondAttribute="bottom" constant="5" id="m05-Vp-Squ"/>
-                                    <constraint firstItem="5pk-rU-TXc" firstAttribute="top" secondItem="R80-et-L9z" secondAttribute="bottom" constant="5" id="m3n-iE-Ld0"/>
-                                    <constraint firstItem="4Nc-G4-qFi" firstAttribute="leading" secondItem="hGG-7s-T6i" secondAttribute="leading" id="maO-kD-vbg"/>
-                                    <constraint firstItem="FIi-Ar-NIc" firstAttribute="centerY" secondItem="C1W-Zg-xwI" secondAttribute="centerY" id="nF4-cP-Meu"/>
-                                    <constraint firstAttribute="height" constant="200" id="pSK-uB-3k5"/>
-                                    <constraint firstItem="nHZ-E8-CqW" firstAttribute="trailing" secondItem="tfX-RX-ge7" secondAttribute="trailing" id="pgU-gt-uBi"/>
-                                    <constraint firstItem="FIi-Ar-NIc" firstAttribute="leading" secondItem="C1W-Zg-xwI" secondAttribute="leading" constant="30" id="rfV-v3-RS4"/>
-                                    <constraint firstItem="R80-et-L9z" firstAttribute="height" secondItem="hGG-7s-T6i" secondAttribute="height" id="sOU-AP-x46"/>
-                                    <constraint firstItem="4Nc-G4-qFi" firstAttribute="height" secondItem="hGG-7s-T6i" secondAttribute="height" id="twv-5U-F7J"/>
-                                    <constraint firstItem="BLe-pL-vcg" firstAttribute="top" secondItem="4Nc-G4-qFi" secondAttribute="bottom" constant="5" id="uMg-GN-68y"/>
-                                    <constraint firstItem="VBf-pt-bIk" firstAttribute="leading" secondItem="ieg-ve-hQ8" secondAttribute="trailing" constant="5" id="uQI-K3-liP"/>
-                                    <constraint firstItem="Fkd-L6-3QS" firstAttribute="top" secondItem="C1W-Zg-xwI" secondAttribute="top" constant="5" id="vrr-OS-6lh"/>
-                                    <constraint firstAttribute="trailing" secondItem="rJV-MQ-YPB" secondAttribute="trailing" constant="20" id="wG5-4B-nGh"/>
-                                    <constraint firstItem="GPz-d3-wov" firstAttribute="centerY" secondItem="5pk-rU-TXc" secondAttribute="centerY" constant="-3" id="x73-l8-5QC"/>
-                                    <constraint firstItem="tfX-RX-ge7" firstAttribute="leading" secondItem="2mW-rD-HrO" secondAttribute="leading" id="y5V-NL-WGW"/>
-                                    <constraint firstItem="nHZ-E8-CqW" firstAttribute="centerY" secondItem="BLe-pL-vcg" secondAttribute="centerY" id="zaF-62-VFV"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="40"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WiM-uT-Fbx">
-                                <rect key="frame" x="0.0" y="225" width="1024" height="60"/>
+                                <rect key="frame" x="0.0" y="275" width="1024" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mW2-K9-KSY">
                                         <rect key="frame" x="20" y="10" width="40" height="40"/>
@@ -5553,7 +5379,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.91247037389999996" green="0.91952092959999998" blue="0.89252052969999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="mW2-K9-KSY" firstAttribute="leading" secondItem="WiM-uT-Fbx" secondAttribute="leading" constant="20" id="1Jt-rD-9Rf"/>
                                     <constraint firstAttribute="height" constant="60" id="7Mm-kZ-nsr"/>
@@ -5570,7 +5396,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NM7-7W-KnE">
-                                <rect key="frame" x="0.0" y="285" width="1024" height="483"/>
+                                <rect key="frame" x="0.0" y="335" width="1024" height="433"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cellCarte" rowHeight="130" id="rra-PP-Usv" customClass="CarteTableViewCell" customModule="Prototype2" customModuleProvider="target">
@@ -5682,15 +5508,201 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C1W-Zg-xwI" customClass="RoundUIViewCorner" customModule="Prototype2" customModuleProvider="target">
+                                <rect key="frame" x="10" y="70" width="1004" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メモ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Nc-G4-qFi">
+                                        <rect key="frame" x="220" y="72" width="100" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1985年01月01日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHZ-E8-CqW">
+                                        <rect key="frame" x="325" y="103" width="280" height="30"/>
+                                        <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最新来店日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGG-7s-T6i">
+                                        <rect key="frame" x="220" y="40" width="100" height="27.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="UmH-Qs-nxg"/>
+                                            <constraint firstAttribute="height" constant="27.5" id="bS5-tg-anB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="202392" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBf-pt-bIk">
+                                        <rect key="frame" x="733" y="40" width="130" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="JZs-5H-VUy"/>
+                                            <constraint firstAttribute="height" constant="35" id="y1T-rc-ZaW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KAGARI 様" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fkd-L6-3QS">
+                                        <rect key="frame" x="220" y="5" width="300" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="hTh-yd-yQE"/>
+                                            <constraint firstAttribute="width" constant="300" id="q82-qi-ryb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="30"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="manIcon-1" translatesAutoresizingMaskIntoConstraints="NO" id="FIi-Ar-NIc">
+                                        <rect key="frame" x="30" y="20" width="160" height="160"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="160" id="MWF-Ie-P93"/>
+                                            <constraint firstAttribute="width" constant="160" id="gBg-Xd-bMn"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="生年月日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLe-pL-vcg">
+                                        <rect key="frame" x="220" y="104" width="100" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="血液型" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R80-et-L9z">
+                                        <rect key="frame" x="220" y="136.5" width="100" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="趣味" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pk-rU-TXc">
+                                        <rect key="frame" x="220" y="169" width="100" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="お客様番号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieg-ve-hQ8">
+                                        <rect key="frame" x="618" y="40" width="110" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="JG5-w4-A4v"/>
+                                            <constraint firstAttribute="height" constant="35" id="kXp-mn-F12"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017年01月01日　金曜日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mW-rD-HrO">
+                                        <rect key="frame" x="325" y="40" width="280" height="27.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="280" id="HuE-Tk-aY5"/>
+                                            <constraint firstAttribute="height" constant="27.5" id="raX-iN-2wn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="リンス・パーマ・カラー" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfX-RX-ge7">
+                                        <rect key="frame" x="325" y="72" width="280" height="30"/>
+                                        <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="音楽・旅行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPz-d3-wov">
+                                        <rect key="frame" x="325" y="165" width="280" height="30"/>
+                                        <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6je-dZ-j28">
+                                        <rect key="frame" x="325" y="137" width="280" height="30"/>
+                                        <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="I can't stop myself of loving you" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FBt-jJ-rT2">
+                                        <rect key="frame" x="618" y="105" width="366" height="90"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="cdg-Bh-6Ss"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJV-MQ-YPB">
+                                        <rect key="frame" x="914" y="22" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="Es7-Wu-bla"/>
+                                            <constraint firstAttribute="width" constant="70" id="KuI-jr-zWp"/>
+                                        </constraints>
+                                        <state key="normal" image="secretmemo"/>
+                                        <connections>
+                                            <action selector="btnSecretPressed:" destination="mbL-DB-Wfu" eventType="touchUpInside" id="lFF-ja-uxh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.23921568630000001" green="0.61960784310000006" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="BLe-pL-vcg" firstAttribute="height" secondItem="hGG-7s-T6i" secondAttribute="height" id="19O-AI-qzD"/>
+                                    <constraint firstItem="FBt-jJ-rT2" firstAttribute="leading" secondItem="nHZ-E8-CqW" secondAttribute="trailing" constant="13" id="1UY-QF-OoV"/>
+                                    <constraint firstItem="Fkd-L6-3QS" firstAttribute="leading" secondItem="FIi-Ar-NIc" secondAttribute="trailing" constant="30" id="2Wt-sh-Ugi"/>
+                                    <constraint firstItem="FBt-jJ-rT2" firstAttribute="trailing" secondItem="rJV-MQ-YPB" secondAttribute="trailing" id="2nv-6L-CMh"/>
+                                    <constraint firstItem="VBf-pt-bIk" firstAttribute="centerY" secondItem="ieg-ve-hQ8" secondAttribute="centerY" id="4oY-NI-b7u"/>
+                                    <constraint firstItem="GPz-d3-wov" firstAttribute="leading" secondItem="2mW-rD-HrO" secondAttribute="leading" id="5L4-AI-p7q"/>
+                                    <constraint firstItem="4Nc-G4-qFi" firstAttribute="width" secondItem="hGG-7s-T6i" secondAttribute="width" id="5Vg-cG-0V3"/>
+                                    <constraint firstItem="R80-et-L9z" firstAttribute="leading" secondItem="hGG-7s-T6i" secondAttribute="leading" id="5w6-tK-i19"/>
+                                    <constraint firstItem="2mW-rD-HrO" firstAttribute="leading" secondItem="hGG-7s-T6i" secondAttribute="trailing" constant="5" id="6ZQ-gz-vlI"/>
+                                    <constraint firstItem="hGG-7s-T6i" firstAttribute="top" secondItem="Fkd-L6-3QS" secondAttribute="bottom" constant="5" id="7fw-ek-nq0"/>
+                                    <constraint firstItem="5pk-rU-TXc" firstAttribute="height" secondItem="hGG-7s-T6i" secondAttribute="height" id="9mE-Lj-Ehj"/>
+                                    <constraint firstItem="R80-et-L9z" firstAttribute="width" secondItem="hGG-7s-T6i" secondAttribute="width" id="AgM-5s-sQT"/>
+                                    <constraint firstItem="ieg-ve-hQ8" firstAttribute="top" secondItem="hGG-7s-T6i" secondAttribute="top" id="DkM-W1-Zjg"/>
+                                    <constraint firstItem="4Nc-G4-qFi" firstAttribute="top" secondItem="hGG-7s-T6i" secondAttribute="bottom" constant="5" id="Fq5-fN-Eiw"/>
+                                    <constraint firstItem="tfX-RX-ge7" firstAttribute="trailing" secondItem="2mW-rD-HrO" secondAttribute="trailing" id="GGh-QF-4Ls"/>
+                                    <constraint firstItem="5pk-rU-TXc" firstAttribute="width" secondItem="hGG-7s-T6i" secondAttribute="width" id="Kgu-Xf-KVt"/>
+                                    <constraint firstItem="hGG-7s-T6i" firstAttribute="leading" secondItem="Fkd-L6-3QS" secondAttribute="leading" id="Kxe-uV-WF3"/>
+                                    <constraint firstItem="R80-et-L9z" firstAttribute="top" secondItem="BLe-pL-vcg" secondAttribute="bottom" constant="5" id="Oi9-NI-L0u"/>
+                                    <constraint firstItem="GPz-d3-wov" firstAttribute="trailing" secondItem="2mW-rD-HrO" secondAttribute="trailing" id="PNu-Zg-7Yu"/>
+                                    <constraint firstItem="2mW-rD-HrO" firstAttribute="centerY" secondItem="hGG-7s-T6i" secondAttribute="centerY" id="Pag-Ke-nNw"/>
+                                    <constraint firstItem="rJV-MQ-YPB" firstAttribute="centerY" secondItem="ieg-ve-hQ8" secondAttribute="centerY" id="Px6-05-goG"/>
+                                    <constraint firstItem="5pk-rU-TXc" firstAttribute="leading" secondItem="hGG-7s-T6i" secondAttribute="leading" id="SuT-0E-dzQ"/>
+                                    <constraint firstItem="tfX-RX-ge7" firstAttribute="centerY" secondItem="4Nc-G4-qFi" secondAttribute="centerY" constant="1" id="Yl1-sq-nL4"/>
+                                    <constraint firstItem="6je-dZ-j28" firstAttribute="leading" secondItem="2mW-rD-HrO" secondAttribute="leading" id="br1-DL-gwg"/>
+                                    <constraint firstItem="nHZ-E8-CqW" firstAttribute="leading" secondItem="tfX-RX-ge7" secondAttribute="leading" id="dWz-Cu-ANM"/>
+                                    <constraint firstItem="ieg-ve-hQ8" firstAttribute="leading" secondItem="FBt-jJ-rT2" secondAttribute="leading" id="e3b-2E-Fa3"/>
+                                    <constraint firstItem="6je-dZ-j28" firstAttribute="trailing" secondItem="2mW-rD-HrO" secondAttribute="trailing" id="e6v-I9-M99"/>
+                                    <constraint firstItem="BLe-pL-vcg" firstAttribute="width" secondItem="hGG-7s-T6i" secondAttribute="width" id="igC-kr-Bps"/>
+                                    <constraint firstAttribute="bottom" secondItem="5pk-rU-TXc" secondAttribute="bottom" constant="3.5" id="iyN-WC-fXK"/>
+                                    <constraint firstItem="BLe-pL-vcg" firstAttribute="leading" secondItem="hGG-7s-T6i" secondAttribute="leading" id="j5M-7A-7eF"/>
+                                    <constraint firstItem="6je-dZ-j28" firstAttribute="centerY" secondItem="R80-et-L9z" secondAttribute="centerY" constant="1.5" id="jgh-XI-KnA"/>
+                                    <constraint firstAttribute="bottom" secondItem="FBt-jJ-rT2" secondAttribute="bottom" constant="5" id="m05-Vp-Squ"/>
+                                    <constraint firstItem="5pk-rU-TXc" firstAttribute="top" secondItem="R80-et-L9z" secondAttribute="bottom" constant="5" id="m3n-iE-Ld0"/>
+                                    <constraint firstItem="4Nc-G4-qFi" firstAttribute="leading" secondItem="hGG-7s-T6i" secondAttribute="leading" id="maO-kD-vbg"/>
+                                    <constraint firstItem="FIi-Ar-NIc" firstAttribute="centerY" secondItem="C1W-Zg-xwI" secondAttribute="centerY" id="nF4-cP-Meu"/>
+                                    <constraint firstAttribute="height" constant="200" id="pSK-uB-3k5"/>
+                                    <constraint firstItem="nHZ-E8-CqW" firstAttribute="trailing" secondItem="tfX-RX-ge7" secondAttribute="trailing" id="pgU-gt-uBi"/>
+                                    <constraint firstItem="FIi-Ar-NIc" firstAttribute="leading" secondItem="C1W-Zg-xwI" secondAttribute="leading" constant="30" id="rfV-v3-RS4"/>
+                                    <constraint firstItem="R80-et-L9z" firstAttribute="height" secondItem="hGG-7s-T6i" secondAttribute="height" id="sOU-AP-x46"/>
+                                    <constraint firstItem="4Nc-G4-qFi" firstAttribute="height" secondItem="hGG-7s-T6i" secondAttribute="height" id="twv-5U-F7J"/>
+                                    <constraint firstItem="BLe-pL-vcg" firstAttribute="top" secondItem="4Nc-G4-qFi" secondAttribute="bottom" constant="5" id="uMg-GN-68y"/>
+                                    <constraint firstItem="VBf-pt-bIk" firstAttribute="leading" secondItem="ieg-ve-hQ8" secondAttribute="trailing" constant="5" id="uQI-K3-liP"/>
+                                    <constraint firstItem="Fkd-L6-3QS" firstAttribute="top" secondItem="C1W-Zg-xwI" secondAttribute="top" constant="5" id="vrr-OS-6lh"/>
+                                    <constraint firstAttribute="trailing" secondItem="rJV-MQ-YPB" secondAttribute="trailing" constant="20" id="wG5-4B-nGh"/>
+                                    <constraint firstItem="GPz-d3-wov" firstAttribute="centerY" secondItem="5pk-rU-TXc" secondAttribute="centerY" constant="-3" id="x73-l8-5QC"/>
+                                    <constraint firstItem="tfX-RX-ge7" firstAttribute="leading" secondItem="2mW-rD-HrO" secondAttribute="leading" id="y5V-NL-WGW"/>
+                                    <constraint firstItem="nHZ-E8-CqW" firstAttribute="centerY" secondItem="BLe-pL-vcg" secondAttribute="centerY" id="zaF-62-VFV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="C1W-Zg-xwI" firstAttribute="top" secondItem="TKc-po-Ydw" secondAttribute="top" id="7SJ-3g-paV"/>
-                            <constraint firstItem="TKc-po-Ydw" firstAttribute="trailing" secondItem="C1W-Zg-xwI" secondAttribute="trailing" constant="15" id="9qU-z5-MGV"/>
+                            <constraint firstItem="TKc-po-Ydw" firstAttribute="trailing" secondItem="C1W-Zg-xwI" secondAttribute="trailing" constant="10" id="9qU-z5-MGV"/>
                             <constraint firstItem="NM7-7W-KnE" firstAttribute="top" secondItem="WiM-uT-Fbx" secondAttribute="bottom" id="CdK-to-idk"/>
-                            <constraint firstItem="C1W-Zg-xwI" firstAttribute="leading" secondItem="TKc-po-Ydw" secondAttribute="leading" constant="15" id="EwE-KE-MtY"/>
+                            <constraint firstItem="C1W-Zg-xwI" firstAttribute="leading" secondItem="TKc-po-Ydw" secondAttribute="leading" constant="10" id="EwE-KE-MtY"/>
                             <constraint firstItem="WiM-uT-Fbx" firstAttribute="top" secondItem="C1W-Zg-xwI" secondAttribute="bottom" constant="5" id="HA4-xC-3DA"/>
                             <constraint firstItem="WiM-uT-Fbx" firstAttribute="trailing" secondItem="TKc-po-Ydw" secondAttribute="trailing" id="IdS-xz-id1"/>
                             <constraint firstItem="NM7-7W-KnE" firstAttribute="bottom" secondItem="TKc-po-Ydw" secondAttribute="bottom" id="S6b-k9-7aR"/>
+                            <constraint firstItem="C1W-Zg-xwI" firstAttribute="top" secondItem="LNS-cD-Xwc" secondAttribute="top" constant="70" id="cYZ-KZ-Inz"/>
                             <constraint firstItem="WiM-uT-Fbx" firstAttribute="leading" secondItem="TKc-po-Ydw" secondAttribute="leading" id="eH6-0a-pF1"/>
                             <constraint firstItem="NM7-7W-KnE" firstAttribute="trailing" secondItem="TKc-po-Ydw" secondAttribute="trailing" id="hkh-Sf-aqZ"/>
                             <constraint firstItem="NM7-7W-KnE" firstAttribute="leading" secondItem="TKc-po-Ydw" secondAttribute="leading" id="s4B-rB-Rjh"/>
@@ -5713,7 +5725,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BeP-kt-Jk7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2848" y="-1228"/>
+            <point key="canvasLocation" x="2847.65625" y="-1228.125"/>
         </scene>
         <!--写真-->
         <scene sceneID="j1e-0g-4nU">
@@ -5807,7 +5819,6 @@
         <image name="womenIcon-1" width="225" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sYF-uj-eCg"/>
         <segue reference="Fmr-di-vbm"/>
         <segue reference="Mz9-Sa-9Oa"/>
     </inferredMetricsTieBreakers>

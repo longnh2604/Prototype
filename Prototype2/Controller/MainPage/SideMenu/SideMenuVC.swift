@@ -31,16 +31,14 @@ class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         lblWelcome.text = "ようこそ、 　\(UserDefaults.standard.string(forKey: "username")!)"
         lblRole.text = UserDefaults.standard.string(forKey: "rules")!
         
-        let url = URL(fileURLWithPath: UserDefaults.standard.string(forKey: "imageURL")!)
-        if let data = try? Data(contentsOf: url)
-        {
-            let image: UIImage = UIImage(data: data)!
-            imvAccount.image = image
+        if let url = URL.init(string: UserDefaults.standard.string(forKey: "imageURL")!) {
+            imvAccount.downloadedFrom(url: url)
+            imvAccount.roundImage(with: imvAccount)
         }
         
         let signInDate = Auth.auth().currentUser?.metadata.lastSignInDate
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMMM dd, yyyy HH:mm:ss"
+        dateFormatter.dateFormat = "Last Signed in HH:mm:ss"
         lblLstLogined.text = dateFormatter.string(from: signInDate!)
         
         pageTestNavi = kMain_Storyboard.instantiateViewController(withIdentifier: "PageTestNavi") as? UINavigationController
@@ -96,7 +94,11 @@ class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             }
             break
         case 3:
+            print("help pressed")
+            break
+        case 4:
             slideMenuVC.dismiss(animated: true, completion: nil)
+            RealmServices.shared.deleteAll()
             break
         default:
             
