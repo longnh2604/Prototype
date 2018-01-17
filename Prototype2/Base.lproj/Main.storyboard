@@ -42,7 +42,7 @@
                                 <rect key="frame" x="410" y="29" width="544" height="710"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsn-hU-tXx">
-                                        <rect key="frame" x="151.5" y="20" width="242.5" height="60"/>
+                                        <rect key="frame" x="151" y="20" width="242.5" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="l3u-es-6wa"/>
                                         </constraints>
@@ -173,7 +173,7 @@
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="You can also contact us as the following" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Es-Xj-XQs">
-                                        <rect key="frame" x="77.5" y="550" width="389.5" height="70"/>
+                                        <rect key="frame" x="78" y="550" width="389.5" height="70"/>
                                         <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1030,7 +1030,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="テンプレートの件名が表示されます" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGm-YG-DgC">
-                                            <rect key="frame" x="415" y="9" width="901" height="27"/>
+                                            <rect key="frame" x="415" y="9" width="559" height="27"/>
                                             <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="18"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -1069,7 +1069,7 @@
                                         <rect key="frame" x="0.0" y="72" width="984" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b72-v5-aPN" id="iYf-ei-WUb">
-                                            <rect key="frame" x="0.0" y="0.0" width="984" height="49.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="984" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="mD4-SI-dLr">
@@ -1179,7 +1179,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本　文" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CrY-aV-iHa">
-                                            <rect key="frame" x="410" y="8.5" width="906" height="27"/>
+                                            <rect key="frame" x="410" y="8.5" width="564" height="27"/>
                                             <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="18"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -1208,7 +1208,7 @@
                                         <rect key="frame" x="0.0" y="72" width="984" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="93Y-Wr-tPr" id="ZYA-aV-m0b">
-                                            <rect key="frame" x="0.0" y="0.0" width="984" height="49.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="984" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{ _NAME_}{_DATE + YEAR_}" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6V-b2-iu5">
@@ -1621,7 +1621,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メールアドレス" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4K-Go-zM5">
-                                            <rect key="frame" x="410" y="8.5" width="906" height="27"/>
+                                            <rect key="frame" x="410" y="8.5" width="564" height="27"/>
                                             <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="18"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -1660,7 +1660,7 @@
                                         <rect key="frame" x="0.0" y="72" width="984" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dDe-Yu-Pyw" id="Tva-da-jR5">
-                                            <rect key="frame" x="0.0" y="0.0" width="984" height="49.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="984" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mailunopenIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Vw1-PT-4VW">
@@ -1740,7 +1740,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本  文" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZt-R5-DCu">
-                                            <rect key="frame" x="410" y="8.5" width="906" height="27"/>
+                                            <rect key="frame" x="410" y="8.5" width="564" height="27"/>
                                             <fontDescription key="fontDescription" name="Meiryo-Bold" family="Meiryo" pointSize="18"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -1769,7 +1769,7 @@
                                         <rect key="frame" x="0.0" y="72" width="984" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="L9h-By-vOh" id="vZo-Yc-cmt">
-                                            <rect key="frame" x="0.0" y="0.0" width="984" height="49.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="984" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eJj-vd-oHr">
@@ -2039,7 +2039,7 @@
                                         <rect key="frame" x="0.0" y="72" width="520" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="69h-0y-5Nv" id="zw8-b0-u24">
-                                            <rect key="frame" x="0.0" y="0.0" width="520" height="49.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="520" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJ4-qN-lxc">
@@ -3232,7 +3232,7 @@
                                                         <rect key="frame" x="0.0" y="28" width="1024" height="100"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YOB-ZF-rkD" id="KMT-E5-bU0">
-                                                            <rect key="frame" x="0.0" y="0.0" width="991" height="99.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="991" height="100"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9L-9S-8hR">
@@ -3610,6 +3610,37 @@
             </objects>
             <point key="canvasLocation" x="-967" y="-476"/>
         </scene>
+        <!--CalculateVC-->
+        <scene sceneID="4iC-aj-Kqx">
+            <objects>
+                <viewController id="BCD-Td-uoX" customClass="CalculateVC" customModule="Prototype2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f0K-wp-GUz">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="polygon" translatesAutoresizingMaskIntoConstraints="NO" id="umt-sI-QfD">
+                                <rect key="frame" x="312" y="194" width="400" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="xap-WN-cMp"/>
+                                    <constraint firstAttribute="width" constant="400" id="zjw-zr-974"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="umt-sI-QfD" firstAttribute="centerX" secondItem="3jE-8X-XfD" secondAttribute="centerX" id="Zih-ta-sQB"/>
+                            <constraint firstItem="umt-sI-QfD" firstAttribute="centerY" secondItem="3jE-8X-XfD" secondAttribute="centerY" id="tmH-4U-2jx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3jE-8X-XfD"/>
+                    </view>
+                    <connections>
+                        <outlet property="imvPolygon" destination="umt-sI-QfD" id="CHe-NS-jpf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JAf-Y3-P6y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-967.38281249999989" y="232.8125"/>
+        </scene>
         <!--設定-->
         <scene sceneID="Nxt-ST-UV0">
             <objects>
@@ -3835,7 +3866,7 @@
                                         <rect key="frame" x="0.0" y="28" width="1024" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Ah-iJ-RxV" id="RcO-fm-FVB">
-                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="womenIcon-1" translatesAutoresizingMaskIntoConstraints="NO" id="HLW-fq-Sfd">
@@ -4178,7 +4209,7 @@
                                         <rect key="frame" x="0.0" y="28" width="1024" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rra-PP-Usv" id="Fa1-h7-7Ba">
-                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="129.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="130"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="womenIcon-1" translatesAutoresizingMaskIntoConstraints="NO" id="6Wq-p2-Fr1">
@@ -5240,6 +5271,7 @@
         <image name="mailunopenIcon" width="506" height="506"/>
         <image name="manIcon-1" width="225" height="225"/>
         <image name="playIcon" width="512" height="512"/>
+        <image name="polygon" width="1200" height="1214"/>
         <image name="qrcodeicon" width="200" height="200"/>
         <image name="reverse_left_normal" width="110" height="110"/>
         <image name="reverse_right_normal" width="110" height="110"/>

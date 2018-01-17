@@ -21,6 +21,7 @@
 		4D88FF042008824600A442DE /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88FF032008824600A442DE /* UIViewController.swift */; };
 		4D88FF062008AB7F00A442DE /* PageTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88FF052008AB7F00A442DE /* PageTestViewController.swift */; };
 		B09545E208C4959AA44FD33C /* Pods_Prototype2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FAC40FDC9F2E6D090F5677D /* Pods_Prototype2.framework */; };
+		FD0433A8200F4E8F00F26725 /* CalculateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0433A7200F4E8F00F26725 /* CalculateVC.swift */; };
 		FD15222320061B7F0028B221 /* SelectedCarteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15222220061B7F0028B221 /* SelectedCarteVC.swift */; };
 		FD15222620061BA30028B221 /* SelectedPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15222520061BA30028B221 /* SelectedPhotoVC.swift */; };
 		FD15222920061BD30028B221 /* ComparePhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15222820061BD30028B221 /* ComparePhotoVC.swift */; };
@@ -78,6 +79,7 @@
 		4D88FF052008AB7F00A442DE /* PageTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTestViewController.swift; sourceTree = "<group>"; };
 		5ED158CD1A04F2AE46B9DE44 /* Pods-Prototype2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prototype2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Prototype2/Pods-Prototype2.debug.xcconfig"; sourceTree = "<group>"; };
 		678C181F9249952A01FD8EEC /* Pods-Prototype2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prototype2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Prototype2/Pods-Prototype2.release.xcconfig"; sourceTree = "<group>"; };
+		FD0433A7200F4E8F00F26725 /* CalculateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateVC.swift; sourceTree = "<group>"; };
 		FD15222220061B7F0028B221 /* SelectedCarteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCarteVC.swift; sourceTree = "<group>"; };
 		FD15222520061BA30028B221 /* SelectedPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPhotoVC.swift; sourceTree = "<group>"; };
 		FD15222820061BD30028B221 /* ComparePhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparePhotoVC.swift; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 				41AF5106200B3B3F0082F272 /* PageVC.swift */,
 				FD15D2A0200C8BC3006F1816 /* PhotoPageVC.swift */,
 				FD15D2A2200C8BDD006F1816 /* VideoPageVC.swift */,
+				FD0433A7200F4E8F00F26725 /* CalculateVC.swift */,
 			);
 			path = MainPage;
 			sourceTree = "<group>";
@@ -594,6 +597,7 @@
 				FD594DF32005DDCC006B72A5 /* CustomerData.swift in Sources */,
 				FD15D29F200C8BB0006F1816 /* CustomerPageVC.swift in Sources */,
 				419D6AB620084BE6007C7CBC /* SideMenuVC.swift in Sources */,
+				FD0433A8200F4E8F00F26725 /* CalculateVC.swift in Sources */,
 				FD723D0E2004BC2F002E5675 /* RoundImageCorner.swift in Sources */,
 				FD152242200620250028B221 /* CarteTableViewCell.swift in Sources */,
 				FD723D0C2004BC10002E5675 /* RoundButtonCorner.swift in Sources */,
