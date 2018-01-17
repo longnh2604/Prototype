@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeVC: BaseMenuVC {
+class HomeVC: BaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()

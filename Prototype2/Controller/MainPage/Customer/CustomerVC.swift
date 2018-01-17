@@ -9,7 +9,7 @@
 import UIKit
 import RealmSwift
 
-class CustomerVC: BaseMenuVC {
+class CustomerVC: BaseVC {
 
     var customers: Results<CustomerData>!
     var selectedIndexPath: NSIndexPath?

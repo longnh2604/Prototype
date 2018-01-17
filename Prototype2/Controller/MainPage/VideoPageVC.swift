@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VideoPageVC: UIPageViewController {
+class VideoPageVC: BasePageVC {
     
     var data :String = ""
     

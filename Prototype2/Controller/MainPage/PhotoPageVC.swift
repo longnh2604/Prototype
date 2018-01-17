@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PhotoPageVC: UIPageViewController {
+class PhotoPageVC: BasePageVC {
     
     var data :String = ""
     

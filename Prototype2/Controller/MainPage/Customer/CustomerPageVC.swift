@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CustomerPageVC: UIPageViewController {
+class CustomerPageVC: BasePageVC {
 
     var data :String = ""
     

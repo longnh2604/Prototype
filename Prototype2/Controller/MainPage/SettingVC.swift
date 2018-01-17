@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SettingVC: BaseMenuVC {
+class SettingVC: BaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()

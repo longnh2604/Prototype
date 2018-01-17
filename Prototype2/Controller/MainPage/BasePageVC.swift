@@ -1,14 +1,14 @@
 //
-//  BaseMenuVC.swift
+//  BasePageVC.swift
 //  Prototype2
 //
-//  Created by Long Nguyen on 2018/01/12.
+//  Created by Long on 2018/01/16.
 //  Copyright © 2018 Long. All rights reserved.
 //
 
 import UIKit
 
-class BaseMenuVC: UIViewController {
+class BasePageVC: UIPageViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
