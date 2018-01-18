@@ -19,9 +19,12 @@ class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var lblRole: UILabel!
     
     var mainNavi : UINavigationController?
-    var pageTestNavi : UINavigationController?
-    var pageTestVC : PageTestViewController?
-    var menuOptions = ["ホーム", "口座情報", "言語", "ヘルプ", "ログアウト"]
+    var helpNavi : UINavigationController?
+    var helpVC: HelpVC?
+    var accountNavi: UINavigationController?
+    var accountInfoVC: AccountInfoVC?
+    
+    var menuOptions = ["ホーム", "口座情報", "ヘルプ", "ログアウト"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,8 +44,11 @@ class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         dateFormatter.dateFormat = "Last Signed in HH:mm:ss"
         lblLstLogined.text = dateFormatter.string(from: signInDate!)
         
-        pageTestNavi = kMain_Storyboard.instantiateViewController(withIdentifier: "PageTestNavi") as? UINavigationController
-        pageTestVC = kMain_Storyboard.instantiateViewController(withIdentifier: "PageTestViewController") as? PageTestViewController
+        helpNavi = kMain_Storyboard.instantiateViewController(withIdentifier: "HelpNavi") as? UINavigationController
+        helpVC = kMain_Storyboard.instantiateViewController(withIdentifier: "HelpVC") as? HelpVC
+        
+        accountNavi = kMain_Storyboard.instantiateViewController(withIdentifier: "AccountNavi") as? UINavigationController
+        accountInfoVC = kMain_Storyboard.instantiateViewController(withIdentifier: "AccountInfoVC") as? AccountInfoVC
     }
 
     override func didReceiveMemoryWarning() {
@@ -76,27 +82,21 @@ class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return nil
     }
     
-    
     func changeViewController(_ index : Int) {
         switch index {
         case 0:
             getSelectedVCInTabbar()?.navigationController?.popToRootViewController(animated: true)
             break
         case 1:
-            if !(UIApplication.topViewController() is PageTestViewController){
-                getSelectedVCInTabbar()?.navigationController?.pushViewController(pageTestVC!, animated: true)
+            if !(UIApplication.topViewController() is AccountInfoVC){
+                getSelectedVCInTabbar()?.navigationController?.pushViewController(accountInfoVC!, animated: true)
             }
             
             break
         case 2:
-            if !(UIApplication.topViewController() is PageTestViewController){
-                getSelectedVCInTabbar()?.navigationController?.pushViewController(pageTestVC!, animated: true)
-            }
+            getSelectedVCInTabbar()?.navigationController?.pushViewController(helpVC!, animated: true)
             break
         case 3:
-            print("help pressed")
-            break
-        case 4:
             slideMenuVC.dismiss(animated: true, completion: nil)
             RealmServices.shared.deleteAll()
             break
