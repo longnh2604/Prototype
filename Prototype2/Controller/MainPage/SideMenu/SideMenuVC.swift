@@ -85,7 +85,10 @@ class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func changeViewController(_ index : Int) {
         switch index {
         case 0:
-            getSelectedVCInTabbar()?.navigationController?.popToRootViewController(animated: true)
+            DispatchQueue.main.async {
+                mainTabbarController?.selectedIndex = 0
+                self.getSelectedVCInTabbar()?.navigationController?.popToRootViewController(animated: true)
+            }
             break
         case 1:
             if !(UIApplication.topViewController() is AccountInfoVC){
