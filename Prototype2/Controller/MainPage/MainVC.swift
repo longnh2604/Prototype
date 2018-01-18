@@ -8,7 +8,7 @@
 
 import UIKit
 import SlideMenuControllerSwift
-class MainVC: UITabBarController {
+class MainVC: UITabBarController, UITabBarControllerDelegate {
     
     @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
     
@@ -16,15 +16,22 @@ class MainVC: UITabBarController {
         super.viewDidLoad()
         slideMenuVC.automaticallyAdjustsScrollViewInsets = true
         slideMenuVC.delegate = self
+        self.delegate = self
     }
                     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+    
+    
+    // UITabBarControllerDelegate
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        kLeftMenuVC?.getSelectedVCInTabbar()?.navigationController?.popToRootViewController(animated: true)
+        print("Selected view controller")
     }
+
+    
 }
 
 extension MainVC : SlideMenuControllerDelegate {
