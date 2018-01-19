@@ -10,6 +10,9 @@ import UIKit
 
 class HomeVC: BaseVC {
 
+    @IBOutlet weak var lblCusRegisterToday: RoundLabelCorner!
+    @IBOutlet weak var lblNotificationNew: RoundLabelCorner!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -55,4 +58,20 @@ class HomeVC: BaseVC {
         }
     }
 
+    @IBAction func searchCustomerPressed(_ sender: Any) {
+        mainTabbarController?.selectedIndex = 1
+    }
+    
+    @IBAction func listCustomerTodayPressed(_ sender: Any) {
+        mainTabbarController?.selectedIndex = 1
+    }
+
+    @IBAction func registerCustomerPressed(_ sender: Any) {
+        
+    }
+    
+    @IBAction func appNotifyPressed(_ sender: Any) {
+        
+    }
+    
 }

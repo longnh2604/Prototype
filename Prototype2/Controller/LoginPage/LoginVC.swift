@@ -29,8 +29,6 @@ class LoginVC: UIViewController {
         tfShopPassword.delegate = self
         tfShopId.delegate = self
         
-        let time = UserDefaults.standard.string(forKey: "AppClose")
-        
         let realm = RealmServices.shared.realm
         customer = realm.objects(CustomerData.self)
         
@@ -94,9 +92,33 @@ class LoginVC: UIViewController {
                 SVProgressHUD.showError(withStatus: error?.localizedDescription)
             } else {
                 print("Firebase Auth passed!")
+                self.getAppNotify()
                 self.findUser()
             }
         }
+    }
+    
+    func getAppNotify() {
+        queryRef.child("appnotify").observeSingleEvent(of: .value, with: { (snapshot) in
+            for snap in snapshot.children.allObjects as! [DataSnapshot] {
+                guard let dictionary = snap.value as? [String: AnyObject] else {
+                    return
+                }
+                print(dictionary)
+                let notiID = dictionary["notiID"] as? Int
+                let version = dictionary["version"] as? String
+                let news = dictionary["news"] as? String
+                let content = dictionary["content"] as? String
+                
+                let newNoti = AppNotify()
+                newNoti.notiID = notiID!
+                newNoti.notiVersion = version!
+                newNoti.notiNews = news!
+                newNoti.notiContent = content!
+                
+                RealmServices.shared.create(newNoti)
+            }
+        })
     }
     
     func findUser() {
@@ -136,6 +158,7 @@ class LoginVC: UIViewController {
                 let open = dictionary["cusMail"]?["open"] as? Int
                 let unopen = dictionary["cusMail"]?["unopen"] as? Int
                 let error = dictionary["cusMail"]?["error"] as? Int
+                let cusRegister = dictionary["registerDate"] as? String
                 
                 let newCustomer = CustomerData()
                 newCustomer.cusName = name!
@@ -150,6 +173,7 @@ class LoginVC: UIViewController {
                 newCustomer.cusMailOpen = open!
                 newCustomer.cusMailUnopen = unopen!
                 newCustomer.cusMailError = error!
+                newCustomer.cusRegisterDate = cusRegister!
                 
                 RealmServices.shared.create(newCustomer)
             }

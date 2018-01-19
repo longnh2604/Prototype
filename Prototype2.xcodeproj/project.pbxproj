@@ -40,6 +40,7 @@
 		FD15D2A3200C8BDD006F1816 /* VideoPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15D2A2200C8BDD006F1816 /* VideoPageVC.swift */; };
 		FD1D81C720103D1700498B2C /* AccountInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1D81C620103D1700498B2C /* AccountInfoVC.swift */; };
 		FD1D81C920103D2700498B2C /* HelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1D81C820103D2700498B2C /* HelpVC.swift */; };
+		FD1D81CB20107ADF00498B2C /* RegisterCustomerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1D81CA20107ADF00498B2C /* RegisterCustomerVC.swift */; };
 		FD55BA72200D9038008E6A81 /* RealmServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD55BA71200D9038008E6A81 /* RealmServices.swift */; };
 		FD594DE92005A68B006B72A5 /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD594DE82005A68B006B72A5 /* MainPageVC.swift */; };
 		FD594DEB2005A6A1006B72A5 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD594DEA2005A6A1006B72A5 /* MainVC.swift */; };
@@ -58,6 +59,10 @@
 		FD723D0B2004BC10002E5675 /* RoundLabelCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD723D082004BC10002E5675 /* RoundLabelCorner.swift */; };
 		FD723D0C2004BC10002E5675 /* RoundButtonCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD723D092004BC10002E5675 /* RoundButtonCorner.swift */; };
 		FD723D0E2004BC2F002E5675 /* RoundImageCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD723D0D2004BC2F002E5675 /* RoundImageCorner.swift */; };
+		FD795BA820119CBC00015DEA /* AppNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD795BA720119CBC00015DEA /* AppNotify.swift */; };
+		FD795BAA20119FF900015DEA /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD795BA920119FF900015DEA /* NotificationVC.swift */; };
+		FD795BAD2011A07000015DEA /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD795BAC2011A07000015DEA /* NotificationCell.swift */; };
+		FD795BB82011EA2C00015DEA /* MailSettingPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD795BB72011EA2C00015DEA /* MailSettingPopup.swift */; };
 		FD8BE949200DA2470011E4F8 /* CustomerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8BE948200DA2470011E4F8 /* CustomerCell.swift */; };
 		FD8BE94D200DCF830011E4F8 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8BE94C200DCF830011E4F8 /* GlobalVariables.swift */; };
 		FD8BE950200DF2AA0011E4F8 /* BasePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8BE94F200DF2AA0011E4F8 /* BasePageVC.swift */; };
@@ -99,6 +104,7 @@
 		FD15D2A2200C8BDD006F1816 /* VideoPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPageVC.swift; sourceTree = "<group>"; };
 		FD1D81C620103D1700498B2C /* AccountInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfoVC.swift; sourceTree = "<group>"; };
 		FD1D81C820103D2700498B2C /* HelpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpVC.swift; sourceTree = "<group>"; };
+		FD1D81CA20107ADF00498B2C /* RegisterCustomerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCustomerVC.swift; sourceTree = "<group>"; };
 		FD55BA71200D9038008E6A81 /* RealmServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmServices.swift; sourceTree = "<group>"; };
 		FD594DE82005A68B006B72A5 /* MainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageVC.swift; sourceTree = "<group>"; };
 		FD594DEA2005A6A1006B72A5 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -120,6 +126,10 @@
 		FD723D082004BC10002E5675 /* RoundLabelCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundLabelCorner.swift; sourceTree = "<group>"; };
 		FD723D092004BC10002E5675 /* RoundButtonCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButtonCorner.swift; sourceTree = "<group>"; };
 		FD723D0D2004BC2F002E5675 /* RoundImageCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundImageCorner.swift; sourceTree = "<group>"; };
+		FD795BA720119CBC00015DEA /* AppNotify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNotify.swift; sourceTree = "<group>"; };
+		FD795BA920119FF900015DEA /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
+		FD795BAC2011A07000015DEA /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		FD795BB72011EA2C00015DEA /* MailSettingPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailSettingPopup.swift; sourceTree = "<group>"; };
 		FD8BE948200DA2470011E4F8 /* CustomerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerCell.swift; sourceTree = "<group>"; };
 		FD8BE94C200DCF830011E4F8 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		FD8BE94F200DF2AA0011E4F8 /* BasePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePageVC.swift; sourceTree = "<group>"; };
@@ -230,18 +240,20 @@
 		FD15223220061D600028B221 /* MainPage */ = {
 			isa = PBXGroup;
 			children = (
+				FD795BAE2011D24A00015DEA /* Setting */,
+				FD795BAB2011A00700015DEA /* Notification */,
 				FD8BE94E200DD9BD0011E4F8 /* HomeMenu */,
 				FD8BE94B200DA26D0011E4F8 /* SideMenu */,
 				FD8BE94A200DA2550011E4F8 /* Customer */,
 				FD594DE82005A68B006B72A5 /* MainPageVC.swift */,
 				FD594DEA2005A6A1006B72A5 /* MainVC.swift */,
 				FD15223420061DE40028B221 /* MainTableViewCell.swift */,
+				FD1D81CA20107ADF00498B2C /* RegisterCustomerVC.swift */,
 				419D6ABD200855A3007C7CBC /* BaseVC.swift */,
 				FD8BE94F200DF2AA0011E4F8 /* BasePageVC.swift */,
 				4D88FF052008AB7F00A442DE /* PageTestViewController.swift */,
 				FD1D81C620103D1700498B2C /* AccountInfoVC.swift */,
 				FD1D81C820103D2700498B2C /* HelpVC.swift */,
-				41AF5104200B2D6B0082F272 /* SettingVC.swift */,
 				41AF5106200B3B3F0082F272 /* PageVC.swift */,
 				FD15D2A0200C8BC3006F1816 /* PhotoPageVC.swift */,
 				FD15D2A2200C8BDD006F1816 /* VideoPageVC.swift */,
@@ -319,6 +331,7 @@
 				FD594DF22005DDCC006B72A5 /* CarteData.swift */,
 				FD594DF12005DDCC006B72A5 /* CustomerData.swift */,
 				FD15D29C200C7962006F1816 /* UserData.swift */,
+				FD795BA720119CBC00015DEA /* AppNotify.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -357,6 +370,24 @@
 				FD723CFA2004AEBC002E5675 /* meiryob.ttc */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FD795BAB2011A00700015DEA /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				FD795BA920119FF900015DEA /* NotificationVC.swift */,
+				FD795BAC2011A07000015DEA /* NotificationCell.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		FD795BAE2011D24A00015DEA /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				41AF5104200B2D6B0082F272 /* SettingVC.swift */,
+				FD795BB72011EA2C00015DEA /* MailSettingPopup.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		FD8BE94A200DA2550011E4F8 /* Customer */ = {
@@ -566,6 +597,7 @@
 				4D88FEFF200877B800A442DE /* UIApplication.swift in Sources */,
 				41AF5109200B3BB40082F272 /* CustomerVC.swift in Sources */,
 				FD15222B20061BE30028B221 /* EditPhotoVC.swift in Sources */,
+				FD1D81CB20107ADF00498B2C /* RegisterCustomerVC.swift in Sources */,
 				4D88FF062008AB7F00A442DE /* PageTestViewController.swift in Sources */,
 				FD15D2A1200C8BC3006F1816 /* PhotoPageVC.swift in Sources */,
 				FD15222620061BA30028B221 /* SelectedPhotoVC.swift in Sources */,
@@ -578,6 +610,7 @@
 				FD8BE949200DA2470011E4F8 /* CustomerCell.swift in Sources */,
 				FD15222920061BD30028B221 /* ComparePhotoVC.swift in Sources */,
 				4D88FF042008824600A442DE /* UIViewController.swift in Sources */,
+				FD795BAD2011A07000015DEA /* NotificationCell.swift in Sources */,
 				4D88FF0220087BEF00A442DE /* Constant.swift in Sources */,
 				FD1D81C720103D1700498B2C /* AccountInfoVC.swift in Sources */,
 				FD15223A20061EC80028B221 /* UserPopupVC.swift in Sources */,
@@ -593,6 +626,7 @@
 				FD15222320061B7F0028B221 /* SelectedCarteVC.swift in Sources */,
 				FD15D29D200C7962006F1816 /* UserData.swift in Sources */,
 				FD723D0A2004BC10002E5675 /* RoundUIViewCorner.swift in Sources */,
+				FD795BAA20119FF900015DEA /* NotificationVC.swift in Sources */,
 				FD15223520061DE40028B221 /* MainTableViewCell.swift in Sources */,
 				41AF5105200B2D6B0082F272 /* SettingVC.swift in Sources */,
 				FD152244200620600028B221 /* SelectedVideoVC.swift in Sources */,
@@ -604,8 +638,10 @@
 				FD0433A8200F4E8F00F26725 /* CalculateVC.swift in Sources */,
 				FD723D0E2004BC2F002E5675 /* RoundImageCorner.swift in Sources */,
 				FD152242200620250028B221 /* CarteTableViewCell.swift in Sources */,
+				FD795BB82011EA2C00015DEA /* MailSettingPopup.swift in Sources */,
 				FD723D0C2004BC10002E5675 /* RoundButtonCorner.swift in Sources */,
 				FD594DF42005DDCC006B72A5 /* CarteData.swift in Sources */,
+				FD795BA820119CBC00015DEA /* AppNotify.swift in Sources */,
 				4D88FEFD2008779000A442DE /* ExSlideMenuController.swift in Sources */,
 				419D6ABE200855A3007C7CBC /* BaseVC.swift in Sources */,
 				FD152246200620710028B221 /* CompareVideoVC.swift in Sources */,

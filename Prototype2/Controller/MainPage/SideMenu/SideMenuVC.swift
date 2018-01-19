@@ -39,10 +39,9 @@ class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             imvAccount.roundImage(with: imvAccount)
         }
         
-        let signInDate = Auth.auth().currentUser?.metadata.lastSignInDate
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "Last Signed in HH:mm:ss"
-        lblLstLogined.text = dateFormatter.string(from: signInDate!)
+        if let lstSignedin = UserDefaults.standard.string(forKey: "AppClose") {
+            lblLstLogined.text = "直前のサインイン " + lstSignedin
+        }
         
         helpNavi = kMain_Storyboard.instantiateViewController(withIdentifier: "HelpNavi") as? UINavigationController
         helpVC = kMain_Storyboard.instantiateViewController(withIdentifier: "HelpVC") as? HelpVC
