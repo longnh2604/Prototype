@@ -31,7 +31,7 @@ class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         tblSideMenu.tableFooterView = UIView()
         
-        lblWelcome.text = "ようこそ、 　\(UserDefaults.standard.string(forKey: "username")!)"
+        lblWelcome.text = "ようこそ、 　\(UserDefaults.standard.string(forKey: "username")!) 様"
         lblRole.text = UserDefaults.standard.string(forKey: "rules")!
         
         if let url = URL.init(string: UserDefaults.standard.string(forKey: "imageURL")!) {

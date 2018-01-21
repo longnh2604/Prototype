@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		410374F020138810005B2BEA /* AccountInfoPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410374EF20138810005B2BEA /* AccountInfoPopup.swift */; };
 		4185115D200BB038008BBDFA /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4185115C200BB038008BBDFA /* HomeVC.swift */; };
 		419D6AB620084BE6007C7CBC /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419D6AB520084BE6007C7CBC /* SideMenuVC.swift */; };
 		419D6AB820084C8B007C7CBC /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419D6AB720084C8B007C7CBC /* SideMenuCell.swift */; };
@@ -70,6 +71,7 @@
 
 /* Begin PBXFileReference section */
 		0FAC40FDC9F2E6D090F5677D /* Pods_Prototype2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prototype2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		410374EF20138810005B2BEA /* AccountInfoPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfoPopup.swift; sourceTree = "<group>"; };
 		4185115C200BB038008BBDFA /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		419D6AB520084BE6007C7CBC /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
 		419D6AB720084C8B007C7CBC /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
@@ -386,6 +388,7 @@
 			children = (
 				41AF5104200B2D6B0082F272 /* SettingVC.swift */,
 				FD795BB72011EA2C00015DEA /* MailSettingPopup.swift */,
+				410374EF20138810005B2BEA /* AccountInfoPopup.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -645,6 +648,7 @@
 				4D88FEFD2008779000A442DE /* ExSlideMenuController.swift in Sources */,
 				419D6ABE200855A3007C7CBC /* BaseVC.swift in Sources */,
 				FD152246200620710028B221 /* CompareVideoVC.swift in Sources */,
+				410374F020138810005B2BEA /* AccountInfoPopup.swift in Sources */,
 				FD55BA72200D9038008E6A81 /* RealmServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

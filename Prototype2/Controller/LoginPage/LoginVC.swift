@@ -86,12 +86,15 @@ class LoginVC: UIViewController {
     
     //Firebase Account Authentication
     func userLogin() {
-        Auth.auth().signIn(withEmail: "longnh264@gmail.com", password: "123456") { (user, error) in
+        let cusEmail = "longnh264@gmail.com"
+        let cusPassword = "123456"
+        Auth.auth().signIn(withEmail: cusEmail , password: cusPassword) { (user, error) in
             if error != nil {
                 print(error!)
                 SVProgressHUD.showError(withStatus: error?.localizedDescription)
             } else {
                 print("Firebase Auth passed!")
+                UserDefaults.standard.set(cusPassword, forKey: "userPassword")
                 self.getAppNotify()
                 self.findUser()
             }
@@ -141,7 +144,7 @@ class LoginVC: UIViewController {
     func getCustomersfromUser(with UID:String) {
         // create searchRef or queryRef you name it
         queryRef.child("customers").queryOrdered(byChild: "userID").queryEqual(toValue: UID).observeSingleEvent(of: .value,with: { (snapshot) in
-            
+            UserDefaults.standard.set(snapshot.childrenCount, forKey: "cusTotal")
             for snap in snapshot.children.allObjects as! [DataSnapshot] {
                 guard let dictionary = snap.value as? [String: AnyObject] else {
                     return
