@@ -15,6 +15,8 @@
 		41AF5105200B2D6B0082F272 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AF5104200B2D6B0082F272 /* SettingVC.swift */; };
 		41AF5107200B3B3F0082F272 /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AF5106200B3B3F0082F272 /* PageVC.swift */; };
 		41AF5109200B3BB40082F272 /* CustomerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AF5108200B3BB40082F272 /* CustomerVC.swift */; };
+		41F34F1E20145EAE000FD9E9 /* HelpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F34F1D20145EAE000FD9E9 /* HelpCell.swift */; };
+		41F34F2020146234000FD9E9 /* HelpData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F34F1F20146234000FD9E9 /* HelpData.swift */; };
 		4D88FEFD2008779000A442DE /* ExSlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88FEFC2008779000A442DE /* ExSlideMenuController.swift */; };
 		4D88FEFF200877B800A442DE /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88FEFE200877B800A442DE /* UIApplication.swift */; };
 		4D88FF0220087BEF00A442DE /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88FF0120087BEF00A442DE /* Constant.swift */; };
@@ -79,6 +81,8 @@
 		41AF5104200B2D6B0082F272 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 		41AF5106200B3B3F0082F272 /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
 		41AF5108200B3BB40082F272 /* CustomerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerVC.swift; sourceTree = "<group>"; };
+		41F34F1D20145EAE000FD9E9 /* HelpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCell.swift; sourceTree = "<group>"; };
+		41F34F1F20146234000FD9E9 /* HelpData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpData.swift; sourceTree = "<group>"; };
 		4D88FEFC2008779000A442DE /* ExSlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExSlideMenuController.swift; sourceTree = "<group>"; };
 		4D88FEFE200877B800A442DE /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		4D88FF0120087BEF00A442DE /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -154,6 +158,15 @@
 			children = (
 			);
 			path = 3rdParty;
+			sourceTree = "<group>";
+		};
+		41F34F1C20145D7D000FD9E9 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				FD1D81C820103D2700498B2C /* HelpVC.swift */,
+				41F34F1D20145EAE000FD9E9 /* HelpCell.swift */,
+			);
+			path = Help;
 			sourceTree = "<group>";
 		};
 		47E14569158FC383BA0311B3 /* Pods */ = {
@@ -247,6 +260,7 @@
 				FD8BE94E200DD9BD0011E4F8 /* HomeMenu */,
 				FD8BE94B200DA26D0011E4F8 /* SideMenu */,
 				FD8BE94A200DA2550011E4F8 /* Customer */,
+				41F34F1C20145D7D000FD9E9 /* Help */,
 				FD594DE82005A68B006B72A5 /* MainPageVC.swift */,
 				FD594DEA2005A6A1006B72A5 /* MainVC.swift */,
 				FD15223420061DE40028B221 /* MainTableViewCell.swift */,
@@ -255,7 +269,6 @@
 				FD8BE94F200DF2AA0011E4F8 /* BasePageVC.swift */,
 				4D88FF052008AB7F00A442DE /* PageTestViewController.swift */,
 				FD1D81C620103D1700498B2C /* AccountInfoVC.swift */,
-				FD1D81C820103D2700498B2C /* HelpVC.swift */,
 				41AF5106200B3B3F0082F272 /* PageVC.swift */,
 				FD15D2A0200C8BC3006F1816 /* PhotoPageVC.swift */,
 				FD15D2A2200C8BDD006F1816 /* VideoPageVC.swift */,
@@ -334,6 +347,7 @@
 				FD594DF12005DDCC006B72A5 /* CustomerData.swift */,
 				FD15D29C200C7962006F1816 /* UserData.swift */,
 				FD795BA720119CBC00015DEA /* AppNotify.swift */,
+				41F34F1F20146234000FD9E9 /* HelpData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -599,6 +613,7 @@
 			files = (
 				4D88FEFF200877B800A442DE /* UIApplication.swift in Sources */,
 				41AF5109200B3BB40082F272 /* CustomerVC.swift in Sources */,
+				41F34F1E20145EAE000FD9E9 /* HelpCell.swift in Sources */,
 				FD15222B20061BE30028B221 /* EditPhotoVC.swift in Sources */,
 				FD1D81CB20107ADF00498B2C /* RegisterCustomerVC.swift in Sources */,
 				4D88FF062008AB7F00A442DE /* PageTestViewController.swift in Sources */,
@@ -650,6 +665,7 @@
 				FD152246200620710028B221 /* CompareVideoVC.swift in Sources */,
 				410374F020138810005B2BEA /* AccountInfoPopup.swift in Sources */,
 				FD55BA72200D9038008E6A81 /* RealmServices.swift in Sources */,
+				41F34F2020146234000FD9E9 /* HelpData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

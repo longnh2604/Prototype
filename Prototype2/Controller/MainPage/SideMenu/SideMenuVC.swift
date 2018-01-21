@@ -23,8 +23,9 @@ class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var helpVC: HelpVC?
     var accountNavi: UINavigationController?
     var accountInfoVC: AccountInfoVC?
+    var accountPopup: AccountInfoPopup?
     
-    var menuOptions = ["ホーム", "口座情報", "ヘルプ", "ログアウト"]
+    var menuOptions = ["ホーム", "ヘルプ", "ログアウト"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,18 +91,17 @@ class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             }
             break
         case 1:
-            if !(UIApplication.topViewController() is AccountInfoVC){
-                getSelectedVCInTabbar()?.navigationController?.pushViewController(accountInfoVC!, animated: true)
-            }
-            
-            break
-        case 2:
             getSelectedVCInTabbar()?.navigationController?.pushViewController(helpVC!, animated: true)
             break
-        case 3:
+        case 2:
             slideMenuVC.dismiss(animated: true, completion: nil)
             RealmServices.shared.deleteAll()
             break
+//        case 3:
+//            if !(UIApplication.topViewController() is AccountInfoVC){
+//                getSelectedVCInTabbar()?.navigationController?.pushViewController(accountInfoVC!, animated: true)
+//            }
+//            break
         default:
             
             break

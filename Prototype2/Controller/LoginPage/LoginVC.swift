@@ -97,6 +97,7 @@ class LoginVC: UIViewController {
                 UserDefaults.standard.set(cusPassword, forKey: "userPassword")
                 self.getAppNotify()
                 self.findUser()
+                self.getHelpData()
             }
         }
     }
@@ -120,6 +121,27 @@ class LoginVC: UIViewController {
                 newNoti.notiContent = content!
                 
                 RealmServices.shared.create(newNoti)
+            }
+        })
+    }
+    
+    func getHelpData() {
+        queryRef.child("apphelp").observeSingleEvent(of: .value, with: { (snapshot) in
+            for snap in snapshot.children.allObjects as! [DataSnapshot] {
+                guard let dictionary = snap.value as? [String: AnyObject] else {
+                    return
+                }
+                print(dictionary)
+                let helpID = dictionary["helpID"] as? Int
+                let helpTitle = dictionary["helpTitle"] as? String
+                let helpImage = dictionary["helpImage"] as? String
+                
+                let newHelp = HelpData()
+                newHelp.helpID = helpID!
+                newHelp.helpTitle = helpTitle!
+                newHelp.helpImage = helpImage!
+                
+                RealmServices.shared.create(newHelp)
             }
         })
     }
