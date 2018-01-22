@@ -10,6 +10,8 @@ import Foundation
 import RealmSwift
 
 class CarteData: Object {
-    @objc dynamic var carteID: String = ""
+    @objc dynamic var carteID: Int = 0
     @objc dynamic var carteMemo: String = ""
+    @objc dynamic var cusID: String = ""
+    var carteImages = List<String>()
 }

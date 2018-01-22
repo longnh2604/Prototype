@@ -17,6 +17,7 @@ class CustomerVC: BaseVC {
     var customerDay = [CustomerData]()
     var pass_data_callback : (([String : Any])->())?
     
+    
     @IBOutlet weak var tblCustomer: UITableView!
     @IBOutlet weak var lblCusTotal: UILabel!
     @IBOutlet weak var lblCus: UILabel!
@@ -47,7 +48,9 @@ class CustomerVC: BaseVC {
         }
         
         if (pass_data_callback != nil){
-            pass_data_callback!(["test":"data_test_customer_vc"])
+            print("in so index \(GlobalVariables.sharedManager.cellIndex)")
+            let customerID = customers[GlobalVariables.sharedManager.cellIndex].cusID
+            pass_data_callback!(["cusID":customerID])
         }
     }
     

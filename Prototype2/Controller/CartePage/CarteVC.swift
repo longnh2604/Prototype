@@ -8,9 +8,14 @@
 
 import UIKit
 import PopupDialog
+import Firebase
+import RealmSwift
 
 class CarteVC: UIViewController {
 
+    var selectedIndexPath: NSIndexPath?
+    var cellSelectedColor = UIColor(red: 188.0/255.0, green: 237.0/255.0, blue: 255.0/255.0, alpha: 1.0)
+    
     @IBOutlet weak var lblCusName: UILabel!
     @IBOutlet weak var lblCusLstCome: UILabel!
     @IBOutlet weak var lblCusMemo: UILabel!
@@ -25,19 +30,63 @@ class CarteVC: UIViewController {
     
     var receive_data : [String:Any]?
     var pass_data_callback : (([String : Any])->())?
+    var cartesData: Results<CarteData>!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(receive_data!["cusID"] ?? 1)
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        tblCarte.delegate = self
+        tblCarte.dataSource = self
+        
+        let realm = RealmServices.shared.realm
+        cartesData = realm.objects(CarteData.self)
+        
         print("Receive data from CustomerVC \(String(describing: receive_data ?? nil))")
+        getCustomersfromUser()
         if (pass_data_callback != nil){
             pass_data_callback!(["test":"data_test_CarteVC"])
+        } else {
         }
+    }
+    
+    func getCustomersfromUser() {
+        queryRef.child("cartes").queryOrdered(byChild: "cusID").queryEqual(toValue: receive_data!["cusID"]!).observeSingleEvent(of: .value, with: { (snapshot) in
+            for snap in snapshot.children.allObjects as! [DataSnapshot] {
+                guard let dictionary = snap.value as? [String: AnyObject] else {
+                    return
+                }
+                print(dictionary)
+                
+                let carteID = dictionary["carteID"] as? Int
+                let cusID = dictionary["cusID"] as? String
+                let carteMemo = dictionary["carteMemo"] as? String
+                
+                let carte = CarteData()
+                
+                if dictionary["carteImage"] != nil {
+                    let datas = dictionary["carteImage"]
+                    if let carteImages = datas!["carteImage"] as? [String]{
+                        for image in carteImages{
+                            carte.carteImages.append(image)
+                        }
+                    }
+                }
+                
+                carte.carteID = carteID!
+                carte.carteMemo = carteMemo!
+                carte.cusID = cusID!
+                
+                
+                RealmServices.shared.create(carte)
+                self.tblCarte.reloadData()
+            }
+        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -79,5 +128,60 @@ class CarteVC: UIViewController {
     
     @IBAction func btnMailPressed(_ sender: Any) {
         
+    }
+}
+
+extension CarteVC: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cellCarte") as? CarteTableViewCell else
+        { return UITableViewCell() }
+        
+        let carteCell = cartesData[indexPath.row]
+        cell.configure(with: carteCell)
+        
+        if self.selectedIndexPath == indexPath as NSIndexPath {
+            cell.contentView.backgroundColor = self.cellSelectedColor
+        }else{
+            cell.contentView.backgroundColor = UIColor.clear
+        }
+        
+        return cell
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(cartesData.count)
+        return cartesData.count
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if selectedIndexPath == indexPath as NSIndexPath {
+            //selected same cell -> deselect
+            selectedIndexPath = indexPath as NSIndexPath
+        }else{
+            let oldSelectedIndexPath = selectedIndexPath
+            selectedIndexPath = indexPath as NSIndexPath
+            // refresh old cell to clear old selection indicators
+            if let previousSelectedIndexPath = oldSelectedIndexPath {
+                if let previousSelectedCell = tableView.cellForRow(at: previousSelectedIndexPath as IndexPath) {
+                    self.configure(cell: previousSelectedCell as! CarteTableViewCell, forRowAtIndexPath: previousSelectedIndexPath as IndexPath)
+                }
+            }
+        }
+        let selectedCell = tableView.cellForRow(at: indexPath)
+        configure(cell: selectedCell as! CarteTableViewCell, forRowAtIndexPath: indexPath)
+    }
+
+    func configure(cell: CarteTableViewCell,forRowAtIndexPath indexPath:IndexPath) {
+        DispatchQueue.main.async {
+            if self.selectedIndexPath == indexPath as NSIndexPath {
+                cell.contentView.backgroundColor = self.cellSelectedColor
+            }else{
+                cell.contentView.backgroundColor = UIColor.clear
+            }
+        }
     }
 }
