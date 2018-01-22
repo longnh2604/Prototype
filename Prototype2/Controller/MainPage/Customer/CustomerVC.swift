@@ -15,6 +15,7 @@ class CustomerVC: BaseVC {
     var selectedIndexPath: NSIndexPath?
     var cellSelectedColor = UIColor(red: 188.0/255.0, green: 237.0/255.0, blue: 255.0/255.0, alpha: 1.0)
     var customerDay = [CustomerData]()
+    var pass_data_callback : (([String : Any])->())?
     
     @IBOutlet weak var tblCustomer: UITableView!
     @IBOutlet weak var lblCusTotal: UILabel!
@@ -43,6 +44,10 @@ class CustomerVC: BaseVC {
         } else {
             setupUI()
             tblCustomer.reloadData()
+        }
+        
+        if (pass_data_callback != nil){
+            pass_data_callback!(["test":"data_test_customer_vc"])
         }
     }
     

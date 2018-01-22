@@ -23,10 +23,21 @@ class CarteVC: UIViewController {
     @IBOutlet weak var imvCus: UIImageView!
     @IBOutlet weak var lblMailStatus: UILabel!
     
+    var receive_data : [String:Any]?
+    var pass_data_callback : (([String : Any])->())?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("Receive data from CustomerVC \(String(describing: receive_data ?? nil))")
+        if (pass_data_callback != nil){
+            pass_data_callback!(["test":"data_test_CarteVC"])
+        }
     }
 
     override func didReceiveMemoryWarning() {

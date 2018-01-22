@@ -24,11 +24,16 @@ class SelectedCarteVC: UIViewController {
     @IBOutlet weak var tfMemo2: UITextView!
     @IBOutlet weak var tfMemo: UITextView!
     @IBOutlet weak var collectionView: UICollectionView!
-    
+    var receive_data : [String:Any]?
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("Receive data from CustomerVC \(String(describing: receive_data ?? nil))")
     }
 
     override func didReceiveMemoryWarning() {

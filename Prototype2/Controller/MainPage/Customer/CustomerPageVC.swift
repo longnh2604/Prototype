@@ -9,13 +9,26 @@
 import UIKit
 
 class CustomerPageVC: BasePageVC {
-
+    var customerVC : CustomerVC?
+    var carteVC : CarteVC?
+    var selectedCarteVC : SelectedCarteVC?
     var data :String = ""
     
     lazy var orderedViewControllers: [UIViewController] = {
-        return [self.newVc(viewController: "CustomerVC"),
-                self.newVc(viewController: "CarteVC"),
-                self.newVc(viewController: "SelectedCarteVC")]
+        customerVC = self.newVc(viewController: "CustomerVC") as? CustomerVC
+        customerVC?.pass_data_callback = {
+            pass_data in
+            self.carteVC?.receive_data = pass_data
+        }
+        carteVC = self.newVc(viewController: "CarteVC") as? CarteVC
+        carteVC?.pass_data_callback = {
+            pass_data in
+            self.selectedCarteVC?.receive_data = pass_data
+        }
+        selectedCarteVC = self.newVc(viewController: "SelectedCarteVC") as? SelectedCarteVC
+        return [customerVC!,
+                carteVC!,
+                selectedCarteVC!]
     }()
     
     override func viewDidLoad() {
