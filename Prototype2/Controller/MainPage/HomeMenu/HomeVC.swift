@@ -7,15 +7,30 @@
 //
 
 import UIKit
+import RealmSwift
 
 class HomeVC: BaseVC {
 
     @IBOutlet weak var lblCusRegisterToday: RoundLabelCorner!
     @IBOutlet weak var lblNotificationNew: RoundLabelCorner!
+    var customers: Results<CustomerData>!
+    var cusRegister = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let realm = RealmServices.shared.realm
+        customers = realm.objects(CustomerData.self)
+        for (index,element) in customers.enumerated() {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd"
+            let currentDate = dateFormatter.string(from: Date())
+            if currentDate == element.cusRegisterDate {
+                cusRegister += 1
+                GlobalVariables.sharedManager.cusDataDisplay.append(index)
+            }
+        }
+        lblCusRegisterToday.text = String(cusRegister)
         navigationController?.navigationBar.topItem?.title = createDateTime()
     }
     
@@ -63,6 +78,7 @@ class HomeVC: BaseVC {
     }
     
     @IBAction func listCustomerTodayPressed(_ sender: Any) {
+        GlobalVariables.sharedManager.cusDisplayByDay = true
         mainTabbarController?.selectedIndex = 1
     }
 
@@ -73,5 +89,4 @@ class HomeVC: BaseVC {
     @IBAction func appNotifyPressed(_ sender: Any) {
         
     }
-    
 }

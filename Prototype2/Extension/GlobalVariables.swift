@@ -10,9 +10,10 @@ import Foundation
 
 class GlobalVariables {
     public var relationID:String = ""
-//    public var cusRecord:Array<CKRecord> = []
     public var cellIndex:Int = 0
     public var cellCarteIndex:Int = 0
+    public var cusDataDisplay = [Int]()
+    public var cusDisplayByDay = false
     
     class var sharedManager: GlobalVariables {
         struct Static{

@@ -14,6 +14,7 @@ class CustomerVC: BaseVC {
     var customers: Results<CustomerData>!
     var selectedIndexPath: NSIndexPath?
     var cellSelectedColor = UIColor(red: 188.0/255.0, green: 237.0/255.0, blue: 255.0/255.0, alpha: 1.0)
+    var customerDay = [CustomerData]()
     
     @IBOutlet weak var tblCustomer: UITableView!
     @IBOutlet weak var lblCusTotal: UILabel!
@@ -32,21 +33,70 @@ class CustomerVC: BaseVC {
 
         let realm = RealmServices.shared.realm
         customers = realm.objects(CustomerData.self)
-        setupUI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if GlobalVariables.sharedManager.cusDisplayByDay == true {
+            customerDay.removeAll()
+            setupCustomerByDay()
+            tblCustomer.reloadData()
+        } else {
+            setupUI()
+            tblCustomer.reloadData()
+        }
+    }
+    
+    func setupCustomerByDay() {
+        for (index,element) in GlobalVariables.sharedManager.cusDataDisplay.enumerated() {
+            let customer = CustomerData()
+            customer.cusName = customers[element].cusName
+            customer.cusID = customers[element].cusID
+            customer.cusSex = customers[element].cusSex
+            customer.cusBirth = customers[element].cusBirth
+            customer.cusImage = customers[element].cusImage
+            customer.cusSecret = customers[element].cusSecret
+            customer.cusLstCome = customers[element].cusLstCome
+            customer.cusMailOpen = customers[element].cusMailOpen
+            customer.cusMailInbox = customers[element].cusMailInbox
+            customer.cusMailError = customers[element].cusMailError
+            customer.cusMailUnopen = customers[element].cusMailUnopen
+            customer.cusRegisterDate = customers[element].cusRegisterDate
+            customer.userID = customers[element].userID
+            customerDay.append(customer)
+        }
+        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        GlobalVariables.sharedManager.cusDisplayByDay = false
     }
     
     func updateUITop(index: Int){
         DispatchQueue.main.async {
-            self.lblCus.text = self.customers[index].cusName + "様"
-            self.lblCusID.text = "ID : " + self.customers[index].cusID
-            self.lblCusGenre.text = self.customers[index].cusSex
-            self.lblCusBirth.text = self.customers[index].cusBirth
-            self.lblCusLstCome.text = "最新来店日　:" + self.customers[index].cusLstCome
-            
-            if let url = URL.init(string: self.customers[index].cusImage) {
-                self.imvCus.downloadedFrom(url: url)
-                self.imvCus.roundImage(with: self.imvCus)
+            if GlobalVariables.sharedManager.cusDisplayByDay == true {
+                self.lblCus.text = self.customerDay[index].cusName + "様"
+                self.lblCusID.text = "ID : " + self.customerDay[index].cusID
+                self.lblCusGenre.text = self.customerDay[index].cusSex
+                self.lblCusBirth.text = self.customerDay[index].cusBirth
+                self.lblCusLstCome.text = "最新来店日　:" + self.customerDay[index].cusLstCome
+                
+                if let url = URL.init(string: self.customerDay[index].cusImage) {
+                    self.imvCus.downloadedFrom(url: url)
+                    self.imvCus.roundImage(with: self.imvCus)
+                }
+            } else {
+                self.lblCus.text = self.customers[index].cusName + "様"
+                self.lblCusID.text = "ID : " + self.customers[index].cusID
+                self.lblCusGenre.text = self.customers[index].cusSex
+                self.lblCusBirth.text = self.customers[index].cusBirth
+                self.lblCusLstCome.text = "最新来店日　:" + self.customers[index].cusLstCome
+                
+                if let url = URL.init(string: self.customers[index].cusImage) {
+                    self.imvCus.downloadedFrom(url: url)
+                    self.imvCus.roundImage(with: self.imvCus)
+                }
             }
+            
         }
     }
 
@@ -97,8 +147,14 @@ extension CustomerVC: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "CustomerCell") as? CustomerCell else
         { return UITableViewCell() }
         
-        let customerCell = customers[indexPath.row]
-        cell.configure(with: customerCell)
+        if GlobalVariables.sharedManager.cusDisplayByDay == true {
+            let customerCell = customerDay[indexPath.row]
+            cell.configure(with: customerCell)
+        } else {
+            let customerCell = customers[indexPath.row]
+            cell.configure(with: customerCell)
+        }
+        
         
         if self.selectedIndexPath == indexPath as NSIndexPath {
             cell.contentView.backgroundColor = self.cellSelectedColor
@@ -110,7 +166,12 @@ extension CustomerVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return customers.count
+        if GlobalVariables.sharedManager.cusDisplayByDay == true {
+            return customerDay.count
+        }
+        else {
+            return customers.count
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
