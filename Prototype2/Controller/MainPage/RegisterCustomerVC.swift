@@ -9,7 +9,7 @@
 import UIKit
 import Gallery
 
-class RegisterCustomerVC: UIViewController {
+class RegisterCustomerVC: UIViewController, GalleryControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,12 +25,9 @@ class RegisterCustomerVC: UIViewController {
     @IBAction func imagePressed(_ sender: Any) {
         let gallery = GalleryController()
         gallery.delegate = self
-        present(gallery, animated: true, completion: nil)
+        self.present(gallery, animated: true, completion: nil)
     }
-}
-
-extension RegisterCustomerVC: GalleryControllerDelegate {
-    //Gallery Delegate
+    
     func galleryController(_ controller: GalleryController, didSelectImages images: [Image]){
         
     }
@@ -42,6 +39,6 @@ extension RegisterCustomerVC: GalleryControllerDelegate {
         
     }
     func galleryControllerDidCancel(_ controller: GalleryController){
-        dismiss(animated: true, completion: nil)
+        controller.dismiss(animated: true, completion: nil)
     }
 }

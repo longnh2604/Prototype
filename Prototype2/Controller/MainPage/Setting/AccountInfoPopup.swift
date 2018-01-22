@@ -69,7 +69,6 @@ class AccountInfoPopup: UIViewController, GalleryControllerDelegate {
         
     }
     func galleryControllerDidCancel(_ controller: GalleryController){
-        navigationController?.popViewController(animated: true)
-        dismiss(animated: true, completion: nil)
+        controller.dismiss(animated: true, completion: nil)
     }
 }
