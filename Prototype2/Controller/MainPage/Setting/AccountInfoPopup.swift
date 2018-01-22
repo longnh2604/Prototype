@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Gallery
 
-class AccountInfoPopup: UIViewController {
+class AccountInfoPopup: UIViewController, GalleryControllerDelegate {
 
     @IBOutlet weak var imvAccount: UIImageView!
     @IBOutlet weak var tfAccName: UITextField!
@@ -48,6 +49,27 @@ class AccountInfoPopup: UIViewController {
     }
     
     @IBAction func cancelPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func imagePressed(_ sender: Any) {
+        let gallery = GalleryController()
+        gallery.delegate = self
+        self.present(gallery, animated: true, completion: nil)
+    }
+    
+    func galleryController(_ controller: GalleryController, didSelectImages images: [Image]){
+        
+    }
+    
+    func galleryController(_ controller: GalleryController, didSelectVideo video: Video){
+        
+    }
+    func galleryController(_ controller: GalleryController, requestLightbox images: [Image]){
+        
+    }
+    func galleryControllerDidCancel(_ controller: GalleryController){
+        navigationController?.popViewController(animated: true)
         dismiss(animated: true, completion: nil)
     }
 }

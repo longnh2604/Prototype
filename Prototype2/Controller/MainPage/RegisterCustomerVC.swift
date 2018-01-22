@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Gallery
 
 class RegisterCustomerVC: UIViewController {
 
@@ -21,15 +22,26 @@ class RegisterCustomerVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func imagePressed(_ sender: Any) {
+        let gallery = GalleryController()
+        gallery.delegate = self
+        present(gallery, animated: true, completion: nil)
     }
-    */
+}
 
+extension RegisterCustomerVC: GalleryControllerDelegate {
+    //Gallery Delegate
+    func galleryController(_ controller: GalleryController, didSelectImages images: [Image]){
+        
+    }
+    
+    func galleryController(_ controller: GalleryController, didSelectVideo video: Video){
+        
+    }
+    func galleryController(_ controller: GalleryController, requestLightbox images: [Image]){
+        
+    }
+    func galleryControllerDidCancel(_ controller: GalleryController){
+        dismiss(animated: true, completion: nil)
+    }
 }
