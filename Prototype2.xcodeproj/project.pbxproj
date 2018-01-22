@@ -66,6 +66,7 @@
 		FD795BAA20119FF900015DEA /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD795BA920119FF900015DEA /* NotificationVC.swift */; };
 		FD795BAD2011A07000015DEA /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD795BAC2011A07000015DEA /* NotificationCell.swift */; };
 		FD795BB82011EA2C00015DEA /* MailSettingPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD795BB72011EA2C00015DEA /* MailSettingPopup.swift */; };
+		FD860FFE20157713004736CA /* SearchCustomerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD860FFD20157713004736CA /* SearchCustomerVC.swift */; };
 		FD8BE949200DA2470011E4F8 /* CustomerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8BE948200DA2470011E4F8 /* CustomerCell.swift */; };
 		FD8BE94D200DCF830011E4F8 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8BE94C200DCF830011E4F8 /* GlobalVariables.swift */; };
 		FD8BE950200DF2AA0011E4F8 /* BasePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8BE94F200DF2AA0011E4F8 /* BasePageVC.swift */; };
@@ -136,6 +137,7 @@
 		FD795BA920119FF900015DEA /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
 		FD795BAC2011A07000015DEA /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		FD795BB72011EA2C00015DEA /* MailSettingPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailSettingPopup.swift; sourceTree = "<group>"; };
+		FD860FFD20157713004736CA /* SearchCustomerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCustomerVC.swift; sourceTree = "<group>"; };
 		FD8BE948200DA2470011E4F8 /* CustomerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerCell.swift; sourceTree = "<group>"; };
 		FD8BE94C200DCF830011E4F8 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		FD8BE94F200DF2AA0011E4F8 /* BasePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePageVC.swift; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 		FD15223220061D600028B221 /* MainPage */ = {
 			isa = PBXGroup;
 			children = (
+				FD860FFC201576F9004736CA /* Search */,
 				FD795BAE2011D24A00015DEA /* Setting */,
 				FD795BAB2011A00700015DEA /* Notification */,
 				FD8BE94E200DD9BD0011E4F8 /* HomeMenu */,
@@ -405,6 +408,14 @@
 				410374EF20138810005B2BEA /* AccountInfoPopup.swift */,
 			);
 			path = Setting;
+			sourceTree = "<group>";
+		};
+		FD860FFC201576F9004736CA /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				FD860FFD20157713004736CA /* SearchCustomerVC.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		FD8BE94A200DA2550011E4F8 /* Customer */ = {
@@ -645,6 +656,7 @@
 				FD15D29D200C7962006F1816 /* UserData.swift in Sources */,
 				FD723D0A2004BC10002E5675 /* RoundUIViewCorner.swift in Sources */,
 				FD795BAA20119FF900015DEA /* NotificationVC.swift in Sources */,
+				FD860FFE20157713004736CA /* SearchCustomerVC.swift in Sources */,
 				FD15223520061DE40028B221 /* MainTableViewCell.swift in Sources */,
 				41AF5105200B2D6B0082F272 /* SettingVC.swift in Sources */,
 				FD152244200620600028B221 /* SelectedVideoVC.swift in Sources */,

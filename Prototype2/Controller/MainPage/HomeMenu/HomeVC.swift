@@ -74,7 +74,7 @@ class HomeVC: BaseVC {
     }
 
     @IBAction func searchCustomerPressed(_ sender: Any) {
-        mainTabbarController?.selectedIndex = 1
+        
     }
     
     @IBAction func listCustomerTodayPressed(_ sender: Any) {
