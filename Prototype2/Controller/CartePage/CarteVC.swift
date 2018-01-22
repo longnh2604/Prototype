@@ -70,8 +70,8 @@ class CarteVC: UIViewController {
                 let carte = CarteData()
                 
                 if dictionary["carteImage"] != nil {
-                    let datas = dictionary["carteImage"]
-                    if let carteImages = datas!["carteImage"] as? [String]{
+                    
+                    if let carteImages = dictionary["carteImage"] as? [String]{
                         for image in carteImages{
                             carte.carteImages.append(image)
                         }
@@ -81,8 +81,7 @@ class CarteVC: UIViewController {
                 carte.carteID = carteID!
                 carte.carteMemo = carteMemo!
                 carte.cusID = cusID!
-                
-                
+
                 RealmServices.shared.create(carte)
                 self.tblCarte.reloadData()
             }
