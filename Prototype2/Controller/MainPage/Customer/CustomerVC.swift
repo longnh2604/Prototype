@@ -203,7 +203,10 @@ extension CustomerVC: UITableViewDelegate, UITableViewDataSource {
         }
         let selectedCell = tableView.cellForRow(at: indexPath)
         configure(cell: selectedCell as! CustomerCell, forRowAtIndexPath: indexPath)
+        
         GlobalVariables.sharedManager.cellIndex = indexPath.row
+        let customerID = customers[GlobalVariables.sharedManager.cellIndex].cusID
+        pass_data_callback!(["cusID":customerID])
     }
     
     func configure(cell: CustomerCell,forRowAtIndexPath indexPath:IndexPath) {

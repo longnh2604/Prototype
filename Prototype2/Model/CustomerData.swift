@@ -23,7 +23,6 @@ class CustomerData: Object {
     @objc dynamic var cusSecret: String = ""
     @objc dynamic var userID: String = ""
     @objc dynamic var cusRegisterDate: String = ""
-    var cusCarte = List<String>()
     
     static func primarykey() -> String? {
         return "cusID"

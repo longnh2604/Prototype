@@ -12,6 +12,9 @@ import RealmSwift
 class CarteData: Object {
     @objc dynamic var carteID: Int = 0
     @objc dynamic var carteMemo: String = ""
+    @objc dynamic var carteMemo1: String = ""
+    @objc dynamic var carteMemo2: String = ""
     @objc dynamic var cusID: String = ""
+    @objc dynamic var cusLstCome: String = ""
     var carteImages = List<String>()
 }

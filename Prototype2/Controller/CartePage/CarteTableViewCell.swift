@@ -18,6 +18,9 @@ class CarteTableViewCell: UITableViewCell {
     @IBOutlet weak var lblMemo1: UILabel!
     
     func configure(with customer: CarteData) {
-        
+        lblLstComeDay.text = customer.cusLstCome
+        lblMemo.text = customer.carteMemo
+        lblMemo1.text = customer.carteMemo1
+        lblMemo2.text = customer.carteMemo2
     }
 }

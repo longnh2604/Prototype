@@ -55,6 +55,18 @@ class CarteVC: UIViewController {
         }
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        let realm = RealmServices.shared.realm
+        let result = realm.objects(CarteData.self)
+        do {
+            try realm.write {
+                realm.delete(result)
+            }
+        } catch {
+            print(error)
+        }
+    }
+    
     func getCustomersfromUser() {
         queryRef.child("cartes").queryOrdered(byChild: "cusID").queryEqual(toValue: receive_data!["cusID"]!).observeSingleEvent(of: .value, with: { (snapshot) in
             for snap in snapshot.children.allObjects as! [DataSnapshot] {
@@ -66,11 +78,13 @@ class CarteVC: UIViewController {
                 let carteID = dictionary["carteID"] as? Int
                 let cusID = dictionary["cusID"] as? String
                 let carteMemo = dictionary["carteMemo"] as? String
+                let cusLstCome = dictionary["cusLstCome"] as? String
+                let carteMemo1 = dictionary["carteMemo1"] as? String
+                let carteMemo2 = dictionary["carteMemo2"] as? String
                 
                 let carte = CarteData()
                 
                 if dictionary["carteImage"] != nil {
-                    
                     if let carteImages = dictionary["carteImage"] as? [String]{
                         for image in carteImages{
                             carte.carteImages.append(image)
@@ -81,6 +95,9 @@ class CarteVC: UIViewController {
                 carte.carteID = carteID!
                 carte.carteMemo = carteMemo!
                 carte.cusID = cusID!
+                carte.cusLstCome = cusLstCome!
+                carte.carteMemo1 = carteMemo1!
+                carte.carteMemo2 = carteMemo2!
 
                 RealmServices.shared.create(carte)
                 self.tblCarte.reloadData()
