@@ -23,6 +23,9 @@ class CustomerData: Object {
     @objc dynamic var cusSecret: String = ""
     @objc dynamic var userID: String = ""
     @objc dynamic var cusRegisterDate: String = ""
+    @objc dynamic var cusMemo: String = ""
+    @objc dynamic var cusBloodType: String = ""
+    @objc dynamic var cusHobby: String = ""
     
     static func primarykey() -> String? {
         return "cusID"

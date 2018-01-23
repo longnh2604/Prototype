@@ -195,6 +195,7 @@ extension CustomerVC: UITableViewDelegate, UITableViewDataSource {
             selectedIndexPath = indexPath as NSIndexPath
             // refresh old cell to clear old selection indicators
             if let previousSelectedIndexPath = oldSelectedIndexPath {
+                print("previous \(previousSelectedIndexPath.row) oldselect \(String(describing: oldSelectedIndexPath?.row))")
                 if let previousSelectedCell = tableView.cellForRow(at: previousSelectedIndexPath as IndexPath) {
                     self.configure(cell: previousSelectedCell as! CustomerCell, forRowAtIndexPath: previousSelectedIndexPath as IndexPath)
                     self.updateUITop(index: indexPath.row)
@@ -202,6 +203,7 @@ extension CustomerVC: UITableViewDelegate, UITableViewDataSource {
             }
         }
         let selectedCell = tableView.cellForRow(at: indexPath)
+        print("gia tri index \(indexPath)")
         configure(cell: selectedCell as! CustomerCell, forRowAtIndexPath: indexPath)
         
         GlobalVariables.sharedManager.cellIndex = indexPath.row

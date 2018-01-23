@@ -31,6 +31,7 @@ class CarteVC: UIViewController {
     var receive_data : [String:Any]?
     var pass_data_callback : (([String : Any])->())?
     var cartesData: Results<CarteData>!
+    var customers: Results<CustomerData>!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,12 +48,27 @@ class CarteVC: UIViewController {
         let realm = RealmServices.shared.realm
         cartesData = realm.objects(CarteData.self)
         
+        setupUI()
+        
         print("Receive data from CustomerVC \(String(describing: receive_data ?? nil))")
         getCustomersfromUser()
         if (pass_data_callback != nil){
             pass_data_callback!(["test":"data_test_CarteVC"])
         } else {
         }
+    }
+    
+    func setupUI() {
+        let realm = RealmServices.shared.realm
+        customers = realm.objects(CustomerData.self)
+        
+        lblCusName.text = customers[GlobalVariables.sharedManager.cellIndex].cusName
+        lblCusID.text = customers[GlobalVariables.sharedManager.cellIndex].cusID
+        lblCusBirth.text = customers[GlobalVariables.sharedManager.cellIndex].cusBirth
+        lblCusLstCome.text = customers[GlobalVariables.sharedManager.cellIndex].cusLstCome
+        lblCusMemo.text = customers[GlobalVariables.sharedManager.cellIndex].cusMemo
+        lblCusBloodType.text = customers[GlobalVariables.sharedManager.cellIndex].cusBloodType
+        lblCusHobby.text = customers[GlobalVariables.sharedManager.cellIndex].cusHobby
     }
     
     override func viewWillDisappear(_ animated: Bool) {

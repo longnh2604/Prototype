@@ -184,6 +184,9 @@ class LoginVC: UIViewController {
                 let unopen = dictionary["cusMail"]?["unopen"] as? Int
                 let error = dictionary["cusMail"]?["error"] as? Int
                 let cusRegister = dictionary["registerDate"] as? String
+                let memo = dictionary["cusMemo"] as? String
+                let bloodtype = dictionary["cusBloodType"] as? String
+                let hobby = dictionary["cusHobby"] as? String
                 
                 let newCustomer = CustomerData()
                 newCustomer.cusName = name!
@@ -199,6 +202,9 @@ class LoginVC: UIViewController {
                 newCustomer.cusMailUnopen = unopen!
                 newCustomer.cusMailError = error!
                 newCustomer.cusRegisterDate = cusRegister!
+                newCustomer.cusMemo = memo!
+                newCustomer.cusBloodType = bloodtype!
+                newCustomer.cusHobby = hobby!
                 
                 RealmServices.shared.create(newCustomer)
             }
