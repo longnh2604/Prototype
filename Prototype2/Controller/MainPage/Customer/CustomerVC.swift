@@ -17,7 +17,6 @@ class CustomerVC: BaseVC {
     var customerDay = [CustomerData]()
     var pass_data_callback : (([String : Any])->())?
     
-    
     @IBOutlet weak var tblCustomer: UITableView!
     @IBOutlet weak var lblCusTotal: UILabel!
     @IBOutlet weak var lblCus: UILabel!
@@ -26,6 +25,7 @@ class CustomerVC: BaseVC {
     @IBOutlet weak var lblCusBirth: UILabel!
     @IBOutlet weak var lblCusLstCome: UILabel!
     @IBOutlet weak var imvCus: UIImageView!
+    @IBOutlet weak var tfCusNote: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,6 +70,7 @@ class CustomerVC: BaseVC {
             customer.cusMailUnopen = customers[element].cusMailUnopen
             customer.cusRegisterDate = customers[element].cusRegisterDate
             customer.userID = customers[element].userID
+            customer.cusNote = customers[element].cusNote
             customerDay.append(customer)
         }
         
@@ -87,6 +88,7 @@ class CustomerVC: BaseVC {
                 self.lblCusGenre.text = self.customerDay[index].cusSex
                 self.lblCusBirth.text = self.customerDay[index].cusBirth
                 self.lblCusLstCome.text = "最新来店日　:" + self.customerDay[index].cusLstCome
+                self.tfCusNote.text = self.customerDay[index].cusNote
                 
                 if let url = URL.init(string: self.customerDay[index].cusImage) {
                     self.imvCus.downloadedFrom(url: url)
@@ -98,6 +100,7 @@ class CustomerVC: BaseVC {
                 self.lblCusGenre.text = self.customers[index].cusSex
                 self.lblCusBirth.text = self.customers[index].cusBirth
                 self.lblCusLstCome.text = "最新来店日　:" + self.customers[index].cusLstCome
+                self.tfCusNote.text = self.customers[index].cusNote
                 
                 if let url = URL.init(string: self.customers[index].cusImage) {
                     self.imvCus.downloadedFrom(url: url)
@@ -162,8 +165,7 @@ extension CustomerVC: UITableViewDelegate, UITableViewDataSource {
             let customerCell = customers[indexPath.row]
             cell.configure(with: customerCell)
         }
-        
-        
+   
         if self.selectedIndexPath == indexPath as NSIndexPath {
             cell.contentView.backgroundColor = self.cellSelectedColor
         }else{
@@ -187,6 +189,7 @@ extension CustomerVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("selected \(String(describing: selectedIndexPath?.row)) indexpath \(String(indexPath.row))")
         if selectedIndexPath == indexPath as NSIndexPath {
             //selected same cell -> deselect
             selectedIndexPath = indexPath as NSIndexPath
@@ -195,16 +198,16 @@ extension CustomerVC: UITableViewDelegate, UITableViewDataSource {
             selectedIndexPath = indexPath as NSIndexPath
             // refresh old cell to clear old selection indicators
             if let previousSelectedIndexPath = oldSelectedIndexPath {
-                print("previous \(previousSelectedIndexPath.row) oldselect \(String(describing: oldSelectedIndexPath?.row))")
                 if let previousSelectedCell = tableView.cellForRow(at: previousSelectedIndexPath as IndexPath) {
                     self.configure(cell: previousSelectedCell as! CustomerCell, forRowAtIndexPath: previousSelectedIndexPath as IndexPath)
-                    self.updateUITop(index: indexPath.row)
                 }
             }
         }
+        self.updateUITop(index: indexPath.row)
         let selectedCell = tableView.cellForRow(at: indexPath)
-        print("gia tri index \(indexPath)")
-        configure(cell: selectedCell as! CustomerCell, forRowAtIndexPath: indexPath)
+        if selectedCell != nil {
+            configure(cell: selectedCell as! CustomerCell, forRowAtIndexPath: indexPath)
+        }
         
         GlobalVariables.sharedManager.cellIndex = indexPath.row
         let customerID = customers[GlobalVariables.sharedManager.cellIndex].cusID

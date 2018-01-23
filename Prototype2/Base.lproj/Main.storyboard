@@ -2253,8 +2253,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfa-fW-ueX" customClass="RoundUIViewCorner" customModule="Prototype2" customModuleProvider="target">
-                                <rect key="frame" x="10" y="70" width="1004" height="200"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfa-fW-ueX">
+                                <rect key="frame" x="0.0" y="70" width="1024" height="200"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="I can't stop myself of loving you" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K9J-ay-zPs">
                                         <rect key="frame" x="622" y="99" width="332" height="93"/>
@@ -2368,11 +2368,6 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="H6M-wT-7lh"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="40"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zDL-d0-9uJ" customClass="RoundUIViewCorner" customModule="Prototype2" customModuleProvider="target">
                                 <rect key="frame" x="10" y="275" width="1004" height="463"/>
@@ -2579,8 +2574,8 @@
                             <constraint firstItem="zDL-d0-9uJ" firstAttribute="top" secondItem="lfa-fW-ueX" secondAttribute="bottom" constant="5" id="6O1-w5-2zS"/>
                             <constraint firstItem="zDL-d0-9uJ" firstAttribute="leading" secondItem="gul-Es-liP" secondAttribute="leading" constant="10" id="878-Ci-aWS"/>
                             <constraint firstItem="gul-Es-liP" firstAttribute="trailing" secondItem="zDL-d0-9uJ" secondAttribute="trailing" constant="10" id="WRG-Qu-N0E"/>
-                            <constraint firstItem="gul-Es-liP" firstAttribute="trailing" secondItem="lfa-fW-ueX" secondAttribute="trailing" constant="10" id="buT-Me-aQP"/>
-                            <constraint firstItem="lfa-fW-ueX" firstAttribute="leading" secondItem="gul-Es-liP" secondAttribute="leading" constant="10" id="muO-7U-HdF"/>
+                            <constraint firstItem="gul-Es-liP" firstAttribute="trailing" secondItem="lfa-fW-ueX" secondAttribute="trailing" id="buT-Me-aQP"/>
+                            <constraint firstItem="lfa-fW-ueX" firstAttribute="leading" secondItem="gul-Es-liP" secondAttribute="leading" id="muO-7U-HdF"/>
                             <constraint firstItem="lfa-fW-ueX" firstAttribute="top" secondItem="sci-SD-9Wk" secondAttribute="top" constant="70" id="ygb-uC-m81"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gul-Es-liP"/>
@@ -4463,11 +4458,6 @@
                                     <constraint firstItem="336-mR-vTC" firstAttribute="leading" secondItem="ghK-q2-wIg" secondAttribute="leading" id="wK2-UW-fTF"/>
                                     <constraint firstItem="LyR-Qx-8H5" firstAttribute="centerY" secondItem="ghK-q2-wIg" secondAttribute="centerY" id="zzH-Q9-gjb"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="40"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mkT-rI-iCf">
                                 <rect key="frame" x="0.0" y="275" width="1024" height="60"/>
@@ -4757,6 +4747,7 @@
                         <outlet property="lblCusLstCome" destination="Iu6-Uz-CiV" id="QUX-Od-FMu"/>
                         <outlet property="lblCusTotal" destination="atL-RG-h9P" id="GDi-gL-V9j"/>
                         <outlet property="tblCustomer" destination="X3O-0w-2u7" id="jxq-vU-e7e"/>
+                        <outlet property="tfCusNote" destination="Yom-bK-1KE" id="tYS-is-cIu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kcc-PY-M1w" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -5143,11 +5134,6 @@
                                     <constraint firstItem="tfX-RX-ge7" firstAttribute="leading" secondItem="2mW-rD-HrO" secondAttribute="leading" id="y5V-NL-WGW"/>
                                     <constraint firstItem="nHZ-E8-CqW" firstAttribute="centerY" secondItem="BLe-pL-vcg" secondAttribute="centerY" id="zaF-62-VFV"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="40"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>

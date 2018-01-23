@@ -187,6 +187,7 @@ class LoginVC: UIViewController {
                 let memo = dictionary["cusMemo"] as? String
                 let bloodtype = dictionary["cusBloodType"] as? String
                 let hobby = dictionary["cusHobby"] as? String
+                let note = dictionary["cusNote"] as? String
                 
                 let newCustomer = CustomerData()
                 newCustomer.cusName = name!
@@ -205,6 +206,7 @@ class LoginVC: UIViewController {
                 newCustomer.cusMemo = memo!
                 newCustomer.cusBloodType = bloodtype!
                 newCustomer.cusHobby = hobby!
+                newCustomer.cusNote = note!
                 
                 RealmServices.shared.create(newCustomer)
             }

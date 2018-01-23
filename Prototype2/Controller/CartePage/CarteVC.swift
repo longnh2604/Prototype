@@ -69,6 +69,7 @@ class CarteVC: UIViewController {
         lblCusMemo.text = customers[GlobalVariables.sharedManager.cellIndex].cusMemo
         lblCusBloodType.text = customers[GlobalVariables.sharedManager.cellIndex].cusBloodType
         lblCusHobby.text = customers[GlobalVariables.sharedManager.cellIndex].cusHobby
+        tfCusNote.text = customers[GlobalVariables.sharedManager.cellIndex].cusNote
     }
     
     override func viewWillDisappear(_ animated: Bool) {
