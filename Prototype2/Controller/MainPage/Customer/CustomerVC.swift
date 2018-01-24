@@ -57,6 +57,7 @@ class CustomerVC: BaseVC {
         if GlobalVariables.sharedManager.cusDisplayByDay == true {
             customerDay.removeAll()
             setupCustomerByDay()
+            updateUITop(index: 0)
             tblCustomer.reloadData()
         } else {
             setupUI()
@@ -93,7 +94,7 @@ class CustomerVC: BaseVC {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        GlobalVariables.sharedManager.cusDisplayByDay = false
+        
     }
     
     func updateUITop(index: Int){

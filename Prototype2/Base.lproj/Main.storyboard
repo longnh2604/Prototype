@@ -39,7 +39,7 @@
                                 <rect key="frame" x="410" y="29" width="544" height="710"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsn-hU-tXx">
-                                        <rect key="frame" x="151" y="20" width="242.5" height="60"/>
+                                        <rect key="frame" x="151.5" y="20" width="242.5" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="l3u-es-6wa"/>
                                         </constraints>
@@ -170,7 +170,7 @@
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="You can also contact us as the following" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Es-Xj-XQs">
-                                        <rect key="frame" x="78" y="550" width="389.5" height="70"/>
+                                        <rect key="frame" x="77.5" y="550" width="389.5" height="70"/>
                                         <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>

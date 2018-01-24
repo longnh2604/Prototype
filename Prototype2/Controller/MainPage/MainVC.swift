@@ -28,6 +28,7 @@ class MainVC: UITabBarController, UITabBarControllerDelegate {
     // UITabBarControllerDelegate
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         kLeftMenuVC?.getSelectedVCInTabbar()?.navigationController?.popToRootViewController(animated: true)
+        GlobalVariables.sharedManager.cusDisplayByDay = false
         print("Selected view controller")
     }
 

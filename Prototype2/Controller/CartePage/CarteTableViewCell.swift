@@ -22,5 +22,10 @@ class CarteTableViewCell: UITableViewCell {
         lblMemo.text = customer.carteMemo
         lblMemo1.text = customer.carteMemo1
         lblMemo2.text = customer.carteMemo2
+        
+        if let url = URL.init(string: customer.carteImages[0]) {
+            self.imvCus.downloadedFrom(url: url)
+            self.imvCus.roundImage(with: self.imvCus)
+        }
     }
 }
