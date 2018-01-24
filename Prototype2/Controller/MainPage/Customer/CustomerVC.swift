@@ -12,6 +12,8 @@ import RealmSwift
 class CustomerVC: BaseVC {
 
     var customers: Results<CustomerData>!
+    var cartes: Results<CarteData>!
+    
     var selectedIndexPath: NSIndexPath?
     var cellSelectedColor = UIColor(red: 188.0/255.0, green: 237.0/255.0, blue: 255.0/255.0, alpha: 1.0)
     var customerDay = [CustomerData]()
@@ -35,6 +37,20 @@ class CustomerVC: BaseVC {
 
         let realm = RealmServices.shared.realm
         customers = realm.objects(CustomerData.self)
+        cartes = realm.objects(CarteData.self)
+        deleteCarteData()
+    }
+    
+    func deleteCarteData() {
+        let realm = RealmServices.shared.realm
+        let result = realm.objects(CarteData.self)
+        do {
+            try realm.write {
+                realm.delete(result)
+            }
+        } catch {
+            print(error)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

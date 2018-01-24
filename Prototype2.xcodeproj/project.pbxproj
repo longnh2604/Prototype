@@ -50,6 +50,7 @@
 		FD594DED2005A9B2006B72A5 /* CarteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD594DEC2005A9B2006B72A5 /* CarteVC.swift */; };
 		FD594DF32005DDCC006B72A5 /* CustomerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD594DF12005DDCC006B72A5 /* CustomerData.swift */; };
 		FD594DF42005DDCC006B72A5 /* CarteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD594DF22005DDCC006B72A5 /* CarteData.swift */; };
+		FD59CF1820181EF00047A007 /* SelectedCarteCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD59CF1720181EF00047A007 /* SelectedCarteCollectionCell.swift */; };
 		FD723CE22004ADC1002E5675 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD723CE12004ADC1002E5675 /* AppDelegate.swift */; };
 		FD723CE72004ADC1002E5675 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD723CE52004ADC1002E5675 /* Main.storyboard */; };
 		FD723CE92004ADC1002E5675 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD723CE82004ADC1002E5675 /* Assets.xcassets */; };
@@ -119,6 +120,7 @@
 		FD594DEE2005DC4D006B72A5 /* Prototype2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Prototype2.entitlements; sourceTree = "<group>"; };
 		FD594DF12005DDCC006B72A5 /* CustomerData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerData.swift; sourceTree = "<group>"; };
 		FD594DF22005DDCC006B72A5 /* CarteData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarteData.swift; sourceTree = "<group>"; };
+		FD59CF1720181EF00047A007 /* SelectedCarteCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCarteCollectionCell.swift; sourceTree = "<group>"; };
 		FD723CDE2004ADC1002E5675 /* Prototype2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prototype2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD723CE12004ADC1002E5675 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD723CE62004ADC1002E5675 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 				FD15222220061B7F0028B221 /* SelectedCarteVC.swift */,
 				FD594DEC2005A9B2006B72A5 /* CarteVC.swift */,
 				FD152241200620250028B221 /* CarteTableViewCell.swift */,
+				FD59CF1720181EF00047A007 /* SelectedCarteCollectionCell.swift */,
 			);
 			path = CartePage;
 			sourceTree = "<group>";
@@ -649,6 +652,7 @@
 				FD15D2A3200C8BDD006F1816 /* VideoPageVC.swift in Sources */,
 				FD15223D20061F400028B221 /* TemplateVC.swift in Sources */,
 				FD152248200620830028B221 /* EditVideoVC.swift in Sources */,
+				FD59CF1820181EF00047A007 /* SelectedCarteCollectionCell.swift in Sources */,
 				4185115D200BB038008BBDFA /* HomeVC.swift in Sources */,
 				FD723CE22004ADC1002E5675 /* AppDelegate.swift in Sources */,
 				FD1D81C920103D2700498B2C /* HelpVC.swift in Sources */,

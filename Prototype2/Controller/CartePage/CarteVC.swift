@@ -70,64 +70,59 @@ class CarteVC: UIViewController {
         lblCusBloodType.text = customers[GlobalVariables.sharedManager.cellIndex].cusBloodType
         lblCusHobby.text = customers[GlobalVariables.sharedManager.cellIndex].cusHobby
         tfCusNote.text = customers[GlobalVariables.sharedManager.cellIndex].cusNote
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        deleteCarteData()
-    }
-    
-    func deleteCarteData() {
-        let realm = RealmServices.shared.realm
-        let result = realm.objects(CarteData.self)
-        do {
-            try realm.write {
-                realm.delete(result)
-            }
-        } catch {
-            print(error)
+        
+        if let url = URL.init(string: self.customers[GlobalVariables.sharedManager.cellIndex].cusImage) {
+            self.imvCus.downloadedFrom(url: url)
+            self.imvCus.roundImage(with: self.imvCus)
         }
     }
     
     func getCustomersfromUser() {
-        queryRef.child("cartes").queryOrdered(byChild: "cusID").queryEqual(toValue: receive_data!["cusID"]!).observeSingleEvent(of: .value, with: { (snapshot) in
-            if snapshot.children.allObjects.isEmpty == false {
-                for snap in snapshot.children.allObjects as! [DataSnapshot] {
-                    guard let dictionary = snap.value as? [String: AnyObject] else {
-                        return
-                    }
-                    print(dictionary)
-                    
-                    let carteID = dictionary["carteID"] as? Int
-                    let cusID = dictionary["cusID"] as? String
-                    let carteMemo = dictionary["carteMemo"] as? String
-                    let cusLstCome = dictionary["cusLstCome"] as? String
-                    let carteMemo1 = dictionary["carteMemo1"] as? String
-                    let carteMemo2 = dictionary["carteMemo2"] as? String
-                    
-                    let carte = CarteData()
-                    
-                    if dictionary["carteImage"] != nil {
-                        if let carteImages = dictionary["carteImage"] as? [String]{
-                            for image in carteImages{
-                                carte.carteImages.append(image)
+        print(receive_data!["cusID"] ?? 1)
+        
+        if cartesData.isEmpty {
+            queryRef.child("cartes").queryOrdered(byChild: "cusID").queryEqual(toValue: receive_data!["cusID"]!).observeSingleEvent(of: .value, with: { (snapshot) in
+                if snapshot.children.allObjects.isEmpty == false {
+                    for snap in snapshot.children.allObjects as! [DataSnapshot] {
+                        guard let dictionary = snap.value as? [String: AnyObject] else {
+                            return
+                        }
+                        print(dictionary)
+                        
+                        let carteID = dictionary["carteID"] as? Int
+                        let cusID = dictionary["cusID"] as? String
+                        let carteMemo = dictionary["carteMemo"] as? String
+                        let cusLstCome = dictionary["cusLstCome"] as? String
+                        let carteMemo1 = dictionary["carteMemo1"] as? String
+                        let carteMemo2 = dictionary["carteMemo2"] as? String
+                        
+                        let carte = CarteData()
+                        
+                        if dictionary["carteImage"] != nil {
+                            if let carteImages = dictionary["carteImage"] as? [String]{
+                                for image in carteImages{
+                                    carte.carteImages.append(image)
+                                }
                             }
                         }
+                        
+                        carte.carteID = carteID!
+                        carte.carteMemo = carteMemo!
+                        carte.cusID = cusID!
+                        carte.cusLstCome = cusLstCome!
+                        carte.carteMemo1 = carteMemo1!
+                        carte.carteMemo2 = carteMemo2!
+                        
+                        RealmServices.shared.create(carte)
+                        self.tblCarte.reloadData()
                     }
-                    
-                    carte.carteID = carteID!
-                    carte.carteMemo = carteMemo!
-                    carte.cusID = cusID!
-                    carte.cusLstCome = cusLstCome!
-                    carte.carteMemo1 = carteMemo1!
-                    carte.carteMemo2 = carteMemo2!
-                    
-                    RealmServices.shared.create(carte)
+                } else {
                     self.tblCarte.reloadData()
                 }
-            } else {
-                self.tblCarte.reloadData()
-            }
-        })
+            })
+        } else {
+            self.tblCarte.reloadData()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -214,6 +209,7 @@ extension CarteVC: UITableViewDelegate, UITableViewDataSource {
         }
         let selectedCell = tableView.cellForRow(at: indexPath)
         configure(cell: selectedCell as! CarteTableViewCell, forRowAtIndexPath: indexPath)
+        GlobalVariables.sharedManager.cellCarteIndex = indexPath.row
     }
 
     func configure(cell: CarteTableViewCell,forRowAtIndexPath indexPath:IndexPath) {
