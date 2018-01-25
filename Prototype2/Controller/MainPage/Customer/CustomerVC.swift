@@ -240,5 +240,4 @@ extension CustomerVC: UITableViewDelegate, UITableViewDataSource {
             }
         }
     }
-            
 }
