@@ -12,7 +12,9 @@ import RealmSwift
 class SearchCustomerVC: UIViewController {
 
     @IBOutlet weak var tblSearch: UITableView!
-
+    @IBOutlet weak var btnDayCome: UIButton!
+    @IBOutlet weak var btn: UIButton!
+    
     var customers: Results<CustomerData>!
     var selectedIndexPath: NSIndexPath?
     var cellSelectedColor = UIColor(red: 188.0/255.0, green: 237.0/255.0, blue: 255.0/255.0, alpha: 1.0)
@@ -30,6 +32,14 @@ class SearchCustomerVC: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    @IBAction func btnButtonDidTap(_ sender: Any) {
+        
+    }
+    
+    @IBAction func btnDayComePressed(_ sender: UIButton) {
+       print(sender.isSelected)
+        self.btnDayCome.isSelected = !sender.isSelected
     }
 }
 
