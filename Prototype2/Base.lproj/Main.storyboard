@@ -39,7 +39,7 @@
                                 <rect key="frame" x="410" y="29" width="544" height="710"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsn-hU-tXx">
-                                        <rect key="frame" x="151.5" y="20" width="242.5" height="60"/>
+                                        <rect key="frame" x="151" y="20" width="242.5" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="l3u-es-6wa"/>
                                         </constraints>
@@ -170,7 +170,7 @@
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="You can also contact us as the following" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Es-Xj-XQs">
-                                        <rect key="frame" x="77.5" y="550" width="389.5" height="70"/>
+                                        <rect key="frame" x="78" y="550" width="389.5" height="70"/>
                                         <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -3136,7 +3136,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQo-BJ-Ubp">
-                                                            <rect key="frame" x="35" y="24.5" width="386" height="30"/>
+                                                            <rect key="frame" x="35" y="25" width="386" height="30"/>
                                                             <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -3861,7 +3861,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="X8U-KI-RHe">
-                                                <rect key="frame" x="801" y="164.5" width="163" height="29"/>
+                                                <rect key="frame" x="820" y="165" width="144" height="29"/>
                                                 <segments>
                                                     <segment title="範囲検索"/>
                                                     <segment title="日付け検索"/>
@@ -3881,65 +3881,77 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBo-J2-Fip">
-                                                <rect key="frame" x="350" y="1" width="130" height="35"/>
+                                                <rect key="frame" x="350" y="1" width="140" height="35"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="130" id="1tz-Bk-XC1"/>
+                                                    <constraint firstAttribute="width" constant="140" id="1tz-Bk-XC1"/>
                                                     <constraint firstAttribute="height" constant="35" id="IkG-kc-N8S"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="12"/>
-                                                <state key="normal" title="とー牧する" backgroundImage="searchOFF">
+                                                <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="11"/>
+                                                <state key="normal" title="と一致する" backgroundImage="searchOFF">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <state key="selected" backgroundImage="searchON">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="btnButtonDidTap:" destination="LYS-9K-vPI" eventType="touchUpInside" id="afk-ex-rjb"/>
+                                                    <action selector="btnSamePressed:" destination="LYS-9K-vPI" eventType="touchUpInside" id="3KO-rW-Epm"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJ5-CS-MVt">
-                                                <rect key="frame" x="500" y="1" width="130" height="35"/>
-                                                <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="12"/>
+                                                <rect key="frame" x="510" y="1" width="140" height="35"/>
+                                                <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="11"/>
                                                 <state key="normal" title="を含む" backgroundImage="searchOFF">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <state key="selected" backgroundImage="searchON">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="btnIncludePressed:" destination="LYS-9K-vPI" eventType="touchUpInside" id="hOJ-Ta-Pyq"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xx8-9V-g7q">
-                                                <rect key="frame" x="350" y="41" width="130" height="35"/>
-                                                <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="12"/>
-                                                <state key="normal" title="生日で検索" backgroundImage="searchOFF">
+                                                <rect key="frame" x="350" y="41" width="140" height="35"/>
+                                                <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="11"/>
+                                                <state key="normal" title="誕生日で検索" backgroundImage="searchOFF">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <state key="selected" backgroundImage="searchON">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="btnBirthdayPressed:" destination="LYS-9K-vPI" eventType="touchUpInside" id="zvB-Bc-WvU"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDb-7c-U27">
-                                                <rect key="frame" x="500" y="41" width="130" height="35"/>
-                                                <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="12"/>
-                                                <state key="normal" title="生月で検索" backgroundImage="searchOFF">
+                                                <rect key="frame" x="510" y="41" width="140" height="35"/>
+                                                <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="11"/>
+                                                <state key="normal" title="誕生月で検索" backgroundImage="searchOFF">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <state key="selected" backgroundImage="searchON">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="btnBirthmonthPressed:" destination="LYS-9K-vPI" eventType="touchUpInside" id="fi6-Gj-cff"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zbk-7i-Wmh">
-                                                <rect key="frame" x="650" y="41" width="130" height="35"/>
-                                                <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="12"/>
-                                                <state key="normal" title="生年で検索" backgroundImage="searchOFF">
+                                                <rect key="frame" x="670" y="41" width="140" height="35"/>
+                                                <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="11"/>
+                                                <state key="normal" title="誕生年で検索" backgroundImage="searchOFF">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <state key="selected" backgroundImage="searchON">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="btnBirthyearPressed:" destination="LYS-9K-vPI" eventType="touchUpInside" id="0kB-vY-TC6"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Su9-IN-PQZ">
-                                                <rect key="frame" x="350" y="161" width="130" height="35"/>
-                                                <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="12"/>
+                                                <rect key="frame" x="350" y="161" width="140" height="35"/>
+                                                <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="11"/>
                                                 <state key="normal" title="来店日" backgroundImage="searchOFF">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
@@ -3949,22 +3961,28 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipz-RD-bsf">
-                                                <rect key="frame" x="500" y="161" width="130" height="35"/>
-                                                <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="12"/>
+                                                <rect key="frame" x="510" y="161" width="140" height="35"/>
+                                                <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="11"/>
                                                 <state key="normal" title="最新来店日" backgroundImage="searchOFF">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <state key="selected" backgroundImage="searchON"/>
+                                                <connections>
+                                                    <action selector="btnLastvisitPressed:" destination="LYS-9K-vPI" eventType="touchUpInside" id="a0s-ee-wVk"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSx-NH-5DA">
-                                                <rect key="frame" x="650" y="161" width="130" height="35"/>
-                                                <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="12"/>
+                                                <rect key="frame" x="670" y="161" width="140" height="35"/>
+                                                <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="11"/>
                                                 <state key="normal" title="初回来店日" backgroundImage="searchOFF">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <state key="selected" backgroundImage="searchON">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="btnFirstvisitPressed:" destination="LYS-9K-vPI" eventType="touchUpInside" id="c2U-BE-nFG"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -4057,6 +4075,7 @@
                                             <constraint firstItem="sIG-ei-i4V" firstAttribute="height" secondItem="PjG-oa-enc" secondAttribute="height" id="tZK-Tz-rEX"/>
                                             <constraint firstItem="Q5M-qi-h7r" firstAttribute="trailing" secondItem="TD1-Au-SKP" secondAttribute="trailing" id="thb-0y-n2U"/>
                                             <constraint firstItem="PSx-NH-5DA" firstAttribute="centerY" secondItem="ipz-RD-bsf" secondAttribute="centerY" id="uLu-bz-w5f"/>
+                                            <constraint firstItem="X8U-KI-RHe" firstAttribute="leading" secondItem="PSx-NH-5DA" secondAttribute="trailing" constant="10" id="ujL-v7-C5Y"/>
                                             <constraint firstItem="hkQ-lW-EM8" firstAttribute="centerY" secondItem="UpV-iC-cmu" secondAttribute="centerY" id="uyn-cg-mQt"/>
                                             <constraint firstItem="2br-NB-uuF" firstAttribute="leading" secondItem="hkQ-lW-EM8" secondAttribute="leading" id="v2J-ZI-u79"/>
                                             <constraint firstItem="Wxr-qe-rsv" firstAttribute="leading" secondItem="juU-1M-ogo" secondAttribute="leading" id="vYw-pM-03L"/>
@@ -4312,8 +4331,15 @@
                         <viewLayoutGuide key="safeArea" id="5tT-PP-j1u"/>
                     </view>
                     <connections>
-                        <outlet property="btn" destination="RBo-J2-Fip" id="F2G-wG-8np"/>
+                        <outlet property="btnBirthday" destination="Xx8-9V-g7q" id="IqB-Hc-hxn"/>
+                        <outlet property="btnBirthmonth" destination="gDb-7c-U27" id="Pf4-bH-SZk"/>
+                        <outlet property="btnBirthyear" destination="Zbk-7i-Wmh" id="QXx-Ly-VXI"/>
                         <outlet property="btnDayCome" destination="Su9-IN-PQZ" id="Wl1-e8-vOu"/>
+                        <outlet property="btnFirstvisit" destination="PSx-NH-5DA" id="TNR-mh-EGA"/>
+                        <outlet property="btnInclude" destination="VJ5-CS-MVt" id="Tej-pv-0qJ"/>
+                        <outlet property="btnLastvisit" destination="ipz-RD-bsf" id="UdY-MU-HJW"/>
+                        <outlet property="btnSame" destination="RBo-J2-Fip" id="FLf-HZ-TTZ"/>
+                        <outlet property="btnSegment" destination="X8U-KI-RHe" id="EoO-XQ-ECl"/>
                         <outlet property="tblSearch" destination="9aO-vV-8GS" id="C9A-pI-ClV"/>
                     </connections>
                 </viewController>
@@ -5048,7 +5074,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1985年01月01日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHZ-E8-CqW">
-                                        <rect key="frame" x="325" y="103.5" width="239.5" height="30"/>
+                                        <rect key="frame" x="325" y="103" width="239.5" height="30"/>
                                         <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -5126,19 +5152,19 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="リンス・パーマ・カラー" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfX-RX-ge7">
-                                        <rect key="frame" x="325" y="72.5" width="239.5" height="30"/>
+                                        <rect key="frame" x="325" y="72" width="239.5" height="30"/>
                                         <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="音楽・旅行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPz-d3-wov">
-                                        <rect key="frame" x="325" y="165.5" width="239.5" height="30"/>
+                                        <rect key="frame" x="325" y="165" width="239.5" height="30"/>
                                         <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6je-dZ-j28">
-                                        <rect key="frame" x="325" y="137.5" width="239.5" height="30"/>
+                                        <rect key="frame" x="325" y="137" width="239.5" height="30"/>
                                         <fontDescription key="fontDescription" name="Meiryo" family="Meiryo" pointSize="20"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>

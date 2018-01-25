@@ -13,7 +13,14 @@ class SearchCustomerVC: UIViewController {
 
     @IBOutlet weak var tblSearch: UITableView!
     @IBOutlet weak var btnDayCome: UIButton!
-    @IBOutlet weak var btn: UIButton!
+    @IBOutlet weak var btnInclude: UIButton!
+    @IBOutlet weak var btnBirthday: UIButton!
+    @IBOutlet weak var btnBirthmonth: UIButton!
+    @IBOutlet weak var btnBirthyear: UIButton!
+    @IBOutlet weak var btnLastvisit: UIButton!
+    @IBOutlet weak var btnFirstvisit: UIButton!
+    @IBOutlet weak var btnSegment: UISegmentedControl!
+    @IBOutlet weak var btnSame: UIButton!
     
     var customers: Results<CustomerData>!
     var selectedIndexPath: NSIndexPath?
@@ -33,14 +40,39 @@ class SearchCustomerVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBAction func btnButtonDidTap(_ sender: Any) {
-        
-    }
     
     @IBAction func btnDayComePressed(_ sender: UIButton) {
-       print(sender.isSelected)
-        self.btnDayCome.isSelected = !sender.isSelected
+        btnDayCome.isSelected = !sender.isSelected
     }
+    
+    @IBAction func btnIncludePressed(_ sender: UIButton) {
+        btnInclude.isSelected = !sender.isSelected
+    }
+    
+    @IBAction func btnSamePressed(_ sender: UIButton) {
+        btnSame.isSelected = !sender.isSelected
+    }
+    
+    @IBAction func btnBirthdayPressed(_ sender: UIButton) {
+        btnBirthday.isSelected = !sender.isSelected
+    }
+    
+    @IBAction func btnBirthmonthPressed(_ sender: UIButton) {
+        btnBirthmonth.isSelected = !sender.isSelected
+    }
+    
+    @IBAction func btnBirthyearPressed(_ sender: UIButton) {
+        btnBirthyear.isSelected = !sender.isSelected
+    }
+    
+    @IBAction func btnLastvisitPressed(_ sender: UIButton) {
+        btnLastvisit.isSelected = !sender.isSelected
+    }
+    
+    @IBAction func btnFirstvisitPressed(_ sender: UIButton) {
+        btnFirstvisit.isSelected = !sender.isSelected
+    }
+    
 }
 
 extension SearchCustomerVC: UITableViewDelegate, UITableViewDataSource {
