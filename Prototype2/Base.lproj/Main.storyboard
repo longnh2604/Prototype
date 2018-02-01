@@ -6537,9 +6537,6 @@
                                             <constraint firstAttribute="height" constant="70" id="Y1Z-P0-ZwH"/>
                                         </constraints>
                                         <state key="normal" image="secretmemo"/>
-                                        <connections>
-                                            <action selector="btnSecretPressed:" destination="co9-h0-8oO" eventType="touchUpInside" id="usI-Yi-dUQ"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.23921568630000001" green="0.61960784310000006" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -6599,7 +6596,7 @@
                                 <rect key="frame" x="0.0" y="275" width="1024" height="493"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Oac-A1-es3">
-                                    <size key="itemSize" width="201" height="173"/>
+                                    <size key="itemSize" width="200" height="160"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -6624,8 +6621,15 @@
                                             <constraint firstAttribute="bottom" secondItem="Vdr-6W-b8e" secondAttribute="bottom" id="xdg-Pt-1UI"/>
                                         </constraints>
                                         <size key="customSize" width="200" height="160"/>
+                                        <connections>
+                                            <outlet property="imvCarte" destination="Vdr-6W-b8e" id="OlU-KB-drZ"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="co9-h0-8oO" id="KvQ-Sy-npk"/>
+                                    <outlet property="delegate" destination="co9-h0-8oO" id="TJv-zz-ZcO"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -6642,15 +6646,7 @@
                         <viewLayoutGuide key="safeArea" id="kMN-c6-QVz"/>
                     </view>
                     <connections>
-                        <outlet property="imvCus" destination="kDU-vj-qa7" id="Vaa-yZ-KSh"/>
-                        <outlet property="lblCusBirth" destination="ZCP-j7-TFv" id="oF2-WX-plB"/>
-                        <outlet property="lblCusBloodType" destination="5qW-qa-6kd" id="d6t-NW-51i"/>
-                        <outlet property="lblCusHobby" destination="P0W-XU-jIm" id="G6Y-Mk-1R0"/>
-                        <outlet property="lblCusID" destination="r7t-v5-yJw" id="qJQ-sx-4iT"/>
-                        <outlet property="lblCusLstCome" destination="9h7-fv-SiG" id="Uob-Tg-hbf"/>
-                        <outlet property="lblCusMemo" destination="Ip6-QD-k9w" id="XtD-zj-Yhl"/>
-                        <outlet property="lblCusName" destination="EGQ-Ah-hm2" id="GgB-Rc-uBu"/>
-                        <outlet property="tfCusNote" destination="gmx-54-ZZv" id="OKO-ER-9eM"/>
+                        <outlet property="collectionView" destination="0S2-Sl-bsz" id="FAj-MC-mdj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xdl-Pg-UsF" userLabel="First Responder" sceneMemberID="firstResponder"/>
