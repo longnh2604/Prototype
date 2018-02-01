@@ -24,7 +24,6 @@
 		4D88FF062008AB7F00A442DE /* PageTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88FF052008AB7F00A442DE /* PageTestViewController.swift */; };
 		B09545E208C4959AA44FD33C /* Pods_Prototype2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FAC40FDC9F2E6D090F5677D /* Pods_Prototype2.framework */; };
 		FD0433A8200F4E8F00F26725 /* CalculateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0433A7200F4E8F00F26725 /* CalculateVC.swift */; };
-		FD15222320061B7F0028B221 /* SelectedCarteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15222220061B7F0028B221 /* SelectedCarteVC.swift */; };
 		FD15222620061BA30028B221 /* SelectedPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15222520061BA30028B221 /* SelectedPhotoVC.swift */; };
 		FD15222920061BD30028B221 /* ComparePhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15222820061BD30028B221 /* ComparePhotoVC.swift */; };
 		FD15222B20061BE30028B221 /* EditPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15222A20061BE30028B221 /* EditPhotoVC.swift */; };
@@ -44,8 +43,9 @@
 		FD1D81C720103D1700498B2C /* AccountInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1D81C620103D1700498B2C /* AccountInfoVC.swift */; };
 		FD1D81C920103D2700498B2C /* HelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1D81C820103D2700498B2C /* HelpVC.swift */; };
 		FD1D81CB20107ADF00498B2C /* RegisterCustomerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1D81CA20107ADF00498B2C /* RegisterCustomerVC.swift */; };
+		FD51AE162022A85E004B7466 /* SelectedCarteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD51AE142022A4D7004B7466 /* SelectedCarteVC.swift */; };
+		FD51AE172022A869004B7466 /* EditCarteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15222220061B7F0028B221 /* EditCarteVC.swift */; };
 		FD55BA72200D9038008E6A81 /* RealmServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD55BA71200D9038008E6A81 /* RealmServices.swift */; };
-		FD594DE92005A68B006B72A5 /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD594DE82005A68B006B72A5 /* MainPageVC.swift */; };
 		FD594DEB2005A6A1006B72A5 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD594DEA2005A6A1006B72A5 /* MainVC.swift */; };
 		FD594DED2005A9B2006B72A5 /* CarteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD594DEC2005A9B2006B72A5 /* CarteVC.swift */; };
 		FD594DF32005DDCC006B72A5 /* CustomerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD594DF12005DDCC006B72A5 /* CustomerData.swift */; };
@@ -93,7 +93,7 @@
 		5ED158CD1A04F2AE46B9DE44 /* Pods-Prototype2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prototype2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Prototype2/Pods-Prototype2.debug.xcconfig"; sourceTree = "<group>"; };
 		678C181F9249952A01FD8EEC /* Pods-Prototype2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prototype2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Prototype2/Pods-Prototype2.release.xcconfig"; sourceTree = "<group>"; };
 		FD0433A7200F4E8F00F26725 /* CalculateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateVC.swift; sourceTree = "<group>"; };
-		FD15222220061B7F0028B221 /* SelectedCarteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCarteVC.swift; sourceTree = "<group>"; };
+		FD15222220061B7F0028B221 /* EditCarteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCarteVC.swift; sourceTree = "<group>"; };
 		FD15222520061BA30028B221 /* SelectedPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPhotoVC.swift; sourceTree = "<group>"; };
 		FD15222820061BD30028B221 /* ComparePhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparePhotoVC.swift; sourceTree = "<group>"; };
 		FD15222A20061BE30028B221 /* EditPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPhotoVC.swift; sourceTree = "<group>"; };
@@ -113,8 +113,8 @@
 		FD1D81C620103D1700498B2C /* AccountInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfoVC.swift; sourceTree = "<group>"; };
 		FD1D81C820103D2700498B2C /* HelpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpVC.swift; sourceTree = "<group>"; };
 		FD1D81CA20107ADF00498B2C /* RegisterCustomerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCustomerVC.swift; sourceTree = "<group>"; };
+		FD51AE142022A4D7004B7466 /* SelectedCarteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCarteVC.swift; sourceTree = "<group>"; };
 		FD55BA71200D9038008E6A81 /* RealmServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmServices.swift; sourceTree = "<group>"; };
-		FD594DE82005A68B006B72A5 /* MainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageVC.swift; sourceTree = "<group>"; };
 		FD594DEA2005A6A1006B72A5 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		FD594DEC2005A9B2006B72A5 /* CarteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarteVC.swift; sourceTree = "<group>"; };
 		FD594DEE2005DC4D006B72A5 /* Prototype2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Prototype2.entitlements; sourceTree = "<group>"; };
@@ -241,10 +241,11 @@
 		FD15222F20061D2A0028B221 /* CartePage */ = {
 			isa = PBXGroup;
 			children = (
-				FD15222220061B7F0028B221 /* SelectedCarteVC.swift */,
+				FD15222220061B7F0028B221 /* EditCarteVC.swift */,
 				FD594DEC2005A9B2006B72A5 /* CarteVC.swift */,
 				FD152241200620250028B221 /* CarteTableViewCell.swift */,
 				FD59CF1720181EF00047A007 /* SelectedCarteCollectionCell.swift */,
+				FD51AE142022A4D7004B7466 /* SelectedCarteVC.swift */,
 			);
 			path = CartePage;
 			sourceTree = "<group>";
@@ -267,7 +268,6 @@
 				FD8BE94B200DA26D0011E4F8 /* SideMenu */,
 				FD8BE94A200DA2550011E4F8 /* Customer */,
 				41F34F1C20145D7D000FD9E9 /* Help */,
-				FD594DE82005A68B006B72A5 /* MainPageVC.swift */,
 				FD594DEA2005A6A1006B72A5 /* MainVC.swift */,
 				FD15223420061DE40028B221 /* MainTableViewCell.swift */,
 				FD1D81CA20107ADF00498B2C /* RegisterCustomerVC.swift */,
@@ -627,6 +627,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD51AE172022A869004B7466 /* EditCarteVC.swift in Sources */,
+				FD51AE162022A85E004B7466 /* SelectedCarteVC.swift in Sources */,
 				4D88FEFF200877B800A442DE /* UIApplication.swift in Sources */,
 				41AF5109200B3BB40082F272 /* CustomerVC.swift in Sources */,
 				41F34F1E20145EAE000FD9E9 /* HelpCell.swift in Sources */,
@@ -658,7 +660,6 @@
 				FD1D81C920103D2700498B2C /* HelpVC.swift in Sources */,
 				FD723D042004BAEB002E5675 /* LoginVC.swift in Sources */,
 				419D6AB820084C8B007C7CBC /* SideMenuCell.swift in Sources */,
-				FD15222320061B7F0028B221 /* SelectedCarteVC.swift in Sources */,
 				FD15D29D200C7962006F1816 /* UserData.swift in Sources */,
 				FD723D0A2004BC10002E5675 /* RoundUIViewCorner.swift in Sources */,
 				FD795BAA20119FF900015DEA /* NotificationVC.swift in Sources */,
@@ -666,7 +667,6 @@
 				FD15223520061DE40028B221 /* MainTableViewCell.swift in Sources */,
 				41AF5105200B2D6B0082F272 /* SettingVC.swift in Sources */,
 				FD152244200620600028B221 /* SelectedVideoVC.swift in Sources */,
-				FD594DE92005A68B006B72A5 /* MainPageVC.swift in Sources */,
 				41AF5107200B3B3F0082F272 /* PageVC.swift in Sources */,
 				FD594DF32005DDCC006B72A5 /* CustomerData.swift in Sources */,
 				FD15D29F200C8BB0006F1816 /* CustomerPageVC.swift in Sources */,
