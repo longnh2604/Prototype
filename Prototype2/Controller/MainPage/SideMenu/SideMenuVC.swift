@@ -10,26 +10,38 @@ import UIKit
 import Firebase
 import RealmSwift
 
-class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class SideMenuVC: UIViewController {
 
-    @IBOutlet weak var tblSideMenu: UITableView!
-    @IBOutlet weak var lblWelcome: UILabel!
-    @IBOutlet weak var lblLstLogined: UILabel!
-    @IBOutlet weak var imvAccount: UIImageView!
-    @IBOutlet weak var lblRole: UILabel!
-    
+    // Variable
     var mainNavi : UINavigationController?
     var helpNavi : UINavigationController?
     var helpVC: HelpVC?
     var accountNavi: UINavigationController?
     var accountInfoVC: AccountInfoVC?
     var accountPopup: AccountInfoPopup?
-    
     var menuOptions = ["ホーム", "ヘルプ", "ログアウト"]
+    
+    // IBOutlet
+    @IBOutlet weak var tblSideMenu: UITableView!
+    @IBOutlet weak var lblWelcome: UILabel!
+    @IBOutlet weak var lblLstLogined: UILabel!
+    @IBOutlet weak var imvAccount: UIImageView!
+    @IBOutlet weak var lblRole: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupUI()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    //MARK: - Load UI
+    /***************************************************************/
+    func setupUI() {
         tblSideMenu.tableFooterView = UIView()
         
         lblWelcome.text = "ようこそ、 　\(UserDefaults.standard.string(forKey: "username")!) 様"
@@ -46,33 +58,6 @@ class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         helpNavi = kMain_Storyboard.instantiateViewController(withIdentifier: "HelpNavi") as? UINavigationController
         helpVC = kMain_Storyboard.instantiateViewController(withIdentifier: "HelpVC") as? HelpVC
-        
-        accountNavi = kMain_Storyboard.instantiateViewController(withIdentifier: "AccountNavi") as? UINavigationController
-        accountInfoVC = kMain_Storyboard.instantiateViewController(withIdentifier: "AccountInfoVC") as? AccountInfoVC
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return menuOptions.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell : SideMenuCell = tableView.dequeueReusableCell(withIdentifier: "SideMenuCell") as! SideMenuCell
-        cell.lblTitle.text = menuOptions[indexPath.row]
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        performSegue(withIdentifier: menuOptions[indexPath.row], sender: self)
-        changeViewController(indexPath.row)
     }
     
     func getSelectedVCInTabbar() -> UIViewController?{
@@ -97,16 +82,32 @@ class SideMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             slideMenuVC.dismiss(animated: true, completion: nil)
             RealmServices.shared.deleteAll()
             break
-//        case 3:
-//            if !(UIApplication.topViewController() is AccountInfoVC){
-//                getSelectedVCInTabbar()?.navigationController?.pushViewController(accountInfoVC!, animated: true)
-//            }
-//            break
         default:
             
             break
         }
         toggleLeft()
     }
+}
 
+//MARK: - Tableview Delegate, Datasource
+/***************************************************************/
+extension SideMenuVC: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return menuOptions.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell : SideMenuCell = tableView.dequeueReusableCell(withIdentifier: "SideMenuCell") as! SideMenuCell
+        cell.lblTitle.text = menuOptions[indexPath.row]
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        changeViewController(indexPath.row)
+    }
 }

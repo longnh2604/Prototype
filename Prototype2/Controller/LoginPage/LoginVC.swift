@@ -15,7 +15,7 @@ import Firebase
 
 class LoginVC: UIViewController {
 
-    // Property
+    // Variable
     var customer: Results<CustomerData>!
     
     // IBOutlet
