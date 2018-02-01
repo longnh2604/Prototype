@@ -15,8 +15,10 @@ import Firebase
 
 class LoginVC: UIViewController {
 
+    // Property
     var customer: Results<CustomerData>!
     
+    // IBOutlet
     @IBOutlet weak var tfPassword: UITextField!
     @IBOutlet weak var tfUsername: UITextField!
     @IBOutlet weak var tfShopPassword: UITextField!
@@ -46,6 +48,9 @@ class LoginVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    //MARK: - IBAction
+    /***************************************************************/
     @IBAction func btnWebPressed(_ sender: Any) {
         UIApplication.tryURL(urls: ["https://abcarte.jp"])
     }
@@ -83,6 +88,9 @@ class LoginVC: UIViewController {
         SVProgressHUD.show()
         userLogin()
     }
+    
+    //MARK: - Load Data
+    /***************************************************************/
     
     //Firebase Account Authentication
     func userLogin() {
@@ -256,9 +264,9 @@ class LoginVC: UIViewController {
 //        }
 //    }
     
+    
     //MARK: - UIResponder Delegate
     /***************************************************************/
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }

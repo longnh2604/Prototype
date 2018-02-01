@@ -13,7 +13,6 @@
 		419D6AB820084C8B007C7CBC /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419D6AB720084C8B007C7CBC /* SideMenuCell.swift */; };
 		419D6ABE200855A3007C7CBC /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419D6ABD200855A3007C7CBC /* BaseVC.swift */; };
 		41AF5105200B2D6B0082F272 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AF5104200B2D6B0082F272 /* SettingVC.swift */; };
-		41AF5107200B3B3F0082F272 /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AF5106200B3B3F0082F272 /* PageVC.swift */; };
 		41AF5109200B3BB40082F272 /* CustomerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AF5108200B3BB40082F272 /* CustomerVC.swift */; };
 		41F34F1E20145EAE000FD9E9 /* HelpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F34F1D20145EAE000FD9E9 /* HelpCell.swift */; };
 		41F34F2020146234000FD9E9 /* HelpData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F34F1F20146234000FD9E9 /* HelpData.swift */; };
@@ -21,13 +20,11 @@
 		4D88FEFF200877B800A442DE /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88FEFE200877B800A442DE /* UIApplication.swift */; };
 		4D88FF0220087BEF00A442DE /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88FF0120087BEF00A442DE /* Constant.swift */; };
 		4D88FF042008824600A442DE /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88FF032008824600A442DE /* UIViewController.swift */; };
-		4D88FF062008AB7F00A442DE /* PageTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88FF052008AB7F00A442DE /* PageTestViewController.swift */; };
 		B09545E208C4959AA44FD33C /* Pods_Prototype2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FAC40FDC9F2E6D090F5677D /* Pods_Prototype2.framework */; };
 		FD0433A8200F4E8F00F26725 /* CalculateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0433A7200F4E8F00F26725 /* CalculateVC.swift */; };
 		FD15222620061BA30028B221 /* SelectedPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15222520061BA30028B221 /* SelectedPhotoVC.swift */; };
 		FD15222920061BD30028B221 /* ComparePhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15222820061BD30028B221 /* ComparePhotoVC.swift */; };
 		FD15222B20061BE30028B221 /* EditPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15222A20061BE30028B221 /* EditPhotoVC.swift */; };
-		FD15223520061DE40028B221 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15223420061DE40028B221 /* MainTableViewCell.swift */; };
 		FD15223720061E2D0028B221 /* MailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15223620061E2D0028B221 /* MailVC.swift */; };
 		FD15223A20061EC80028B221 /* UserPopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15223920061EC80028B221 /* UserPopupVC.swift */; };
 		FD15223D20061F400028B221 /* TemplateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15223C20061F400028B221 /* TemplateVC.swift */; };
@@ -81,7 +78,6 @@
 		419D6AB720084C8B007C7CBC /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
 		419D6ABD200855A3007C7CBC /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		41AF5104200B2D6B0082F272 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
-		41AF5106200B3B3F0082F272 /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
 		41AF5108200B3BB40082F272 /* CustomerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerVC.swift; sourceTree = "<group>"; };
 		41F34F1D20145EAE000FD9E9 /* HelpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCell.swift; sourceTree = "<group>"; };
 		41F34F1F20146234000FD9E9 /* HelpData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpData.swift; sourceTree = "<group>"; };
@@ -89,7 +85,6 @@
 		4D88FEFE200877B800A442DE /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		4D88FF0120087BEF00A442DE /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		4D88FF032008824600A442DE /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
-		4D88FF052008AB7F00A442DE /* PageTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTestViewController.swift; sourceTree = "<group>"; };
 		5ED158CD1A04F2AE46B9DE44 /* Pods-Prototype2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prototype2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Prototype2/Pods-Prototype2.debug.xcconfig"; sourceTree = "<group>"; };
 		678C181F9249952A01FD8EEC /* Pods-Prototype2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prototype2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Prototype2/Pods-Prototype2.release.xcconfig"; sourceTree = "<group>"; };
 		FD0433A7200F4E8F00F26725 /* CalculateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateVC.swift; sourceTree = "<group>"; };
@@ -97,7 +92,6 @@
 		FD15222520061BA30028B221 /* SelectedPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPhotoVC.swift; sourceTree = "<group>"; };
 		FD15222820061BD30028B221 /* ComparePhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparePhotoVC.swift; sourceTree = "<group>"; };
 		FD15222A20061BE30028B221 /* EditPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPhotoVC.swift; sourceTree = "<group>"; };
-		FD15223420061DE40028B221 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		FD15223620061E2D0028B221 /* MailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailVC.swift; sourceTree = "<group>"; };
 		FD15223920061EC80028B221 /* UserPopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPopupVC.swift; sourceTree = "<group>"; };
 		FD15223C20061F400028B221 /* TemplateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateVC.swift; sourceTree = "<group>"; };
@@ -157,13 +151,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		419D6AB02007AA10007C7CBC /* 3rdParty */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = 3rdParty;
-			sourceTree = "<group>";
-		};
 		41F34F1C20145D7D000FD9E9 /* Help */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,8 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				4D88FF032008824600A442DE /* UIViewController.swift */,
-				4D88FEFE200877B800A442DE /* UIApplication.swift */,
 				4D88FEFC2008779000A442DE /* ExSlideMenuController.swift */,
+				4D88FEFE200877B800A442DE /* UIApplication.swift */,
 				FD55BA71200D9038008E6A81 /* RealmServices.swift */,
 				FD8BE94C200DCF830011E4F8 /* GlobalVariables.swift */,
 			);
@@ -261,21 +248,15 @@
 		FD15223220061D600028B221 /* MainPage */ = {
 			isa = PBXGroup;
 			children = (
-				FD860FFC201576F9004736CA /* Search */,
-				FD795BAE2011D24A00015DEA /* Setting */,
-				FD795BAB2011A00700015DEA /* Notification */,
+				FD51AE182022C013004B7466 /* Base */,
 				FD8BE94E200DD9BD0011E4F8 /* HomeMenu */,
+				FD860FFC201576F9004736CA /* Search */,
+				FD795BAB2011A00700015DEA /* Notification */,
 				FD8BE94B200DA26D0011E4F8 /* SideMenu */,
 				FD8BE94A200DA2550011E4F8 /* Customer */,
 				41F34F1C20145D7D000FD9E9 /* Help */,
-				FD594DEA2005A6A1006B72A5 /* MainVC.swift */,
-				FD15223420061DE40028B221 /* MainTableViewCell.swift */,
 				FD1D81CA20107ADF00498B2C /* RegisterCustomerVC.swift */,
-				419D6ABD200855A3007C7CBC /* BaseVC.swift */,
-				FD8BE94F200DF2AA0011E4F8 /* BasePageVC.swift */,
-				4D88FF052008AB7F00A442DE /* PageTestViewController.swift */,
 				FD1D81C620103D1700498B2C /* AccountInfoVC.swift */,
-				41AF5106200B3B3F0082F272 /* PageVC.swift */,
 				FD15D2A0200C8BC3006F1816 /* PhotoPageVC.swift */,
 				FD15D2A2200C8BDD006F1816 /* VideoPageVC.swift */,
 				FD0433A7200F4E8F00F26725 /* CalculateVC.swift */,
@@ -307,6 +288,16 @@
 			path = TemplatePage;
 			sourceTree = "<group>";
 		};
+		FD51AE182022C013004B7466 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				419D6ABD200855A3007C7CBC /* BaseVC.swift */,
+				FD594DEA2005A6A1006B72A5 /* MainVC.swift */,
+				FD8BE94F200DF2AA0011E4F8 /* BasePageVC.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		FD723CD52004ADC1002E5675 = {
 			isa = PBXGroup;
 			children = (
@@ -328,12 +319,11 @@
 		FD723CE02004ADC1002E5675 /* Prototype2 */ = {
 			isa = PBXGroup;
 			children = (
-				4D88FF0020087BDD00A442DE /* Constant */,
 				FD594DEE2005DC4D006B72A5 /* Prototype2.entitlements */,
+				4D88FF0020087BDD00A442DE /* Constant */,
 				FD723CF82004AEA6002E5675 /* Fonts */,
 				FD723CF72004AE6C002E5675 /* Controller */,
 				FD723CF62004AE68002E5675 /* View */,
-				419D6AB02007AA10007C7CBC /* 3rdParty */,
 				4D88FEFB200876D800A442DE /* Extension */,
 				FD723CF52004AE64002E5675 /* Model */,
 				FD723CE12004ADC1002E5675 /* AppDelegate.swift */,
@@ -372,10 +362,11 @@
 		FD723CF72004AE6C002E5675 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FD15223B20061F2F0028B221 /* TemplatePage */,
-				FD15223820061E9F0028B221 /* UserPage */,
 				FD15223320061D680028B221 /* LoginPage */,
 				FD15223220061D600028B221 /* MainPage */,
+				FD795BAE2011D24A00015DEA /* Setting */,
+				FD15223B20061F2F0028B221 /* TemplatePage */,
+				FD15223820061E9F0028B221 /* UserPage */,
 				FD15223120061D450028B221 /* MailPage */,
 				FD15222F20061D2A0028B221 /* CartePage */,
 				FD15222E20061D1F0028B221 /* SecretPage */,
@@ -634,7 +625,6 @@
 				41F34F1E20145EAE000FD9E9 /* HelpCell.swift in Sources */,
 				FD15222B20061BE30028B221 /* EditPhotoVC.swift in Sources */,
 				FD1D81CB20107ADF00498B2C /* RegisterCustomerVC.swift in Sources */,
-				4D88FF062008AB7F00A442DE /* PageTestViewController.swift in Sources */,
 				FD15D2A1200C8BC3006F1816 /* PhotoPageVC.swift in Sources */,
 				FD15222620061BA30028B221 /* SelectedPhotoVC.swift in Sources */,
 				FD8BE94D200DCF830011E4F8 /* GlobalVariables.swift in Sources */,
@@ -664,10 +654,8 @@
 				FD723D0A2004BC10002E5675 /* RoundUIViewCorner.swift in Sources */,
 				FD795BAA20119FF900015DEA /* NotificationVC.swift in Sources */,
 				FD860FFE20157713004736CA /* SearchCustomerVC.swift in Sources */,
-				FD15223520061DE40028B221 /* MainTableViewCell.swift in Sources */,
 				41AF5105200B2D6B0082F272 /* SettingVC.swift in Sources */,
 				FD152244200620600028B221 /* SelectedVideoVC.swift in Sources */,
-				41AF5107200B3B3F0082F272 /* PageVC.swift in Sources */,
 				FD594DF32005DDCC006B72A5 /* CustomerData.swift in Sources */,
 				FD15D29F200C8BB0006F1816 /* CustomerPageVC.swift in Sources */,
 				419D6AB620084BE6007C7CBC /* SideMenuVC.swift in Sources */,

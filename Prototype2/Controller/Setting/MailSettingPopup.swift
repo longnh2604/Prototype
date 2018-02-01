@@ -10,6 +10,7 @@ import UIKit
 
 class MailSettingPopup: UIViewController {
 
+    // IBOutlet
     @IBOutlet weak var tfWebmail: UITextField!
     @IBOutlet weak var tfSender: UITextField!
     @IBOutlet weak var popupView: UIView!
@@ -30,6 +31,8 @@ class MailSettingPopup: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    //MARK: - IBAction
+    /***************************************************************/
     @IBAction func resetPressed(_ sender: Any) {
         
     }

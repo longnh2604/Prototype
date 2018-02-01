@@ -11,6 +11,7 @@ import RealmSwift
 
 class HomeVC: BaseVC {
 
+    //IBOutlet
     @IBOutlet weak var lblCusRegisterToday: RoundLabelCorner!
     @IBOutlet weak var lblNotificationNew: RoundLabelCorner!
     var customers: Results<CustomerData>!
@@ -19,6 +20,7 @@ class HomeVC: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //count number of customer register today
         let realm = RealmServices.shared.realm
         customers = realm.objects(CustomerData.self)
         for (index,element) in customers.enumerated() {
@@ -31,6 +33,8 @@ class HomeVC: BaseVC {
             }
         }
         lblCusRegisterToday.text = String(cusRegister)
+        
+        //get date time on home title
         navigationController?.navigationBar.topItem?.title = createDateTime()
     }
     
@@ -43,6 +47,8 @@ class HomeVC: BaseVC {
         // Dispose of any resources that can be recreated.
     }
     
+    //MARK: - Load Data
+    /***************************************************************/
     func createDateTime() -> String {
         let date = Date()
         let formatter = DateFormatter()
@@ -73,6 +79,8 @@ class HomeVC: BaseVC {
         }
     }
 
+    //MARK: - IBAction
+    /***************************************************************/
     @IBAction func searchCustomerPressed(_ sender: Any) {
         
     }

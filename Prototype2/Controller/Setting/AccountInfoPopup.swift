@@ -9,8 +9,9 @@
 import UIKit
 import Gallery
 
-class AccountInfoPopup: UIViewController, GalleryControllerDelegate {
+class AccountInfoPopup: UIViewController {
 
+    // IBOutlet
     @IBOutlet weak var imvAccount: UIImageView!
     @IBOutlet weak var tfAccName: UITextField!
     @IBOutlet weak var tfAccPassword: UITextField!
@@ -21,6 +22,21 @@ class AccountInfoPopup: UIViewController, GalleryControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupUI()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        dismiss(animated: true, completion: nil)
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    //MARK: - Load UI
+    /***************************************************************/
+    func setupUI() {
         popupView.layer.cornerRadius = 10
         popupView.layer.masksToBounds = true
         
@@ -34,16 +50,9 @@ class AccountInfoPopup: UIViewController, GalleryControllerDelegate {
             imvAccount.roundImage(with: imvAccount)
         }
     }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        dismiss(animated: true, completion: nil)
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    //MARK: - IBAction
+    /***************************************************************/
     @IBAction func settingPressed(_ sender: Any) {
         
     }
@@ -57,7 +66,11 @@ class AccountInfoPopup: UIViewController, GalleryControllerDelegate {
         gallery.delegate = self
         self.present(gallery, animated: true, completion: nil)
     }
-    
+}
+
+//MARK: - Gallery Delegate
+/***************************************************************/
+extension AccountInfoPopup: GalleryControllerDelegate {
     func galleryController(_ controller: GalleryController, didSelectImages images: [Image]){
         
     }

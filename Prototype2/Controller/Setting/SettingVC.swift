@@ -14,8 +14,6 @@ class SettingVC: BaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,6 +21,8 @@ class SettingVC: BaseVC {
         // Dispose of any resources that can be recreated.
     }
     
+    //MARK: - IBAction
+    /***************************************************************/
     @IBAction func logoutPressed(_ sender: Any) {
         SVProgressHUD.show()
         RealmServices.shared.deleteAll()
@@ -42,6 +42,8 @@ class SettingVC: BaseVC {
         
     }
     
+    //MARK: - Popup
+    /***************************************************************/
     func openPoup(message: String) {
         let title = "ALERT"
         
@@ -56,10 +58,7 @@ class SettingVC: BaseVC {
         let buttonTwo = DefaultButton(title: "CONFIRM", height: 60) {
             
         }
-        
-        // Add buttons to dialog
-        // Alternatively, you can use popup.addButton(buttonOne)
-        // to add a single button
+
         popup.addButtons([buttonOne, buttonTwo])
         
         // Present dialog

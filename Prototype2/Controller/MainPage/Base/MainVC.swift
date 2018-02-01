@@ -9,9 +9,7 @@
 import UIKit
 import SlideMenuControllerSwift
 class MainVC: UITabBarController, UITabBarControllerDelegate {
-    
-    @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         slideMenuVC.automaticallyAdjustsScrollViewInsets = true
@@ -23,18 +21,18 @@ class MainVC: UITabBarController, UITabBarControllerDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    // UITabBarControllerDelegate
+
+    //MARK: - UITabBarControllerDelegate
+    /***************************************************************/
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         kLeftMenuVC?.getSelectedVCInTabbar()?.navigationController?.popToRootViewController(animated: true)
         GlobalVariables.sharedManager.cusDisplayByDay = false
         print("Selected view controller")
     }
-
-    
 }
 
+//MARK: - SlideMenuController Delegate
+/***************************************************************/
 extension MainVC : SlideMenuControllerDelegate {
     
     func leftWillOpen() {
@@ -78,6 +76,8 @@ extension MainVC : SlideMenuControllerDelegate {
     }
 }
 
+//MARK: - UIImageView
+/***************************************************************/
 extension UIImageView {
     func downloadedFrom(url: URL, contentMode mode: UIViewContentMode = .scaleAspectFit) {
         contentMode = mode
