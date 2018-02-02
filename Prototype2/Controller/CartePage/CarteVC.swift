@@ -221,4 +221,9 @@ extension CarteVC: UITableViewDelegate, UITableViewDataSource {
             }
         }
     }
+    
+    func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
+        print("click index \(indexPath.row)")
+
+    }
 }
