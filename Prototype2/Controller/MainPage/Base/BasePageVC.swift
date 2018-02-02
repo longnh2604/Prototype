@@ -13,6 +13,7 @@ class BasePageVC: UIPageViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addMenuBarButton()
+        removeTapRecognizer()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -25,4 +26,20 @@ class BasePageVC: UIPageViewController {
         // Dispose of any resources that can be recreated.
     }
 
+}
+
+extension UIPageViewController {
+    func removeTapRecognizer() {
+        let gestureRecognizers = self.gestureRecognizers
+        
+        var tapGesture: UIGestureRecognizer?
+        gestureRecognizers.forEach { recognizer in
+            if recognizer.isKind(of: UITapGestureRecognizer.self) {
+                tapGesture = recognizer
+            }
+        }
+        if let tapGesture = tapGesture {
+            self.view.removeGestureRecognizer(tapGesture)
+        }
+    }
 }

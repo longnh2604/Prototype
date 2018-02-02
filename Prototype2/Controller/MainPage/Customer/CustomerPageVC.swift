@@ -12,6 +12,7 @@ class CustomerPageVC: BasePageVC {
     var customerVC : CustomerVC?
     var carteVC : CarteVC?
     var selectedCarteVC : SelectedCarteVC?
+    var processVC: ProcessVC?
     var data :String = ""
     
     lazy var orderedViewControllers: [UIViewController] = {
@@ -26,9 +27,17 @@ class CustomerPageVC: BasePageVC {
             self.selectedCarteVC?.receive_data = pass_data
         }
         selectedCarteVC = self.newVc(viewController: "SelectedCarteVC") as? SelectedCarteVC
+        selectedCarteVC?.pass_data_callback = {
+            pass_data in
+            self.processVC?.receive_data = pass_data
+        }
+        
+        processVC = self.newVc(viewController: "ProcessVC") as? ProcessVC
+        
         return [customerVC!,
                 carteVC!,
-                selectedCarteVC!]
+                selectedCarteVC!,
+                processVC!]
     }()
     
     override func viewDidLoad() {

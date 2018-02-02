@@ -40,7 +40,7 @@
 		FD1D81C720103D1700498B2C /* AccountInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1D81C620103D1700498B2C /* AccountInfoVC.swift */; };
 		FD1D81C920103D2700498B2C /* HelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1D81C820103D2700498B2C /* HelpVC.swift */; };
 		FD1D81CB20107ADF00498B2C /* RegisterCustomerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1D81CA20107ADF00498B2C /* RegisterCustomerVC.swift */; };
-		FD298F402022C99A000F78FA /* SelectCarteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD298F3F2022C99A000F78FA /* SelectCarteVC.swift */; };
+		FD50747820240499005BFE92 /* ProcessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD50747720240499005BFE92 /* ProcessVC.swift */; };
 		FD51AE162022A85E004B7466 /* SelectedCarteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD51AE142022A4D7004B7466 /* SelectedCarteVC.swift */; };
 		FD51AE172022A869004B7466 /* EditCarteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15222220061B7F0028B221 /* EditCarteVC.swift */; };
 		FD55BA72200D9038008E6A81 /* RealmServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD55BA71200D9038008E6A81 /* RealmServices.swift */; };
@@ -108,7 +108,7 @@
 		FD1D81C620103D1700498B2C /* AccountInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfoVC.swift; sourceTree = "<group>"; };
 		FD1D81C820103D2700498B2C /* HelpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpVC.swift; sourceTree = "<group>"; };
 		FD1D81CA20107ADF00498B2C /* RegisterCustomerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCustomerVC.swift; sourceTree = "<group>"; };
-		FD298F3F2022C99A000F78FA /* SelectCarteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCarteVC.swift; sourceTree = "<group>"; };
+		FD50747720240499005BFE92 /* ProcessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessVC.swift; sourceTree = "<group>"; };
 		FD51AE142022A4D7004B7466 /* SelectedCarteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCarteVC.swift; sourceTree = "<group>"; };
 		FD55BA71200D9038008E6A81 /* RealmServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmServices.swift; sourceTree = "<group>"; };
 		FD594DEA2005A6A1006B72A5 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -235,7 +235,7 @@
 				FD152241200620250028B221 /* CarteTableViewCell.swift */,
 				FD59CF1720181EF00047A007 /* SelectedCarteCollectionCell.swift */,
 				FD51AE142022A4D7004B7466 /* SelectedCarteVC.swift */,
-				FD298F3F2022C99A000F78FA /* SelectCarteVC.swift */,
+				FD50747720240499005BFE92 /* ProcessVC.swift */,
 			);
 			path = CartePage;
 			sourceTree = "<group>";
@@ -635,8 +635,8 @@
 				FD8BE950200DF2AA0011E4F8 /* BasePageVC.swift in Sources */,
 				FD15223720061E2D0028B221 /* MailVC.swift in Sources */,
 				FD15224020061FC70028B221 /* SecretVC.swift in Sources */,
+				FD50747820240499005BFE92 /* ProcessVC.swift in Sources */,
 				FD723D0B2004BC10002E5675 /* RoundLabelCorner.swift in Sources */,
-				FD298F402022C99A000F78FA /* SelectCarteVC.swift in Sources */,
 				FD8BE949200DA2470011E4F8 /* CustomerCell.swift in Sources */,
 				FD15222920061BD30028B221 /* ComparePhotoVC.swift in Sources */,
 				4D88FF042008824600A442DE /* UIViewController.swift in Sources */,

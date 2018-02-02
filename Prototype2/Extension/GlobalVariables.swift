@@ -9,11 +9,12 @@
 import Foundation
 
 class GlobalVariables {
-    public var relationID:String = ""
-    public var cellIndex:Int = 0
-    public var cellCarteIndex:Int = 0
+    public var relationID: String = ""
+    public var cellIndex: Int = 0
+    public var cellCarteIndex: Int = 0
     public var cusDataDisplay = [Int]()
     public var cusDisplayByDay = false
+    public var typeProcess: Int = 0
     
     class var sharedManager: GlobalVariables {
         struct Static{

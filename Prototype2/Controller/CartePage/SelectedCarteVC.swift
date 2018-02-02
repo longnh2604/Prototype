@@ -13,10 +13,16 @@ class SelectedCarteVC: UIViewController {
     
     //IBOutlet
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var btnCompare: UIButton!
+    @IBOutlet weak var btnTranmission: UIButton!
+    @IBOutlet weak var btnUpDown: UIButton!
+    @IBOutlet weak var btnMorphing: UIButton!
     
     //Variable
     var customers: Results<CustomerData>!
     var cartes: Results<CarteData>!
+    var arrayNo = [Int]()
+    var pass_data_callback : (([String : Any])->())?
     var receive_data : [String:Any]?
     var OrderNo: Int = 0
     
@@ -30,12 +36,59 @@ class SelectedCarteVC: UIViewController {
         let realm = RealmServices.shared.realm
         customers = realm.objects(CustomerData.self)
         cartes = realm.objects(CarteData.self)
+        
+        collectionView.reloadData()
+        buttonDisplay()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func buttonDisplay() {
+        if OrderNo >= 2 {
+            if OrderNo > 2 {
+                btnCompare.isEnabled = false
+                btnTranmission.isEnabled = false
+                btnUpDown.isEnabled = false
+                btnMorphing.isEnabled = true
+            } else {
+                btnCompare.isEnabled = true
+                btnTranmission.isEnabled = true
+                btnUpDown.isEnabled = true
+                btnMorphing.isEnabled = true
+            }
+        } else {
+            btnCompare.isEnabled = false
+            btnTranmission.isEnabled = false
+            btnUpDown.isEnabled = false
+            btnMorphing.isEnabled = false
+        }
+    }
+    
+    func checkHighlight(senderValue: UIButton) {
+        
+    }
+    
+    //MARK: - IBAction
+    /***************************************************************/
+    @IBAction func btnComparePressed(_ sender: UIButton) {
+        GlobalVariables.sharedManager.typeProcess = 1
+    }
+    
+    @IBAction func btnTranmissionPressed(_ sender: UIButton) {
+        GlobalVariables.sharedManager.typeProcess = 2
+    }
+    
+    @IBAction func btnUpDownPressed(_ sender: UIButton) {
+        GlobalVariables.sharedManager.typeProcess = 3
+    }
+    
+    @IBAction func btnMorphingPressed(_ sender: UIButton) {
+        GlobalVariables.sharedManager.typeProcess = 4
+    }
+    
 }
 
 //MARK: - CollectionView Delegate, Datasource
@@ -72,6 +125,11 @@ extension SelectedCarteVC: UICollectionViewDelegate, UICollectionViewDataSource 
         OrderNo += 1
         cell.lblCellNo.text = String(OrderNo)
         cell.lblCellNo.isHidden = false
+        buttonDisplay()
+        print(indexPath.row)
+        arrayNo.append(indexPath.row)
+        print(arrayNo)
+        pass_data_callback!(["PicSelected":arrayNo])
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
@@ -82,6 +140,11 @@ extension SelectedCarteVC: UICollectionViewDelegate, UICollectionViewDataSource 
         let cellNo = Int(cell.lblCellNo.text!)
         //reload cell number in order
         compareNumber(cellNumber: cellNo!)
+        buttonDisplay()
+        
+        arrayNo = arrayNo.filter{$0 != indexPath.row}
+        print(arrayNo)
+        pass_data_callback!(["PicSelected":arrayNo])
     }
     
     func compareNumber(cellNumber:Int) {
@@ -90,9 +153,6 @@ extension SelectedCarteVC: UICollectionViewDelegate, UICollectionViewDataSource 
                 //dag hidden
             } else {
                 var noOrder = Int(cell.lblCellNo.text!)
-                print(noOrder ?? 0)
-                print(OrderNo)
-                print(cellNumber)
                 if noOrder! > cellNumber {
                     noOrder = noOrder! - 1
                     cell.lblCellNo.text = String(noOrder!)

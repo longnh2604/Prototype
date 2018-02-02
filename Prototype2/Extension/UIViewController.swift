@@ -16,6 +16,13 @@ extension UIViewController {
         self.slideMenuController()?.addLeftGestures()
     }
     
+    func addRightBarButton() {
+        self.addRigtBarButtonWithImage(UIImage(named: "addImageIcon")!, action: #selector(openPhotoVC))
+//        self.addRightBarButtonWithImage(UIImage(named: "addImageIcon")!)
+        self.slideMenuController()?.removeRightGestures()
+        self.slideMenuController()?.addRightGestures()
+    }
+    
     func removeNavigationBarItem() {
         self.navigationItem.leftBarButtonItem = nil
         self.navigationItem.rightBarButtonItem = nil
@@ -42,5 +49,9 @@ extension UIViewController {
     
     func dismissVC(sender: AnyObject){
         self.dismiss(animated: true)
+    }
+    
+    @objc func openPhotoVC() {
+        
     }
 }
