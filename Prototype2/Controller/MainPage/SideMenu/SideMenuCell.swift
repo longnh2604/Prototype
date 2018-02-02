@@ -10,6 +10,7 @@ import UIKit
 
 class SideMenuCell: UITableViewCell {
 
+    // IBOutlet
     @IBOutlet weak var lblTitle: UILabel!
     
     override func awakeFromNib() {
@@ -20,7 +21,7 @@ class SideMenuCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+    
     }
 
 }

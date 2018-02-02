@@ -20,6 +20,10 @@ class HomeVC: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //save User Login Session
+        UserDefaults.standard.set("logined", forKey: "LoginState")
+        UserDefaults.standard.synchronize()
+        
         //count number of customer register today
         let realm = RealmServices.shared.realm
         customers = realm.objects(CustomerData.self)

@@ -26,6 +26,7 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tfUsername.delegate = self
         tfPassword.delegate = self
         tfShopPassword.delegate = self
@@ -36,6 +37,13 @@ class LoginVC: UIViewController {
         
         RealmServices.shared.observerRealmErrors(in: self) { (error) in
             print(error ?? "No errors detected")
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        //Check Login session
+        if UserDefaults.standard.string(forKey: "LoginState") == "logined" {
+            userLogin()
         }
     }
     
