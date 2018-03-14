@@ -154,7 +154,7 @@
                   moduleName = "Prototype2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/long/Desktop/Prototype2/Prototype2/Controller/CartePage/SelectedCarteVC.swift"
-                  timestampString = "539247768.760846"
+                  timestampString = "540275361.555349"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "145"
@@ -169,7 +169,7 @@
                   moduleName = "Prototype2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/long/Desktop/Prototype2/Prototype2/Controller/CartePage/SelectedCarteVC.swift"
-                  timestampString = "539247768.762216"
+                  timestampString = "540275361.55814"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "145"
@@ -177,22 +177,6 @@
                   offsetFromSymbolStart = "28">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Prototype2/Controller/MainPage/Customer/CustomerPageVC.swift"
-            timestampString = "539249986.407899"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "orderedViewControllers"
-            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

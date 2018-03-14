@@ -26,7 +26,11 @@ class SettingVC: BaseVC {
     @IBAction func logoutPressed(_ sender: Any) {
         SVProgressHUD.show()
         RealmServices.shared.deleteAll()
-        slideMenuVC.dismiss(animated: true, completion: nil)
+        UserDefaults.standard.set("logout", forKey: "LoginState")
+        UserDefaults.standard.synchronize()
+//        slideMenuVC.dismiss(animated: true, completion: nil)
+        let loginPageView =  self.storyboard?.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
+        self.present(loginPageView, animated: true, completion: nil)
         SVProgressHUD.dismiss()
     }
     

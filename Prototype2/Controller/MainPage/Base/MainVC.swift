@@ -12,7 +12,7 @@ class MainVC: UITabBarController, UITabBarControllerDelegate {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        slideMenuVC.automaticallyAdjustsScrollViewInsets = true
+//        slideMenuVC.automaticallyAdjustsScrollViewInsets = true
         slideMenuVC.delegate = self
         self.delegate = self
     }

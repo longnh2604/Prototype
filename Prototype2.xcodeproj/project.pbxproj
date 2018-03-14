@@ -43,6 +43,10 @@
 		FD50747820240499005BFE92 /* ProcessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD50747720240499005BFE92 /* ProcessVC.swift */; };
 		FD51AE162022A85E004B7466 /* SelectedCarteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD51AE142022A4D7004B7466 /* SelectedCarteVC.swift */; };
 		FD51AE172022A869004B7466 /* EditCarteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15222220061B7F0028B221 /* EditCarteVC.swift */; };
+		FD53FFEA2033D6A5009D60A1 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD53FFE92033D6A5009D60A1 /* SplashVC.swift */; };
+		FD53FFEC2033D7F8009D60A1 /* AnimatedULogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD53FFEB2033D7F8009D60A1 /* AnimatedULogoView.swift */; };
+		FD53FFEF2033DB49009D60A1 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD53FFEE2033DB49009D60A1 /* Utils.swift */; };
+		FD53FFF12033E62A009D60A1 /* UserManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD53FFF02033E62A009D60A1 /* UserManagement.swift */; };
 		FD55BA72200D9038008E6A81 /* RealmServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD55BA71200D9038008E6A81 /* RealmServices.swift */; };
 		FD594DEB2005A6A1006B72A5 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD594DEA2005A6A1006B72A5 /* MainVC.swift */; };
 		FD594DED2005A9B2006B72A5 /* CarteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD594DEC2005A9B2006B72A5 /* CarteVC.swift */; };
@@ -110,6 +114,10 @@
 		FD1D81CA20107ADF00498B2C /* RegisterCustomerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCustomerVC.swift; sourceTree = "<group>"; };
 		FD50747720240499005BFE92 /* ProcessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessVC.swift; sourceTree = "<group>"; };
 		FD51AE142022A4D7004B7466 /* SelectedCarteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCarteVC.swift; sourceTree = "<group>"; };
+		FD53FFE92033D6A5009D60A1 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
+		FD53FFEB2033D7F8009D60A1 /* AnimatedULogoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedULogoView.swift; sourceTree = "<group>"; };
+		FD53FFEE2033DB49009D60A1 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		FD53FFF02033E62A009D60A1 /* UserManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManagement.swift; sourceTree = "<group>"; };
 		FD55BA71200D9038008E6A81 /* RealmServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmServices.swift; sourceTree = "<group>"; };
 		FD594DEA2005A6A1006B72A5 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		FD594DEC2005A9B2006B72A5 /* CarteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarteVC.swift; sourceTree = "<group>"; };
@@ -187,6 +195,8 @@
 			isa = PBXGroup;
 			children = (
 				4D88FF0120087BEF00A442DE /* Constant.swift */,
+				FD53FFEE2033DB49009D60A1 /* Utils.swift */,
+				FD53FFF02033E62A009D60A1 /* UserManagement.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -271,6 +281,8 @@
 			isa = PBXGroup;
 			children = (
 				FD723D032004BAEB002E5675 /* LoginVC.swift */,
+				FD53FFE92033D6A5009D60A1 /* SplashVC.swift */,
+				FD53FFEB2033D7F8009D60A1 /* AnimatedULogoView.swift */,
 			);
 			path = LoginPage;
 			sourceTree = "<group>";
@@ -634,6 +646,8 @@
 				FD594DED2005A9B2006B72A5 /* CarteVC.swift in Sources */,
 				FD8BE950200DF2AA0011E4F8 /* BasePageVC.swift in Sources */,
 				FD15223720061E2D0028B221 /* MailVC.swift in Sources */,
+				FD53FFEC2033D7F8009D60A1 /* AnimatedULogoView.swift in Sources */,
+				FD53FFEA2033D6A5009D60A1 /* SplashVC.swift in Sources */,
 				FD15224020061FC70028B221 /* SecretVC.swift in Sources */,
 				FD50747820240499005BFE92 /* ProcessVC.swift in Sources */,
 				FD723D0B2004BC10002E5675 /* RoundLabelCorner.swift in Sources */,
@@ -641,6 +655,7 @@
 				FD15222920061BD30028B221 /* ComparePhotoVC.swift in Sources */,
 				4D88FF042008824600A442DE /* UIViewController.swift in Sources */,
 				FD795BAD2011A07000015DEA /* NotificationCell.swift in Sources */,
+				FD53FFF12033E62A009D60A1 /* UserManagement.swift in Sources */,
 				4D88FF0220087BEF00A442DE /* Constant.swift in Sources */,
 				FD1D81C720103D1700498B2C /* AccountInfoVC.swift in Sources */,
 				FD15223A20061EC80028B221 /* UserPopupVC.swift in Sources */,
@@ -656,6 +671,7 @@
 				419D6AB820084C8B007C7CBC /* SideMenuCell.swift in Sources */,
 				FD15D29D200C7962006F1816 /* UserData.swift in Sources */,
 				FD723D0A2004BC10002E5675 /* RoundUIViewCorner.swift in Sources */,
+				FD53FFEF2033DB49009D60A1 /* Utils.swift in Sources */,
 				FD795BAA20119FF900015DEA /* NotificationVC.swift in Sources */,
 				FD860FFE20157713004736CA /* SearchCustomerVC.swift in Sources */,
 				41AF5105200B2D6B0082F272 /* SettingVC.swift in Sources */,

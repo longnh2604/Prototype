@@ -79,8 +79,12 @@ class SideMenuVC: UIViewController {
             getSelectedVCInTabbar()?.navigationController?.pushViewController(helpVC!, animated: true)
             break
         case 2:
-            slideMenuVC.dismiss(animated: true, completion: nil)
+            UserDefaults.standard.set("logout", forKey: "LoginState")
+            UserDefaults.standard.synchronize()
             RealmServices.shared.deleteAll()
+//            slideMenuVC.dismiss(animated: true, completion: nil)
+            let loginPageView =  self.storyboard?.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
+            self.present(loginPageView, animated: true, completion: nil)
             break
         default:
             
